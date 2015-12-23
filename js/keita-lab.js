@@ -1,80 +1,80 @@
 $(window).load(function(){
 
-	var $window = $(window);
-	//smooth scroll
-	$('li.menu-element>a').smoothScroll();
+  var $window = $(window);
+  //smooth scroll
+  $('li.menu-element>a').smoothScroll();
 
-	//sticky menu bar
-	$("header").each(function(){
-		var $menubar = $(this);
-		var menubarOffsetTop = $menubar.offset().top;
-		$window.on('scroll', function(){
-			if($window.scrollTop() > menubarOffsetTop){
-				$menubar.removeClass('no-sticky');
-				$menubar.addClass('sticky');
-			}
-			else{
-				$menubar.removeClass('sticky');
-				$menubar.addClass('no-sticky');
-			}
-		});
-		$window.trigger('scroll');
-	});
+  //sticky menu bar
+  $("header").each(function(){
+    var $menubar = $(this);
+    var menubarOffsetTop = $menubar.offset().top;
+    $window.on('scroll', function(){
+      if($window.scrollTop() > menubarOffsetTop){
+        $menubar.removeClass('no-sticky');
+        $menubar.addClass('sticky');
+      }
+      else{
+        $menubar.removeClass('sticky');
+        $menubar.addClass('no-sticky');
+      }
+    });
+    $window.trigger('scroll');
+  });
 
-	// sticky headline
-	$(".headword").each(function(){
-		var $h_word = $(this);
-		var h_wordOffsetTop = $h_word.offset().top;
-		$window.on('scroll', function(){
-			if($window.scrollTop() > h_wordOffsetTop-500){
-				$h_word.removeClass('no-sticky');
-				$h_word.addClass('sticky');
-			}
-			else{
-				$h_word.removeClass('sticky');
-				$h_word.addClass('no-sticky');
-			}
-		});
-		$window.trigger('scroll');
-	});
+  // sticky headline
+  $(".headword").each(function(){
+    var $h_word = $(this);
+    var h_wordOffsetTop = $h_word.offset().top;
+    $window.on('scroll', function(){
+      if($window.scrollTop() > h_wordOffsetTop-500){
+        $h_word.removeClass('no-sticky');
+        $h_word.addClass('sticky');
+      }
+      else{
+        $h_word.removeClass('sticky');
+        $h_word.addClass('no-sticky');
+      }
+    });
+    $window.trigger('scroll');
+  });
 
-	// Window resize event
-	var onResize = function () {
-		if (window.innerWidth < 590) {
-			$('#menu').css('height', '120px');
-			$('div.menu-element').css('width', '70px');
-			$('div.menu-element').css('height', '50px');
-			$('div.menu-element>a').css('width', '70px');
-			$('div.menu-element>a').css('height', '50px');
-			$('div.menu-element>a').css('margin-top', '0px');
-			$('div.menu-element>a').css('font-size', '20px');
-			$('div.menu-title').css('margin-right', '100%');
-		}
-		else if (window.innerWidth < 740) {
-			$('#menu').css('height', '100px');
-			$('div.menu-element').css('width', '70px');
-			$('div.menu-element').css('height', '100px');
-			$('div.menu-element>a').css('width', '70px');
-			$('div.menu-element>a').css('height', '50px');
-			$('div.menu-element>a').css('margin-top', '35px');
-			$('div.menu-element>a').css('font-size', '20px');
-			$('div.menu-title').css('margin-right', '0px');
-		}
-		else {
-			$('#menu').css('height', '100px');
-			$('div.menu-element').css('width', '100px');
-			$('div.menu-element').css('height', '100px');
-			$('div.menu-element>a').css('width', '100px');
-			$('div.menu-element>a').css('height', '65px');
-			$('div.menu-element>a').css('margin-top', '35px');
-			$('div.menu-element>a').css('font-size', '25px');
-			$('div.menu-title').css('margin-right', '0');
-		}
-		$('.filled-video').attr('width', window.innerWidth+"px");
-	}
-	onResize();
+  // Window resize event
+  var onResize = function () {
+    if (window.innerWidth < 590) {
+      $('#menu').css('height', '120px');
+      $('div.menu-element').css('width', '70px');
+      $('div.menu-element').css('height', '50px');
+      $('div.menu-element>a').css('width', '70px');
+      $('div.menu-element>a').css('height', '50px');
+      $('div.menu-element>a').css('margin-top', '0px');
+      $('div.menu-element>a').css('font-size', '20px');
+      $('div.menu-title').css('margin-right', '100%');
+    }
+    else if (window.innerWidth < 740) {
+      $('#menu').css('height', '100px');
+      $('div.menu-element').css('width', '70px');
+      $('div.menu-element').css('height', '100px');
+      $('div.menu-element>a').css('width', '70px');
+      $('div.menu-element>a').css('height', '50px');
+      $('div.menu-element>a').css('margin-top', '35px');
+      $('div.menu-element>a').css('font-size', '20px');
+      $('div.menu-title').css('margin-right', '0px');
+    }
+    else {
+      $('#menu').css('height', '100px');
+      $('div.menu-element').css('width', '100px');
+      $('div.menu-element').css('height', '100px');
+      $('div.menu-element>a').css('width', '100px');
+      $('div.menu-element>a').css('height', '65px');
+      $('div.menu-element>a').css('margin-top', '35px');
+      $('div.menu-element>a').css('font-size', '25px');
+      $('div.menu-title').css('margin-right', '0');
+    }
+    $('.filled-video').attr('width', window.innerWidth+"px");
+  }
+  onResize();
   $(window).bind("resize", onResize);
-  
+
   // jssor slider
   var options = {
       $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
@@ -82,13 +82,13 @@ $(window).load(function(){
       $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
       $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
 
-      $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+      $ArrowKeyNavigation: true,                     //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
       $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
       $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
       $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
       //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
       //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-      $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+      $SlideSpacing: 0,                           //[Optional] Space between each slide in pixels, default value is 0
       $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
       $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
       $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
