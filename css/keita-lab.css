@@ -1,19 +1,63 @@
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/NotoSansCJKjp-Thin.woff') format('woff');
+}
 
 @font-face {
-	font-family: 'Lato', 'Khula', 'sans-serif';
-}
-body {
-    font-family: 'Lato', 'Khula', 'Yu Gothic', "Hiragino Gothic ProN","hiragino mincho", "Meiryo", cursive;
-    font-size: 20px;
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
     font-weight: 300;
+    src: url('../font/NotoSansCJKjp-Light.woff') format('woff')
+
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/NotoSansCJKjp-DemiLight.woff')  format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../font/NotoSansCJKjp-Regular.woff')  format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../font/NotoSansCJKjp-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../font/NotoSansCJKjp-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: 1000;
+    src: url('../font/NotoSansCJKjp-Black.woff') format('woff');
+}
+@font-face {
+	font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif';
+}
+
+body {
+    font-family: 'Lato', 'Noto Sans Japanese', 'Yu Gothic', "Hiragino Gothic ProN","hiragino mincho", "Meiryo", cursive;
+    font-size: 20px;
+    font-weight: 200;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lato', Arial, serif;
+	font-family: 'Lato', 'Noto Sans Japanese', Arial, serif;
 	font-weight: 300;
 	font-size: 35px;
 }
 h1 {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 35px;
   margin: 0;
   padding: 0;
