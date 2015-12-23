@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "A website for keita laboratory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keitalab/web.git"
+  },
+  "author": "mactkg <mactkg@gmail.com> (http://makerbox.net/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keitalab/web/issues"
+  },
+  "homepage": "https://github.com/keitalab/web#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1"
+  }
+}
