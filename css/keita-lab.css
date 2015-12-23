@@ -44,7 +44,7 @@
     src: url('../font/NotoSansCJKjp-Black.woff') format('woff');
 }
 @font-face {
-	font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif';
+  font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif';
 }
 
 /* Common */
@@ -54,9 +54,9 @@ body {
     font-weight: 200;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lato', 'Noto Sans Japanese', Arial, serif;
-	font-weight: 300;
-	font-size: 35px;
+  font-family: 'Lato', 'Noto Sans Japanese', Arial, serif;
+  font-weight: 300;
+  font-size: 35px;
 }
 h1 {
   font-weight: 300;
@@ -65,96 +65,96 @@ h1 {
   padding: 0;
 }
 h2 {
-	font-weight: 300;
-	font-size: 30px;
+  font-weight: 300;
+  font-size: 30px;
 }
 h3 {
-	font-weight: 300;
-	font-size: 25px;
+  font-weight: 300;
+  font-size: 25px;
 }
 h4 {
-	font-weight: 300;
-	font-size: 20px;
+  font-weight: 300;
+  font-size: 20px;
 }
 h5 {
-	font-weight: 300;
-	font-size: 15px;
+  font-weight: 300;
+  font-size: 15px;
 }
 h6 {
-	font-weight: 300;
-	font-size: 10px;
+  font-weight: 300;
+  font-size: 10px;
 }
 
 /* Menu header */
 header {
-	z-index: 9999;
-	background: #fff;
-	opacity: .8;
+  z-index: 9999;
+  background: #fff;
+  opacity: .8;
 }
 header.no-sticky {
-	position : fixed;
-	left: -10px;
-	top : 0px;
-	width: 101%;
+  position : fixed;
+  left: -10px;
+  top : 0px;
+  width: 101%;
 }
 header.sticky {
-	position : fixed;
-	left: -10px;
-	top : 0px;
-	width: 101%;
+  position : fixed;
+  left: -10px;
+  top : 0px;
+  width: 101%;
 }
 
 #menu {
-	width: 100%;
-	height: 100px;
-	-webkit-box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
-	box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+  width: 100%;
+  height: 100px;
+  -webkit-box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.25);
 }
 div.menu-title, div.menu-element {
-	width: 100px;
-	height: 100px;
-	padding: 0;
-	margin: 0;
-	background: #fff;
-	color: #000;
-	float: right;
-	text-align: center;
-	vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  color: #000;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
 }
 
 div.menu-element>a {
-	width: 100%;
-	height: 50px;
-	margin-top: 35px;
+  width: 100%;
+  height: 50px;
+  margin-top: 35px;
 
-	background: #fff;
-	color: #000;
-	display: block;
-	text-decoration: none;
+  background: #fff;
+  color: #000;
+  display: block;
+  text-decoration: none;
 
-	vertical-align: middle;
-	/*margin-bottom: 15px;*/
-	font-size: 25px;
+  vertical-align: middle;
+  /*margin-bottom: 15px;*/
+  font-size: 25px;
 }
 div.menu-title {
-	width: 200px;
-	height: 50px;
-	padding: 0px 0px 0px 0px;
-	margin: 20px 0px 0px 30px;
+  width: 200px;
+  height: 50px;
+  padding: 0px 0px 0px 0px;
+  margin: 20px 0px 0px 30px;
 
-	vertical-align: middle;
-	float: left;
+  vertical-align: middle;
+  float: left;
 
-	font-family: 'Lato', Arial, serif;
-	font-weight: 400;
-	font-size: 40px;
+  font-family: 'Lato', Arial, serif;
+  font-weight: 400;
+  font-size: 40px;
 }
 
 .main {
   margin: 100px 0 0 0;
-	padding: 0;
-	/*height: 0px;*/
-	/*width: 100%;*/
+  padding: 0;
+  /*height: 0px;*/
+  /*width: 100%;*/
 }
 
 /* jssor slide */
@@ -266,5 +266,5 @@ div.menu-title {
 
 /* credit */
 #credit {
-	text-align: center;
+  text-align: center;
 }
