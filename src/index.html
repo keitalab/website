@@ -1,53 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="keywords" content="明治大学,総合数理,先端メディアサイエンス,FMS,keita lab,渡邊恵太,keita watanabe,Integlass,渡邊研究室">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>keita lab</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Khula:300,600,400,700' rel='stylesheet' type='text/css'>
+{% extends "_layout.html" %}
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <link rel="stylesheet" type="text/css" href="css/keita-lab.css">
-  
-  
-</head>
-<body>
-  <!-- Menu bar -->
-  <header class="no-sticky">
-  <div class="menu" id="menu">
-    <div>
-      <a href="index.html">
-        <div class="menu-title">keita lab</div>
-      </a>
-    </div>
-    <div>
-      <div class="menu-element">
-        <a href="other.html">Other</a>
-      </div>
-      <div class="menu-element">
-        <a href="project.html">Project</a>
-      </div>
-      <div class="menu-element">
-        <a href="member.html">Member</a>
-      </div>
-      <div class="menu-element">
-        <a href="index.html">News</a>
-      </div>
-    </div>
-  </div>
-</header>
-
-
-  <div class="main">
-    
+{% block main %}
 <!-- image slider -->
 <div style="min-height: 50px;">
     <div id="slider1_container">
@@ -135,24 +88,4 @@
   </div>
 </div>
 <hr>
-
-  </div>
-
-  <!-- footer -->
-  <div class="credit">
-  Copyright © keita lab - All rights reserved.
-</div>
-
-
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.smooth-scroll.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="js/ie10-viewport-bug-workaround.js"></script>
-  <!-- jssor slider scripts-->
-  <!-- use jssor.slider.debug.js for debug -->
-  <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-  <script src="js/keita-lab.js"></script>
-
-</body>
-</html>
+{% endblock %}

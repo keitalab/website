@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "gulp sass"
+    "sass": "gulp sass",
+    "nunjucks": "gulp nunjucks",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/keitalab/web#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-nunjucks-render": "^1.0.0",
     "gulp-sass": "^2.1.1"
   }
 }

@@ -16,47 +16,20 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
   <link rel="stylesheet" type="text/css" href="css/keita-lab.css">
-  
-  
+  {% block head %}
+  {% endblock %}
 </head>
 <body>
   <!-- Menu bar -->
-  <header class="no-sticky">
-  <div class="menu" id="menu">
-    <div>
-      <a href="index.html">
-        <div class="menu-title">keita lab</div>
-      </a>
-    </div>
-    <div>
-      <div class="menu-element">
-        <a href="other.html">Other</a>
-      </div>
-      <div class="menu-element">
-        <a href="project.html">Project</a>
-      </div>
-      <div class="menu-element">
-        <a href="member.html">Member</a>
-      </div>
-      <div class="menu-element">
-        <a href="index.html">News</a>
-      </div>
-    </div>
-  </div>
-</header>
-
+  {% include "_header.html" %}
 
   <div class="main">
-    
-<h1>other page</h1>
-
+    {% block main %}
+    {% endblock %}
   </div>
 
   <!-- footer -->
-  <div class="credit">
-  Copyright © keita lab - All rights reserved.
-</div>
-
+  {% include "_footer.html" %}
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
