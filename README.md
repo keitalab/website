@@ -1,7 +1,19 @@
 # Website
 研究室のWebサイト
 
-## 開発する
+## 主なファイル構造
+### いじるとこ
+- `sass`: cssを便利に書ける`sass`のファイルを入れるところ
+- `src`: htmlを便利に書ける`nunjucks`のファイルを入れるところ
+- `font`: フォントを入れるところ
+- `js`: JSファイルを入れるところ
+
+### いじらないところ
+- `css`: sassから生成されたcssファイルが入るところ
+- `node_modules`: node.jsのパッケージがインストールされる場所
+- ルートのhtmlファイル: nunjucksで生成するのでいじりたければ`src`をいじろう
+
+## 開発の準備
 - Node.jsいれましょう
 - gitいれましょう
 
@@ -36,6 +48,13 @@ $ npm i
 
 これで準備完了!
 
-### 使えるコマンド
-- ここに色々コマンドをかく．いまは`npm run sass`だけ
-  - livereloadとかあとで
+## コマンド集
+### いまのとこ使えるコマンド
+- `npm run watch`: ファイルの変更を監視して保存したらhtmlとかcss生成
+- `npm run nunjucks`: `src/`の中身をhtmlとして変換しルートに置く
+- `npm run sass`: `sass/`の中身をhtmlとして変換し`css/`に置く
+
+### 後で増える予定のコマンド
+- `npm run dev`: 開発用
+  - `npm run watch`の機能をベースに
+  - `live-reload`できるようにする
