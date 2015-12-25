@@ -9,7 +9,7 @@
     "nunjucks": "gulp nunjucks",
     "build": "gulp build",
     "watch": "gulp watch",
-    "publish": "gulp build && git commit -a && git subtree push --prefix dist/ origin gh-pages --squash"
+    "publish": "gulp build && git commit -a && git subtree push --prefix dist/ origin gh-pages --squash && git push origin master"
   },
   "repository": {
     "type": "git",
