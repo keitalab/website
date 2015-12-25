@@ -13,8 +13,8 @@ gulp.task('nunjucks', function() {
 
 gulp.task('sass', function() {
   // copy bootstrap files
-  var bs = "./node_modules/bootstrap/dist";
-  gulp.src([bs + '/css/bootstrap-theme.min.css', bs + '/css/bootstrap.min.css'])
+  gulp.src(['node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
+            'node_modules/bootstrap/dist/css/bootstrap.min.css'])
     .pipe(gulp.dest('./dist/css'));
 
   // compile sass
@@ -34,6 +34,9 @@ gulp.task('assets', function() {
 
   gulp.src('./image/**/*')
     .pipe(gulp.dest('./dist/image'));
+
+  gulp.src('./CNAME')
+    .pipe(gulp.dest('./dist'));
 });
 
 
