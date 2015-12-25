@@ -51,7 +51,7 @@ $ npm i
 ## コマンド集
 ### いまのとこ使えるコマンド
 - `npm run watch`: ファイルの変更を監視して保存したらhtmlとかcss生成
-- `npm run nunjucks`: `src/`の中身をhtmlとして変換しルートに置く
+- `npm run nunjucks`: `pages/`の中身をhtmlとして変換しルートに置く
 - `npm run sass`: `sass/`の中身をhtmlとして変換し`css/`に置く
 
 ### 後で増える予定のコマンド
