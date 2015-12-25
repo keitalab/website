@@ -1,0 +1,91 @@
+{% extends "_layout.html" %}
+
+{% block main %}
+<!-- image slider -->
+<div style="min-height: 50px;">
+    <div id="slider1_container">
+        <!-- Loading Screen -->
+        <div class="loading" u="loading">
+            <div class="loading-filter">
+            </div>
+            <div class="loading-image">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div u="slides" class="slides">
+            <div>
+                <img u="image" src2="image/1920/red.jpg" />
+            </div>
+            <div>
+                <img u="image" src2="image/1920/purple.jpg" />
+            </div>
+            <div>
+                <img u="image" src2="image/1920/blue.jpg" />
+            </div>
+        </div>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb21" >
+            <div u="prototype"></div>
+        </div>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r">
+        </span>
+    </div>
+</div>
+<hr>
+<!-- main container -->
+<div class="container">
+  <!-- About -->
+  <h1>明治大学 FMS 渡邊研究室</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p>
+        2013年4月、東京都中野に明治大学4つめのキャンパスが完成しました。
+        同時に発足した総合数理学部先端メディアサイエンス学科、通称FMS、そこに私たち渡邊研究室は所属しています。
+        インタクラションデザイン、ユーザーインターフェースなどを得意領域とします。
+      </p>
+    </div>
+  </div>
+  <hr>
+  <!-- News -->
+  <h1>News</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <img></img>
+      <span>2016.1.1 研究室Webが更新されました</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <img></img>
+      <span>2015.12.21 研究室忘年会が開かれました</span>
+    </div>
+  </div>
+  <hr>
+  <!-- Contact -->
+  <h1>Contact</h1>
+  <div class="row-fluid">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <div class="row-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Access</h3>
+          <p>
+            東京都中野区中野4-21-1 1108号室
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h3>Mail</h3>
+          <p>
+            watanabe[a]gmail.com
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.518910487341!2d139.66140152859685!3d35.707536575128046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x567bdf699508c4ba!2z5piO5rK75aSn5a2m5Lit6YeO44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1397458743374"></iframe>
+    </div>
+  </div>
+</div>
+<hr>
+{% endblock %}
