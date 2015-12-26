@@ -4,7 +4,7 @@
 <h1>Project</h1>
 <div class="container">
   {# 11個の概要の長さがバラバラのプロジェクトを作ってる(ビルドのたびにバラバラ) #}
-  {% for i in params %}
+  {% for i in range(0, 1) %}
   <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 post-wrap">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -16,7 +16,6 @@
         <h3>dummy</h3>
         <p>
           {{ param1 }}
-          
         <!-- {% for i in range(0, 1) %}
         {{ ["", "dummy", "dummy", "dummmmmmmy"] | random }}
         {% endfor %} -->

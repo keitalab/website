@@ -20,7 +20,7 @@ $(window).load(function(){
     });
     $window.trigger('scroll');
   });
-
+  
   // sticky headline
   $(".headword").each(function(){
     var $h_word = $(this);

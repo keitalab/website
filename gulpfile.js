@@ -3,16 +3,17 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var nunjucksRender = require('gulp-nunjucks-render');
+// var data = require('gulp-data');
 
 gulp.task('nunjucks', function() {
+  nunjucksRender.nunjucks.configure(['pages/'], {watch: false, noCache: true});
   var params = {
     param1: 'param1',
     param2: 'param2',
     param3: 'param3',
   };
-  nunjucksRender.nunjucks.configure(['pages/'], {watch: false, noCache: true});
   gulp.src(['pages/**/*.html', '!pages/**/_*.html'])
-    .pipe(data(params))
+    // .pipe(data(params))
     .pipe(nunjucksRender())
     .pipe(gulp.dest("./dist"));
 });
