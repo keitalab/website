@@ -1,8 +1,13 @@
 'use strict';
 
 var gulp = require('gulp');
+var del = require('del');
 var sass = require('gulp-sass');
 var nunjucksRender = require('gulp-nunjucks-render');
+
+gulp.task('clean', function () {
+  del.sync('./dist');
+});
 
 gulp.task('nunjucks', function() {
   nunjucksRender.nunjucks.configure(['pages/'], {watch: false, noCache: true});
@@ -63,5 +68,5 @@ gulp.task('sass:watch', function() {
 });
 
 
-gulp.task('build', ['nunjucks', 'js', 'sass', 'assets']);
+gulp.task('build', ['clean', 'nunjucks', 'js', 'sass', 'assets']);
 gulp.task('watch', ['build', 'nunjucks:watch', 'js:watch', 'sass:watch']);
