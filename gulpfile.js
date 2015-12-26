@@ -6,7 +6,13 @@ var nunjucksRender = require('gulp-nunjucks-render');
 nunjucksRender.nunjucks.configure(['pages/'], {watch: false});
 
 gulp.task('nunjucks', function() {
+  var params = {
+    param1: 'param1',
+    param2: 'param2',
+    param3: 'param3',
+  };
   gulp.src(['pages/**/*.html', '!pages/**/_*.html'])
+    .pipe(data(params))
     .pipe(nunjucksRender())
     .pipe(gulp.dest("./dist"));
 });
