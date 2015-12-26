@@ -1,5 +1,13 @@
 {% extends "_layout.html" %}
 
 {% block main %}
-<h1>member page</h1>
+<h1>Member</h1>
+<div class="container">
+  {% for member in members.b1 %}
+  <h2>{{ member.name_ja }}</h2>
+  {% endfor %}
+  {% for member in memberData.b2 %}
+    <h3>{{ member.name_en }}</h3>
+  {% endfor %}
+</div>
 {% endblock %}

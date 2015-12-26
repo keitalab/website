@@ -5,6 +5,7 @@ var del = require('del');
 var sass = require('gulp-sass');
 var data = require('gulp-data');
 var nunjucksRender = require('gulp-nunjucks-render');
+var dataset = require('./lab-data.json');
 
 gulp.task('clean', function () {
   del.sync('./dist');
@@ -12,17 +13,8 @@ gulp.task('clean', function () {
 
 gulp.task('nunjucks', function() {
   nunjucksRender.nunjucks.configure(['pages/'], {watch: false, noCache: true});
-
-  var params = {
-    "projects": [
-       { "author": "odkyt", "name": "integlass" },
-       { "author": "mactkg", "name": "webmo" },
-       { "author": "kwzr", "name": "twinkrun" }
-    ]
-  };
-
   gulp.src(['pages/**/*.html', '!pages/**/_*.html'])
-    .pipe(data(params))
+    .pipe(data(dataset))
     .pipe(nunjucksRender())
     .pipe(gulp.dest("./dist"));
 });

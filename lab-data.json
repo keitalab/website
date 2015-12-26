@@ -1,0 +1,49 @@
+{
+  "members": {
+    "b1": [
+      {"name_ja": "浅岡亮汰", "name_en": "Ryota Asaoka", "image": ""},
+      {"name_ja": "小林巧", "name_en": "Takumi Kobayashi", "image": ""},
+      {"name_ja": "佐々木美香子", "name_en": "Mikako Sasaki", "image": ""},
+      {"name_ja": "羽鳥早紀", "name_en": "Saki Hatori", "image": ""},
+      {"name_ja": "水野颯", "name_en": "Hayate Mizuno", "image": ""},
+      {"name_ja": "安田清優", "name_en": "Seiyu Yasuda", "image": ""}
+    ],
+    "b2": [
+      {"name_ja": "大内泰良", "name_en": "Taira Ouchi", "image": ""},
+      {"name_ja": "金子翔麻", "name_en": "Shoma Kaneko", "image": ""},
+      {"name_ja": "上河恵理", "name_en": "Eri Kamikawa", "image": ""},
+      {"name_ja": "谷森一貴", "name_en": "Kazuki Tanimori", "image": ""},
+      {"name_ja": "永須龍太郎", "name_en": "Ryotaro Nagasu", "image": ""},
+      {"name_ja": "西條瞳", "name_en": "Hitomi Nishijo", "image": ""},
+      {"name_ja": "福地翼", "name_en": "Tsubasa Fukuchi", "image": ""}
+    ],
+    "b3": [
+      {"name_ja": "伊藤大智", "name_en": "Daichi Ito", "image": ""},
+      {"name_ja": "尾髙陽太", "name_en": "Yota Odaka", "image": ""},
+      {"name_ja": "片倉翔平", "name_en": "Shohei Katakura", "image": ""},
+      {"name_ja": "川連一将", "name_en": "Kazumasa Kawazure", "image": ""},
+      {"name_ja": "古賀千晴", "name_en": "Chiharu Koga", "image": ""},
+      {"name_ja": "小松勇毅", "name_en": "Yuki Komatsu", "image": ""},
+      {"name_ja": "杉本英輝", "name_en": "Hideki Sugimoto", "image": ""},
+      {"name_ja": "高桑遼祐", "name_en": "Ryosuke Takakuwa", "image": ""},
+      {"name_ja": "永島択真", "name_en": "Takuma Nagashima", "image": ""},
+      {"name_ja": "中屋裕登", "name_en": "Hiroto Nakaya", "image": ""},
+      {"name_ja": "原健太", "name_en": "Kenta Hara", "image": ""},
+      {"name_ja": "吉村佳純", "name_en": "Kazumi Yoshimura", "image": ""}
+    ],
+    "other": [
+      {"name_ja": "渡邊恵太", "name_en": "Keita Watanabe", "image": ""}
+    ]
+  },
+  "projects": {
+    "2015": [
+      { "author": "mactkg", "name": "webmo" }
+    ],
+    "2014": [
+    ],
+    "2013": [
+      { "author": "odkyt", "name": "integlass" },
+      { "author": "kwzr", "name": "twinkrun" }
+    ]
+  }
+}
