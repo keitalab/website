@@ -152,6 +152,10 @@ div.main {
     width: 100%;
     height: auto; }
 
+img .profile-thumbnail {
+  width: 150px;
+  height: 150px; }
+
 /* credit */
 #credit {
   text-align: center; }
