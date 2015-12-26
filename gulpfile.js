@@ -1,11 +1,17 @@
 'use strict';
 
 var gulp = require('gulp');
+var del = require('del');
 var sass = require('gulp-sass');
 var nunjucksRender = require('gulp-nunjucks-render');
-nunjucksRender.nunjucks.configure(['pages/'], {watch: false});
+
+gulp.task('clean', function () {
+  del.sync('./dist');
+});
 
 gulp.task('nunjucks', function() {
+  nunjucksRender.nunjucks.configure(['pages/'], {watch: false, noCache: true});
+
   gulp.src(['pages/**/*.html', '!pages/**/_*.html'])
     .pipe(nunjucksRender())
     .pipe(gulp.dest("./dist"));
@@ -14,7 +20,8 @@ gulp.task('nunjucks', function() {
 gulp.task('sass', function() {
   // copy bootstrap files
   gulp.src(['node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
-            'node_modules/bootstrap/dist/css/bootstrap.min.css'])
+            'node_modules/bootstrap/dist/css/bootstrap.min.css',
+            'node_modules/swiper/dist/css/swiper.min.css'])
     .pipe(gulp.dest('./dist/css'));
 
   // compile sass
@@ -24,6 +31,14 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js', function() {
+  // copy libraries
+  gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js',
+            'node_modules/bootstrap/dist/js/npm.js',
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js',
+            'node_modules/swiper/dist/js/swiper.min.js'])
+    .pipe(gulp.dest('./dist/js'));
+
   gulp.src('./js/**/*.js')
     .pipe(gulp.dest('./dist/js'));
 });
@@ -53,5 +68,5 @@ gulp.task('sass:watch', function() {
 });
 
 
-gulp.task('build', ['nunjucks', 'js', 'sass', 'assets']);
-gulp.task('watch', ['nunjucks:watch', 'js:watch', 'sass:watch']);
+gulp.task('build', ['clean', 'nunjucks', 'js', 'sass', 'assets']);
+gulp.task('watch', ['build', 'nunjucks:watch', 'js:watch', 'sass:watch']);

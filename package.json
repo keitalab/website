@@ -22,11 +22,15 @@
   },
   "homepage": "https://github.com/keitalab/web#readme",
   "devDependencies": {
+    "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-nunjucks-render": "^1.0.0",
     "gulp-sass": "^2.1.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4",
+    "jquery-smooth-scroll": "^1.6.0",
+    "swiper": "^3.2.7"
   }
 }

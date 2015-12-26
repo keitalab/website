@@ -149,8 +149,27 @@ div.main {
   /*width: 100%;*/
 }
 
-/* jssor slide */
-@import "jssor";
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
 
 /* credit */
 #credit {
