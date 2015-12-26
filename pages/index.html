@@ -2,38 +2,23 @@
 
 {% block main %}
 <!-- image slider -->
-<div style="min-height: 50px;">
-    <div id="slider1_container">
-        <!-- Loading Screen -->
-        <div class="loading" u="loading">
-            <div class="loading-filter">
-            </div>
-            <div class="loading-image">
-            </div>
-        </div>
-        <!-- Slides Container -->
-        <div u="slides" class="slides">
-            <div>
-                <img u="image" src2="image/1920/red.jpg" />
-            </div>
-            <div>
-                <img u="image" src2="image/1920/purple.jpg" />
-            </div>
-            <div>
-                <img u="image" src2="image/1920/blue.jpg" />
-            </div>
-        </div>
-        <!-- bullet navigator container -->
-        <div u="navigator" class="jssorb21" >
-            <div u="prototype"></div>
-        </div>
-        <!-- Arrow Left -->
-        <span u="arrowleft" class="jssora21l">
-        </span>
-        <!-- Arrow Right -->
-        <span u="arrowright" class="jssora21r">
-        </span>
-    </div>
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="image/1920/blue.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="image/1920/red.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img src="image/1920/purple.jpg">
+      </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
 </div>
 <hr>
 <!-- main container -->
