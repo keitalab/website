@@ -3,15 +3,18 @@
 
 ## 主なファイル構造
 ### いじるとこ
+- `dist`: 実際に公開するファイルを入れておく．
+  - `npm run build` するとここが更新される．
+  - `npm run watch` しても同様．
+  - `npm run publish` すると公開できる．
 - `sass`: cssを便利に書ける`sass`のファイルを入れるところ
 - `pages`: htmlを便利に書ける`nunjucks`のファイルを入れるところ
 - `font`: フォントを入れるところ
 - `js`: JSファイルを入れるところ
+- `image`: 画像を入れるところ
 
 ### いじらないところ
-- `css`: sassから生成されたcssファイルが入るところ
 - `node_modules`: node.jsのパッケージがインストールされる場所
-- ルートのhtmlファイル: nunjucksで生成するのでいじりたければ`src`をいじろう
 
 ## 開発の準備
 - Node.jsいれましょう
@@ -48,11 +51,19 @@ $ npm i
 
 これで準備完了!
 
+## ワークフロー
+
+1. `$ npm run watch`
+2. 適当に編集．
+3. `$ npm run publish`
+
 ## コマンド集
 ### いまのとこ使えるコマンド
 - `npm run watch`: ファイルの変更を監視して保存したらhtmlとかcss生成
 - `npm run nunjucks`: `pages/`の中身をhtmlとして変換しルートに置く
 - `npm run sass`: `sass/`の中身をhtmlとして変換し`css/`に置く
+- `npm run build`: `dist/`の中身を更新
+- `npm run publish`: `npm run build`したのちにコミットして公開
 
 ### 後で増える予定のコマンド
 - `npm run dev`: 開発用
