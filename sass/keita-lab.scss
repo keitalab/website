@@ -1,14 +1,14 @@
 /* Font family */
 @font-face {
     font-family: 'Noto Sans Japanese';
-    font-style: normal;
+    font-style: thin;
     font-weight: 200;
     src: url('../font/NotoSansCJKjp-Thin.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Noto Sans Japanese';
-    font-style: normal;
+    font-style: light;
     font-weight: 300;
     src: url('../font/NotoSansCJKjp-Light.woff') format('woff')
 
@@ -33,7 +33,7 @@
 }
 @font-face {
     font-family: 'Noto Sans Japanese';
-    font-style: normal;
+    font-style: bold;
     font-weight: 800;
     src: url('../font/NotoSansCJKjp-Bold.woff') format('woff');
 }
@@ -50,8 +50,8 @@
 /* Common */
 body {
     font-family: 'Lato', 'Noto Sans Japanese', 'Yu Gothic', "Hiragino Gothic ProN","hiragino mincho", "Meiryo", cursive;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 12px;
+    // font-weight: 200;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', 'Noto Sans Japanese', Arial, serif;
@@ -169,6 +169,24 @@ div.main {
     height: auto;
   }
 
+}
+
+/* Member Profile */
+div.profile-container {
+  margin-bottom: 15px;
+  background-color: #fdfdfd;
+}
+img.profile-thumbnail {
+  float: left;
+}
+div.profile-name {
+  margin-top: 0px;
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  // font-style: thin;
+  text-align: left;
+  float: left;
 }
 
 /* credit */
