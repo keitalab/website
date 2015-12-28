@@ -1,3 +1,11 @@
+/* Color set */
+$keita-lab-black: #252525;
+$keita-lab-blue: #6490D3;
+$keita-lab-yellow: #EACA2A;
+$keita-lab-red: #CA3842;
+$keita-lab-orange: #D75C36;
+$keita-lab-brown: #5C3926;
+
 /* Font family */
 @font-face {
     font-family: 'Noto Sans Japanese';
@@ -51,7 +59,7 @@
 body {
     font-family: 'Lato', 'Noto Sans Japanese', 'Yu Gothic', "Hiragino Gothic ProN","hiragino mincho", "Meiryo", cursive;
     font-size: 12px;
-    // font-weight: 200;
+    font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', 'Noto Sans Japanese', Arial, serif;
@@ -175,20 +183,20 @@ div.main {
 div.profile-container {
   margin-bottom: 15px;
   background-color: #fdfdfd;
+  img.profile-thumbnail {
+    float: left;
+  }
+  div.profile-name {
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 0px;
+    font-size: 20px;
+    font-weight: 300;
+    // font-style: thin;
+    text-align: left;
+    float: left;
+  }
 }
-img.profile-thumbnail {
-  float: left;
-}
-div.profile-name {
-  margin-top: 0px;
-  margin-left: 15px;
-  font-size: 20px;
-  font-weight: 300;
-  // font-style: thin;
-  text-align: left;
-  float: left;
-}
-
 /* credit */
 #credit {
   text-align: center;
