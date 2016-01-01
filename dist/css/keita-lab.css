@@ -168,6 +168,20 @@ div.profile-container {
     text-align: left;
     float: left; }
 
+/* Project */
+div.project-container {
+  width: 240px;
+  height: 250px;
+  margin: 0 auto 20px auto;
+  vertical-align: top; }
+  div.project-container .project-title {
+    font-family: normal;
+    font-size: 20px; }
+  div.project-container .project-author {
+    font-size: 12px; }
+  div.project-container .project-brief {
+    font-size: 15px; }
+
 /* credit */
 #credit {
   text-align: center; }
