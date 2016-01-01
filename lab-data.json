@@ -1,8 +1,8 @@
 {
   "news": [
-    { "date": "2016.1.1", "text": "HappyNewYear", "link": "" },
-    { "date": "2016.1.1", "text": "HappyNewYear", "link": "" },
-    { "date": "2016.1.1", "text": "HappyNewYear", "link": "" }
+    { "date": "2016.1.1", "text_en": "Happy New Year", "text_ja": "Happy New Year", "link": "" },
+    { "date": "2015.12.21", "text_en": "研究室忘年会が開かれました", "text_ja": "研究室忘年会が開かれました", "link": "" },
+    { "date": "2015.4.1", "text_en": "申請渡邊研究室が発足しました", "text_ja": "申請渡邊研究室が発足しました", "link": "" }
   ],
   "members": {
     "b1": [
