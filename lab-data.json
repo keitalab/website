@@ -1,8 +1,8 @@
 {
   "news": [
-    { "date": "2016.1.1", "text_en": "Happy New Year", "text_ja": "Happy New Year", "link": "" },
-    { "date": "2015.12.21", "text_en": "研究室忘年会が開かれました", "text_ja": "研究室忘年会が開かれました", "link": "" },
-    { "date": "2015.4.1", "text_en": "申請渡邊研究室が発足しました", "text_ja": "申請渡邊研究室が発足しました", "link": "" }
+    { "date": "2016.1.1", "text_en": "Happy New Year!", "text_ja": "Happy New Year", "link": "" },
+    { "date": "2015.12.21", "text_en": "Year end party was held.", "text_ja": "研究室忘年会が開かれました", "link": "" },
+    { "date": "2015.4.1", "text_en": "New keita lab has been started!", "text_ja": "新生渡邊研究室が発足しました", "link": "" }
   ],
   "members": {
     "b1": [
@@ -127,7 +127,7 @@
         "image": "Twinkrun.jpg",
         "link": "http://twinkrun.net/" },
       { "author_en": "Yota Odaka", "author_ja": "尾髙陽太", "title_en": "Integlass", "title_ja": "Integlass",
-        "brief_en": "A measuring cup which combine information with tool.",
+        "brief_en": "A measuring cup which combines information with tool.",
         "brief_ja": "情報と道具を一体化する計量カップ",
         "image": "integlass-240x135.jpg",
         "link": "" }
