@@ -136,6 +136,11 @@ div.main {
   padding: 0;
   /*height: 0px;*/
   /*width: 100%;*/ }
+  div.main .lang-selector {
+    width: 100%;
+    align-items: center; }
+    div.main .lang-selector div {
+      float: left; }
 
 .swiper-container {
   width: 100%;
