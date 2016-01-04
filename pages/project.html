@@ -12,9 +12,12 @@
         <a href="{{ project.link }}">
           <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="" width="240px" height="135px" />
         </a>
-        <div class="project-title">{{ project.title_ja }}</div>
-        <div class="project-author">{{ project.author_en }}</div>
-        <div class="project-brief">{{ project.brief_en }}</div>
+        <div class="project-title ja-element">{{ project.title_ja }}</div>
+        <div class="project-author ja-element">{{ project.author_ja }}</div>
+        <div class="project-brief ja-element">{{ project.brief_ja }}</div>
+        <div class="project-title en-element" hidden="true">{{ project.title_en }}</div>
+        <div class="project-author en-element" hidden="true">{{ project.author_en }}</div>
+        <div class="project-brief en-element" hidden="true">{{ project.brief_en }}</div>
       </div>
     </div>
     {% endfor %}
