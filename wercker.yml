@@ -1,0 +1,20 @@
+box: node
+
+build:
+  steps:
+    - npm-install
+    - script:
+      name: build
+      code: npm run build
+
+deploy:
+  steps:
+    - lukevivier/gh-pages:
+      token: $GITHUB_TOKEN
+      domain: keita-lab.jp
+      basedir: dist
+  after-steps:
+    - wantedly/pretty-slack-notify:
+      webhook_url: $SLACK_WEBHOOK_URL
+      channel: website
+      username: cibot
