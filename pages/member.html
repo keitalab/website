@@ -9,7 +9,8 @@
   {% for member in members.other %}
     <div class="profile-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <img class="img-circle profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name en-element" hidden="true">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name ja-element">{{ member.lastname_ja }}{{ member.firstname_ja }}</div>
     </div>
   {% endfor %}
  </div>
@@ -22,7 +23,8 @@
     {% for member in members.b3 %}
     <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <img class="img-circle profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name en-element" hidden="true">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name ja-element">{{ member.lastname_ja }}{{ member.firstname_ja }}</div>
     </div>
     {% endfor %}
   </div>
@@ -32,7 +34,8 @@
     {% for member in members.b2 %}
     <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <img class="img-circle profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name en-element" hidden="true">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name ja-element">{{ member.lastname_ja }}{{ member.firstname_ja }}</div>
     </div>
     {% endfor %}
   </div>
@@ -42,7 +45,8 @@
     {% for member in members.b1 %}
     <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <img class="img-circle profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name en-element" hidden="true">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+      <div class="profile-name ja-element">{{ member.lastname_ja }}{{ member.firstname_ja }}</div>
     </div>
     {% endfor %}
   </div>

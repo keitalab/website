@@ -1,18 +1,6 @@
 $(window).load(function(){
-
   var $window = $(window);
-  var selectedLang = window.sessionStorage.getItem('selectedLang');
 
-  // Prepare language
-  if (selectedLang == 'en') {
-    $('div.lang-en-selected').attr('hidden', false);
-    $('div.lang-ja-selected').attr('hidden', true);
-  }
-  else {
-    $('div.lang-ja-selected').attr('hidden', false);
-    $('div.lang-en-selected').attr('hidden', true);
-  }
-  
   //smooth scroll
   $('li.menu-element>a').smoothScroll();
 
@@ -98,6 +86,35 @@ $(window).load(function(){
         loop: true
     });
 
+  // Change text
+  var changeLang = function () {
+    var selectedLang = window.sessionStorage.getItem('selectedLang');
+    if (selectedLang == 'en') {
+      $('div.lang-en-selected').attr('hidden', false);
+      $('div.lang-ja-selected').attr('hidden', true);
+      $('.en-element').each(function(i, element) {
+        var e = $(element);
+        e.attr('hidden', false);
+      });
+      $('.ja-element').each(function(i, element) {
+        var e = $(element);
+        e.attr('hidden', true);
+      });
+    }
+    else {
+      $('div.lang-ja-selected').attr('hidden', false);
+      $('div.lang-en-selected').attr('hidden', true);
+      $('.en-element').each(function(i, element) {
+        var e = $(element);
+        e.attr('hidden', true);
+      });
+      $('.ja-element').each(function(i, element) {
+        var e = $(element);
+        e.attr('hidden', false);
+      });
+    }
+  }
+  
   // Language selector
   var selectLang = function (event) {
     var target = $(event.target);
@@ -116,7 +133,9 @@ $(window).load(function(){
     else {
       return;
     }
+    changeLang();
   };
   $('a.lang-ja').bind('click', selectLang);
   $('a.lang-en').bind('click', selectLang);
+  changeLang();
 });
