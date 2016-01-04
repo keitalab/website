@@ -40,14 +40,13 @@
   <!-- News -->
   <h1>News</h1>
   <div class="row">
+    {% for topic in news %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <img></img>
-      <span>2016.1.1 研究室Webが更新されました</span>
+      <span class="news-text ja-element">{{ topic.date }}&nbsp{{ topic.text_ja }}</span>
+      <span class="news-text en-element" hidden="true">{{ topic.date }}&nbsp{{ topic.text_en }}</span>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img></img>
-      <span>2015.12.21 研究室忘年会が開かれました</span>
-    </div>
+    {% endfor %}
   </div>
   <hr>
   <!-- Contact -->
