@@ -136,6 +136,11 @@ div.main {
   padding: 0;
   /*height: 0px;*/
   /*width: 100%;*/ }
+  div.main .lang-selector {
+    width: 100%;
+    align-items: center; }
+    div.main .lang-selector div {
+      float: left; }
 
 .swiper-container {
   width: 100%;
@@ -163,10 +168,14 @@ div.profile-container {
     margin-top: 0px;
     margin-left: 15px;
     margin-right: 0px;
-    font-size: 20px;
-    font-weight: 300;
     text-align: left;
     float: left; }
+    div.profile-container div.profile-name.en-element {
+      font-size: 20px;
+      font-weight: 300; }
+    div.profile-container div.profile-name.ja-element {
+      font-size: 15px;
+      font-weight: 300; }
 
 /* Project */
 div.project-container {

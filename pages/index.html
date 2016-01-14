@@ -26,10 +26,13 @@
   <h1>Meiji Univ., FMS, Watanabe Laboratory</h1>
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <p>
+      <p class="ja-element">
         2013年4月、東京都中野に明治大学4つめのキャンパスが完成しました。
         同時に発足した総合数理学部先端メディアサイエンス学科、通称FMS、そこに私たち渡邊研究室は所属しています。
         インタクラションデザイン、ユーザーインターフェースなどを得意領域とします。
+      </p>
+      <p class="en-element">
+        hello!
       </p>
     </div>
   </div>
@@ -37,14 +40,13 @@
   <!-- News -->
   <h1>News</h1>
   <div class="row">
+    {% for topic in news %}
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <img></img>
-      <span>2016.1.1 研究室Webが更新されました</span>
+      <span class="news-text ja-element">{{ topic.date }}&nbsp{{ topic.text_ja }}</span>
+      <span class="news-text en-element" hidden="true">{{ topic.date }}&nbsp{{ topic.text_en }}</span>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img></img>
-      <span>2015.12.21 研究室忘年会が開かれました</span>
-    </div>
+    {% endfor %}
   </div>
   <hr>
   <!-- Contact -->
@@ -54,8 +56,11 @@
       <div class="row-fluid">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Access</h3>
-          <p>
+          <p class="ja-element">
             東京都中野区中野4-21-1 1108号室
+          </p>
+          <p class="en-element" hidden="true">
+            1108, 4-21-1, Nakano, Nakano-ku, Tokyo, Japan
           </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

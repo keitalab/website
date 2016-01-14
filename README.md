@@ -57,6 +57,12 @@ $ npm i
 2. 適当に編集．
 3. `$ npm run publish`
 
+## ページの作り方
+### 日本語・英語対応
+- 日本語の要素には`ja-element`、英語には`en-element`をclassに追加
+  - 日/英を選択すると他方が`hidden="true"`になります
+  - `en-element`の要素は始め`hidden="true"`にするとなおよし
+
 ## コマンド集
 ### いまのとこ使えるコマンド
 - `npm run watch`: ファイルの変更を監視して保存したらhtmlとかcss生成
