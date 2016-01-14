@@ -2,22 +2,22 @@
 
 {% block main %}
 
-<h1>Member</h1>
-<h2>Administrator</h2>
 <div class="container">
- <div class="row">
-  {% for member in members.other %}
+  <h1>Member</h1>
+  <h2>Administrator</h2>
+  <div class="row">
+    {% for member in members.other %}
     <div class="profile-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <img class="img-circle profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
       <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
     </div>
-  {% endfor %}
- </div>
-</div>
-<hr>
-<h2>Bachelor</h2>
-<h3>3rd year</h3>
-<div class="container">
+    {% endfor %}
+  </div>
+
+  <hr>
+
+  <h2>Bachelor</h2>
+  <h3>3rd year</h3>
   <div class="row">
     {% for member in members.b3 %}
     <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -26,8 +26,8 @@
     </div>
     {% endfor %}
   </div>
-</div>
-<h3>2nd year</h3><div class="container">
+
+  <h3>2nd year</h3>
   <div class="row">
     {% for member in members.b2 %}
     <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -36,8 +36,8 @@
     </div>
     {% endfor %}
   </div>
-</div>
-<h3>1st year</h3><div class="container">
+
+  <h3>1st year</h3>
   <div class="row">
     {% for member in members.b1 %}
     <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -47,4 +47,5 @@
     {% endfor %}
   </div>
 </div>
+
 {% endblock %}
