@@ -22,108 +22,98 @@
 </head>
 <body>
   <!-- Menu bar -->
-  <header class="no-sticky">
+  <nav class="navbar navbar-default navbar-static-top">
   <div class="menu" id="menu">
-    <div>
-      <a href="index.html">
-        <div class="menu-title">keita lab</div>
-      </a>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">keita lab</a>
     </div>
-    <div>
-      <div class="menu-element">
-        <a href="other.html">Other</a>
-      </div>
-      <div class="menu-element">
-        <a href="project.html">Project</a>
-      </div>
-      <div class="menu-element">
-        <a href="member.html">Member</a>
-      </div>
-      <div class="menu-element">
-        <a href="index.html">News</a>
-      </div>
+
+    <div class="navbar-menu">
+      <ul class="nav navbar-nav">
+        <!--li><a href="other.html">Other</a></li-->
+        <li><a href="project.html">Project</a></li>
+        <li><a href="member.html">Member</a></li>
+        <li><a href="index.html">News</a></li>
+      </ul>
     </div>
   </div>
-</header>
+</nav>
 
 
   <div class="main">
     
 <!-- image slider -->
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="image/1920/blue.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="image/1920/red.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="image/1920/purple.jpg">
-      </div>
+<div class="row">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="image/1920/blue.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/1920/red.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="image/1920/purple.jpg">
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
-  <!-- Add Arrows -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
 </div>
+
 <!-- main container -->
-<div class="container">
-  <!-- About -->
-  <h1>Meiji Univ., FMS, Watanabe Laboratory</h1>
-  <div class="row">
+<div class="container-fluid">
+  <div class="row-fluid">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- About -->
+      <h2 class="page-header">Meiji Univ., FMS, Watanabe Laboratory</h2>
       <p>
         2013年4月、東京都中野に明治大学4つめのキャンパスが完成しました。
         同時に発足した総合数理学部先端メディアサイエンス学科、通称FMS、そこに私たち渡邊研究室は所属しています。
         インタクラションデザイン、ユーザーインターフェースなどを得意領域とします。
       </p>
-    </div>
-  </div>
-  <hr>
-  <!-- News -->
-  <h1>News</h1>
-  <div class="row">
-    
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img></img>
-      <span>2016.1.1&nbspHappy New Year!</span>
-    </div>
-    
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img></img>
-      <span>2015.12.21&nbspYear end party was held.</span>
-    </div>
-    
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img></img>
-      <span>2015.4.1&nbspNew keita lab has been started!</span>
-    </div>
-    
-  </div>
-  <hr>
-  <!-- Contact -->
-  <h1>Contact</h1>
-  <div class="row-fluid">
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <div class="row-fluid">
+
+      <!-- News -->
+      <h2 class="page-header">News</h2>
+      <div class="row">
+        
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img></img>
+          <span>2016.1.1&nbspあけましておめでとうございます。今年もよろしくお願いいたします。</span>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img></img>
+          <span>2015.12.21&nbsp研究室忘年会が開かれました。</span>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <img></img>
+          <span>2015.4.1&nbsp新生渡邊研究室が発足しました!</span>
+        </div>
+        
+      </div>
+
+      <!-- Contact -->
+      <h2 class="page-header">Contact</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
           <h3>Access</h3>
           <p>
             東京都中野区中野4-21-1 1108号室
           </p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h3>Mail</h3>
           <p>
             watanabe[a]gmail.com
           </p>
         </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+          <iframe class="map" width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.518910487341!2d139.66140152859685!3d35.707536575128046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x567bdf699508c4ba!2z5piO5rK75aSn5a2m5Lit6YeO44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1397458743374"></iframe>
+        </div>
       </div>
-    </div>
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.518910487341!2d139.66140152859685!3d35.707536575128046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x567bdf699508c4ba!2z5piO5rK75aSn5a2m5Lit6YeO44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1397458743374"></iframe>
     </div>
   </div>
 </div>

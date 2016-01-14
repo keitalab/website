@@ -72,8 +72,8 @@ $(window).load(function(){
     }
     $('.filled-video').attr('width', window.innerWidth+"px");
   };
-  onResize();
-  $(window).bind("resize", onResize);
+  //onResize();
+  //$(window).bind("resize", onResize);
 
   // swiper
   var swiper = new Swiper('.swiper-container', {
