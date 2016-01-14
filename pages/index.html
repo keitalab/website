@@ -24,8 +24,10 @@
 </div>
 
 <!-- main container -->
-<div class="container-fluid">
-  <div class="row-fluid">
+<div class="container">
+  <!-- About -->
+  <h1>Meiji Univ., FMS, Watanabe Laboratory</h1>
+  <div class="introduce row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <!-- About -->
       <h2 class="page-header">Meiji Univ., FMS, Watanabe Laboratory</h2>
@@ -35,34 +37,37 @@
         インタクラションデザイン、ユーザーインターフェースなどを得意領域とします。
       </p>
 
-      <!-- News -->
-      <h2 class="page-header">News</h2>
-      <div class="row">
-        {% for news in news %}
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <img></img>
-          <span>{{ news.date }}&nbsp{{ news.text_ja }}</span>
-        </div>
-        {% endfor %}
-      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- News -->
+  <h1>News</h1>
+  <div class="news-container row">
+    {% for news in news %}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <img></img>
+      <span>{{ news.date }}&nbsp{{ news.text_en }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  <hr>
+  <!-- Contact -->
+  <h1>Contact</h1>
+  <div class="contact-container row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 
-      <!-- Contact -->
-      <h2 class="page-header">Contact</h2>
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h3>Access</h3>
-          <p>
-            東京都中野区中野4-21-1 1108号室
-          </p>
-          <h3>Mail</h3>
-          <p>
-            watanabe[a]gmail.com
-          </p>
-        </div>
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-          <iframe class="map" width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.518910487341!2d139.66140152859685!3d35.707536575128046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x567bdf699508c4ba!2z5piO5rK75aSn5a2m5Lit6YeO44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1397458743374"></iframe>
-        </div>
-      </div>
+        <h3>Access</h3>
+        <p>
+          東京都中野区中野4-21-1 1108号室
+        </p>
+        <h3>Mail</h3>
+        <p>
+          watanabe[a]gmail.com
+        </p>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <iframe width="100%" height="300px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6479.518910487341!2d139.66140152859685!3d35.707536575128046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x567bdf699508c4ba!2z5piO5rK75aSn5a2m5Lit6YeO44Kt44Oj44Oz44OR44K5!5e0!3m2!1sja!2sjp!4v1397458743374"></iframe>
     </div>
   </div>
 </div>
