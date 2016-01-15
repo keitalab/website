@@ -210,7 +210,15 @@ div.project-container {
   height: 250px;
   margin: 0 auto 20px auto;
   vertical-align: top;
-  img {
+  .project-thumbnail-trimming {
+    width: 240px;
+    height: 135px;
+    display: block;
+    overflow: hidden;
+  }
+  .project-thumbnail {
+    width: 240px;
+    height: auto;
   }
   .project-title {
     font-family: normal;

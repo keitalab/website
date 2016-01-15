@@ -166,6 +166,14 @@ div.project-container {
   height: 250px;
   margin: 0 auto 20px auto;
   vertical-align: top; }
+  div.project-container .project-thumbnail-trimming {
+    width: 240px;
+    height: 135px;
+    display: block;
+    overflow: hidden; }
+  div.project-container .project-thumbnail {
+    width: 240px;
+    height: auto; }
   div.project-container .project-title {
     font-family: normal;
     font-size: 20px; }

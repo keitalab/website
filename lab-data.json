@@ -111,7 +111,13 @@
         "brief_en": "emotion ＋ pointer = 感情を表す矢印",
         "brief_ja": "emotion ＋ pointer = 感情を表す矢印",
         "image": "emopo.jpg",
-        "link": "" }
+        "link": "" },
+      { "author_en": "Nagashima Takuma", "author_ja": "永島 択真", "title_en": "selffect", "title_ja": "selffect",
+        "brief_ja": "「喋る＋効果音」により会話の熱や感情を高める発話に溶け込むトーク拡張システム",
+        "brief_en": "「喋る＋効果音」により会話の熱や感情を高める発話に溶け込むトーク拡張システム",
+        "image": "selffect.jpg",
+        "link": ""
+      }
     ],
     "2014": [
       { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊", "title_en": "LiveTexture", "title_ja": "LiveTexture",

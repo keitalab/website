@@ -8,8 +8,8 @@
     {% for project in projects[2015] %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <div class="project-container">
-        <a href="{{ project.link }}">
-          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="" width="240px" height="135px" />
+        <a href="{{ project.link }}" class="project-thumbnail-trimming">
+          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="{{ project.title_ja }}"/>
         </a>
         <div class="project-title">{{ project.title_ja }}</div>
         <div class="project-author">{{ project.author_en }}</div>
@@ -24,8 +24,8 @@
     {% for project in projects[2014] %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <div class="project-container">
-        <a href="{{ project.link }}">
-          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="" width="240px" height="135px" />
+        <a href="{{ project.link }}" class="project-thumbnail-trimming">
+          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="{{ project.title_ja }}"/>
         </a>
         <div class="project-title">{{ project.title_ja }}</div>
         <div class="project-author">{{ project.author_en }}</div>
@@ -40,8 +40,8 @@
     {% for project in projects[2013] %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <div class="project-container">
-        <a href="{{ project.link }}">
-          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="" width="240px" height="135px" />
+        <a href="{{ project.link }}" class="project-thumbnail-trimming">
+          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="{{ project.title_ja }}"/>
         </a>
         <div class="project-title">{{ project.title_ja }}</div>
         <div class="project-author">{{ project.author_en }}</div>
