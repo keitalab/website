@@ -14,7 +14,7 @@ deploy:
       domain: keita-lab.jp
       basedir: dist
   after-steps:
-    - wantedly/pretty-slack-notify:
-      webhook_url: $SLACK_WEBHOOK_URL
+    - slack-notifier:
+      url: $SLACK_WEBHOOK_URL
       channel: website
-      username: cibot
+      username: bot
