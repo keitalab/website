@@ -85,27 +85,30 @@ h6 {
 /* Menu header */
 nav {
   background: #fff;
-  padding: 15px 0; }
-  nav #menu {
+  width: 900px;
+  left: 50%;
+  margin-left: -450px;
+  padding: 100px 0 2px 0; }
+  nav .menu {
     width: 100%; }
-    nav #menu a {
+    nav .menu a {
       color: #000;
       display: block;
       text-decoration: none;
       font-size: 25px; }
       @media (max-width: 768px) {
-        nav #menu a {
+        nav .menu a {
           padding-bottom: 2px; } }
-    nav #menu .navbar-menu {
+    nav .menu .navbar-menu {
       float: right; }
-      nav #menu .navbar-menu li {
+      nav .menu .navbar-menu li {
         float: left; }
       @media (max-width: 768px) {
-        nav #menu .navbar-menu {
+        nav .menu .navbar-menu {
           float: left; }
-          nav #menu .navbar-menu ul {
+          nav .menu .navbar-menu ul {
             margin: 0; } }
-    nav #menu .navbar-brand {
+    nav .menu .navbar-brand {
       vertical-align: middle;
       font-family: 'Lato', Arial, serif;
       font-weight: 400;
@@ -115,7 +118,7 @@ div.main {
   padding: 0; }
 
 .swiper-container {
-  width: 100%;
+  width: 900px;
   height: auto;
   margin-top: -20px; }
 
@@ -128,11 +131,13 @@ div.main {
   background: #fff;
   height: auto; }
   .swiper-slide img {
+    border-radius: 6px;
     width: 100%;
     height: auto; }
 
 /* Index.html */
 div.container {
+  width: 900px;
   margin-top: 50px; }
   div.container div.introduce {
     margin-top: 15px;
@@ -148,7 +153,7 @@ div.container {
 /* Member Profile */
 div.profile-container {
   margin-bottom: 15px;
-  background-color: #fdfdfd; }
+  background-color: #fff; }
   div.profile-container img.profile-thumbnail {
     float: left; }
   div.profile-container div.profile-name {

@@ -96,9 +96,13 @@ h6 {
 /* Menu header */
 nav {
   background: #fff;
-  padding: 15px 0;
+  width:900px;
+  left:50%;
+  margin-left:-450px;
+  padding: 100px 0 2px 0;
+    
 
-  #menu {
+  .menu {
     width: 100%;
 
     a {
@@ -141,7 +145,7 @@ div.main {
 }
 
 .swiper-container {
-  width: 100%;
+  width: 900px;
   height: auto;
   margin-top: -20px;
 }
@@ -157,6 +161,7 @@ div.main {
   height: auto;
 
   img {
+    border-radius:6px;
     width: 100%;
     height: auto;
   }
@@ -169,6 +174,7 @@ div.swiper-container {
 
 }
 div.container {
+  width:900px;
   margin-top: 50px;
   div.introduce {
     margin-top: 15px;
@@ -188,7 +194,7 @@ div.container {
 /* Member Profile */
 div.profile-container {
   margin-bottom: 15px;
-  background-color: #fdfdfd;
+  background-color: #fff;
   img.profile-thumbnail {
     float: left;
   }
