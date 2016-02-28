@@ -84,8 +84,9 @@ $(window).load(function(){
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         paginationClickable: true,
-        autoplay: 5000,
+        autoplay: 7000,
         autoplayDisableOnInteraction: false,
+      effect: 'fade',
         loop: true
     });
 });

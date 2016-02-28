@@ -203,8 +203,9 @@ div.project-container {
   div.project-container .project-author {
     font-size: 12px; }
   div.project-container .project-brief {
-    margin-top: 10px;
-    font-size: 15px; }
+    color: #9A9A9A;
+    margin-top: 5px;
+    font-size: 13px; }
 
 img.project-thumnabil {
   border-radius: 3px; }
