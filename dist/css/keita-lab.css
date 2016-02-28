@@ -1,5 +1,10 @@
+@charset "UTF-8";
 /* Color set */
 /* Font family */
+@font-face {
+  font-family: 'YuMincho';
+  src: url("../font/YuMincho.ttc") format("ttc"); }
+
 @font-face {
   font-family: 'Noto Sans Japanese';
   font-style: thin;
@@ -47,36 +52,40 @@
 
 /* Common */
 body {
-  font-family: 'Lato', 'Noto Sans Japanese', 'Yu Gothic', "Hiragino Gothic ProN","hiragino mincho", "Meiryo", cursive;
-  font-size: 16px;
-  font-weight: 300; }
+  color: #4D4D4D;
+  font-family: 'Noto Sans Japanese' sans-serif;
+  font-size: 14px; }
+
+p {
+  line-height: 200%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', 'Noto Sans Japanese', Arial, serif;
-  font-weight: 300;
+  font-family: 'Noto Sans Japanese',sans-serif;
   font-size: 35px; }
 
 h1 {
-  font-weight: 300;
-  font-size: 35px;
+  font-weight: 800;
+  font-size: 20px;
   margin: 0;
   padding: 0; }
 
 h2 {
-  font-weight: 300;
-  font-size: 30px; }
+  font-weight: 500;
+  font-size: 16px; }
 
 h3 {
   font-weight: 300;
-  font-size: 25px; }
+  font-size: 14px; }
 
 h4 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px; }
 
 h5 {
-  font-weight: 300;
-  font-size: 15px; }
+  font-weight: 500;
+  text-decoration: underline;
+  font-family: 'YuMincho',sans-serif;
+  font-size: 16px; }
 
 h6 {
   font-weight: 300;
@@ -87,19 +96,24 @@ nav {
   background: #fff;
   width: 900px;
   left: 50%;
-  margin-left: -450px;
-  padding: 100px 0 2px 0; }
+  margin-left: -450px; }
   nav .menu {
     width: 100%; }
+    nav .menu a:hover {
+      color: #9A9A9A;
+      background-color: #ffffff; }
     nav .menu a {
-      color: #000;
+      color: #696969;
+      background-color: #fff;
       display: block;
       text-decoration: none;
-      font-size: 25px; }
+      font-size: 12px;
+      font-weight: 400; }
       @media (max-width: 768px) {
         nav .menu a {
           padding-bottom: 2px; } }
     nav .menu .navbar-menu {
+      padding: 70px 0 2px 0;
       float: right; }
       nav .menu .navbar-menu li {
         float: left; }
@@ -109,8 +123,9 @@ nav {
           nav .menu .navbar-menu ul {
             margin: 0; } }
     nav .menu .navbar-brand {
+      padding: 50px 40px 2px 10px;
       vertical-align: middle;
-      font-family: 'Lato', Arial, serif;
+      font-family: 'Noto Sans Japanese', sans-serif;
       font-weight: 400;
       font-size: 40px; }
 
@@ -118,8 +133,9 @@ div.main {
   padding: 0; }
 
 .swiper-container {
+  border-radius: 6px;
   width: 900px;
-  height: auto;
+  height: 400px;
   margin-top: -20px; }
 
 .swiper-wrapper {
@@ -131,14 +147,14 @@ div.main {
   background: #fff;
   height: auto; }
   .swiper-slide img {
-    border-radius: 6px;
     width: 100%;
     height: auto; }
 
 /* Index.html */
+/*紹介文など*/
 div.container {
   width: 900px;
-  margin-top: 50px; }
+  margin-top: 40px; }
   div.container div.introduce {
     margin-top: 15px;
     margin-left: 1%;
@@ -155,12 +171,13 @@ div.profile-container {
   margin-bottom: 15px;
   background-color: #fff; }
   div.profile-container img.profile-thumbnail {
+    border-radius: 3px;
     float: left; }
   div.profile-container div.profile-name {
     margin-top: 0px;
     margin-left: 15px;
     margin-right: 0px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     text-align: left;
     float: left; }
@@ -169,7 +186,7 @@ div.profile-container {
 div.project-container {
   width: 240px;
   height: 250px;
-  margin: 0 auto 20px auto;
+  margin: 20px 0px 20px 0px;
   vertical-align: top; }
   div.project-container .project-thumbnail-trimming {
     width: 240px;
@@ -180,12 +197,17 @@ div.project-container {
     width: 240px;
     height: auto; }
   div.project-container .project-title {
+    margin-top: 10px;
     font-family: normal;
-    font-size: 20px; }
+    font-size: 16px; }
   div.project-container .project-author {
     font-size: 12px; }
   div.project-container .project-brief {
+    margin-top: 10px;
     font-size: 15px; }
+
+img.project-thumnabil {
+  border-radius: 3px; }
 
 /* credit */
 footer div.credit {
