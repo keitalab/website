@@ -1,3 +1,8 @@
+// Size set
+$whole-margin-left: 10%;
+$whole-margin-right: 10%;
+$whole-width: 80%;
+
 /* Color set */
 $keita-lab-black: #252525;
 $keita-lab-gray: #696969;
@@ -64,7 +69,7 @@ $keita-lab-brown: #5C3926;
 
 // Common
 body {
-  margin: 0 15%;
+  margin: 0 $whole-margin-right 0 $whole-margin-left;
 }
 a {
   color: $keita-lab-gray;
@@ -113,7 +118,7 @@ section.main {
     &.slideshow {
       div.slideshow-item {
         position: absolute;
-        width: 70%;
+        width: $whole-width;
         img {
           width: 100%;
         }

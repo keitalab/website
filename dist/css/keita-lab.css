@@ -50,7 +50,7 @@
   font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif'; }
 
 body {
-  margin: 0 15%; }
+  margin: 0 10% 0 10%; }
 
 a {
   color: #696969; }
@@ -81,6 +81,6 @@ header {
 
 section.main section.slideshow div.slideshow-item {
   position: absolute;
-  width: 70%; }
+  width: 80%; }
   section.main section.slideshow div.slideshow-item img {
     width: 100%; }
