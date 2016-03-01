@@ -79,5 +79,8 @@ header {
         width: 100%;
         text-align: right; }
 
-section.main section.slideshow div.slideshow-item img {
-  width: 100%; }
+section.main section.slideshow div.slideshow-item {
+  position: absolute;
+  width: 70%; }
+  section.main section.slideshow div.slideshow-item img {
+    width: 100%; }

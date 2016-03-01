@@ -112,13 +112,11 @@ section.main {
   section {
     &.slideshow {
       div.slideshow-item {
+        position: absolute;
+        width: 70%;
         img {
-          width: 100%;  
+          width: 100%;
         }
-        // position: absolute;
-        // top: 10%;
-        // left: 15%;
-        // right: 15%;
 
       }
     }
