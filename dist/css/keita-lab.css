@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Color set */
 /* Font family */
 @font-face {
@@ -50,210 +49,35 @@
 @font-face {
   font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif'; }
 
-/* Common */
 body {
-  color: #4D4D4D;
-  font-family: 'Noto Sans Japanese' sans-serif;
-  font-size: 14px; }
+  margin: 0 15%; }
 
-p {
-  line-height: 200%; }
+a {
+  color: #696969; }
+  a:hover {
+    text-decoration: none; }
+  a:link {
+    text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+  a:active {
+    text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Sans Japanese',sans-serif;
-  font-size: 35px; }
-
-h1 {
-  font-weight: 800;
-  font-size: 20px;
-  margin: 0;
-  padding: 0; }
-
-h2 {
-  font-weight: 800;
-  font-size: 16px; }
-
-h3 {
-  font-weight: 300;
-  font-size: 14px; }
-
-h4 {
-  font-weight: 400;
-  font-size: 20px; }
-
-h5 {
-  font-weight: 500;
-  text-decoration: underline;
-  font-family: 'YuMincho',sans-serif;
-  font-size: 16px; }
-
-h6 {
-  font-weight: 300;
-  font-size: 10px; }
-
-/* Menu header */
-.n {
-  font-size: 12px;
-  margin-top: 40px;
-  margin-bottom: 25px;
-  margin-right: auto;
-  margin-left: auto;
-  background: #fff;
-  width: 898px; }
-  .n .simg {
-    margin-bottom: -20px; }
-  .n a {
-    color: #696969; }
-  .n a:hover {
-    text-decoration: none;
-    color: #9A9A9A;
-    background-color: #ffffff; }
-  .n ul {
-    text-align: right; }
-  .n li {
+header {
+  height: 80px; }
+  header section.logo {
     display: inline-block;
-    margin-left: 30px; }
+    width: 50%; }
+  header section.menu {
+    display: inline-block;
+    width: 49%; }
+    header section.menu div.menu-item {
+      display: inline-block;
+      width: 32%; }
+      header section.menu div.menu-item a {
+        display: inline-block;
+        width: 100%;
+        text-align: right; }
 
-/*
-nav {
-  background: #fff;
-  width:900px;
-  left:50%;
-  margin-left:-450px;
-    
-  .menu {
-      width: 100%;
-
-    a {
-      color: #696969;
-      background-color: #fff;
-        
-      display: block;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight:400;
-
-      @media(max-width: 768px) {
-        padding-bottom: 2px;
-      }
-    }
-
-    .navbar-menu {
-      padding :70px 0 2px 0;
-      float: right;
-      li {
-        float: left;
-      }
-
-      @media(max-width: 768px) {
-        float: left;
-
-        ul {
-          margin: 0;
-        }
-      }
-    }
-
-    .navbar-brand {
-      padding :50px 40px 2px 10px;
-      vertical-align: middle;
-      font-family: 'Noto Sans Japanese', sans-serif;
-      font-weight: 400;
-      font-size: 40px;
-    }
-  }
-}
-*/
-div.main {
-  padding: 0; }
-
-.swiper-container {
-  border-radius: 6px;
-  width: 900px;
-  height: 400px;
-  margin-top: -10px; }
-
-.swiper-wrapper {
-  height: auto; }
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: auto; }
-  .swiper-slide img {
-    width: 100%;
-    height: auto; }
-
-/* Index.html */
-div.swiper-container {
-  max-width: none !important; }
-
-/*紹介文など*/
-div.container {
-  width: 928px;
-  max-width: none !important;
-  margin-top: 40px; }
-  div.container div.introduce {
-    margin-top: 15px;
-    margin-left: 0px;
-    margin-right: 0px; }
-  div.container div.news-container {
-    margin-top: 15px;
-    margin-left: 1%;
-    margin-right: 1%; }
-  div.container div.contact-container {
-    margin-top: 0px; }
-
-/* Member Profile */
-div.profile-container {
-  margin-bottom: 15px;
-  background-color: #fff; }
-  div.profile-container img.profile-thumbnail {
-    border-radius: 3px;
-    float: left; }
-  div.profile-container div.profile-name {
-    margin-top: 0px;
-    margin-left: 15px;
-    margin-right: 0px;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    float: left; }
-
-/* Project */
-div.project-container {
-  border-radius: 3px;
-  width: 240px;
-  height: 250px;
-  margin: 20px 0px 20px 0px;
-  vertical-align: top; }
-  div.project-container img.project-thumbnail {
-    border-radius: 3px; }
-  div.project-container .project-thumbnail-trimming {
-    width: 240px;
-    height: 135px;
-    display: block;
-    overflow: hidden; }
-  div.project-container .project-thumbnail {
-    width: 240px;
-    height: auto; }
-  div.project-container .project-title {
-    margin-top: 10px;
-    font-family: normal;
-    font-size: 16px; }
-  div.project-container .project-author {
-    color: #6A6A6A;
-    margin-top: -2px;
-    font-size: 12px; }
-  div.project-container .project-brief {
-    color: #9A9A9A;
-    margin-top: 5px;
-    font-size: 12px; }
-
-/* credit */
-footer div.credit {
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  vertical-align: middle; }
+section.main section.slideshow div.slideshow-item img {
+  width: 100%; }

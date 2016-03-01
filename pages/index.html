@@ -1,37 +1,16 @@
 {% extends "_layout.html" %}
 
 {% block main %}
-<!-- image slider -->
-<div class="row">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-       
-        <div class="swiper-slide">
-          <img src="image/top/03.jpg">
-        </div>
-        <div class="swiper-slide">
-          <img src="image/top/04.jpg">
-        </div>
-            <div class="swiper-slide">
-          <img src="image/top/05.jpg">
-        </div>
-        <div class="swiper-slide">
-          <img src="image/top/06.jpg">
-        </div>
-        <div class="swiper-slide">
-          <img src="image/top/07.jpg">
-        </div>
-        <div class="swiper-slide">
-          <img src="image/top/08.jpg">
-        </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+<!-- Slideshow -->
+{{ images }}
+{% set images = ['03.jpg', '02.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg'] %}
+<section class="slideshow">
+  {% for image in images %}
+  <div class="slideshow-item">
+    <img src="image/top/top-{{ image }}" alt="" />
   </div>
-</div>
+  {% endfor %}
+</section>
 
 <!-- main container -->
 <div class="container">
@@ -48,12 +27,11 @@
   <hr>
 
   <!-- theme -->
-  
+
   <h1>研究内容</h1>
 <div class="introduce row">
 
     <p>渡邊研究室では、主に以下のような３つのテーマで研究をしています。</p></br>
-       
 
     <h5><b>1. Sense of Self-Ownership</b> : 自己帰属感の高い道具 / 身体・知覚拡張研究</h5>
     <p>　情報と身体を結びつける自己帰属感とそのインタラクション手法についての研究。</p>
@@ -61,23 +39,11 @@
     <p>　次のインターネットのインターフェースを考えます。</p>
     <h5><b>3. Improvised Creation</b> :「今ここで作れる」即応創造環境の研究</h5>
     <p>　今欲しい、必要なもの、アイデアをすぐに形にする環境の研究。</p>
-      
- 
-  </div>
-  
 
- 
-  <!-- News
-  <h1>お知らせ</h1>
-  <div class="news-container row">
-    {% for news in news %}
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img></img>
-      <span>{{ news.date }}&nbsp{{ news.text_en }}</span>
-    </div>
-    {% endfor %}
+
   </div>
- -->
+
+
   <hr>
 
   <!-- Contact -->
