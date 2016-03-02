@@ -1,6 +1,6 @@
 // Definitions
 var common = {
-  fadeInDuration: 1000,
+  fadeInDuration: 3000,
   fadeOutDuration: 1000
 }
 var slideshow = {
@@ -62,7 +62,7 @@ startLoadingSpinner();
 // Loaded
 $(window).load(function() {
   $('section.loader')
-    .fadeOut(common.fadeInDuration, function() {
+    .fadeOut(common.fadeOutDuration, function() {
       $('section.main, header, footer')
         .fadeIn(common.fadeInDuration, function() {
           updateSlideshow();
