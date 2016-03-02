@@ -58,7 +58,7 @@ gulp.task('assets', function () {
 
 gulp.task('nunjucks:watch', function () {
   gulp.watch(['pages/**/*.html',
-              'lab-data,json'], ['nunjucks'])
+              'lab-data.json'], ['nunjucks'])
 })
 
 gulp.task('js:watch', function () {

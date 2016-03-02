@@ -50,7 +50,8 @@
   font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif'; }
 
 body {
-  margin: 0 10% 0 10%; }
+  margin: 0 10% 0 10%;
+  background-color: #ffffff; }
 
 a {
   color: #696969; }
@@ -62,6 +63,27 @@ a {
     text-decoration: none; }
   a:active {
     text-decoration: none; }
+
+section.loader {
+  background: #ffffff;
+  z-index: 999; }
+  section.loader .loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15px 0 0 -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 6px solid #bababa;
+    border-right-color: #f0f0f0;
+    animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 header {
   height: 80px; }
@@ -78,6 +100,14 @@ header {
         display: inline-block;
         width: 100%;
         text-align: right; }
+
+div.headline {
+  margin: 0 0 1em 0;
+  font-size: 18px;
+  font-weight: bold; }
+
+.bold {
+  font-weight: bold; }
 
 section.main section.slideshow div.slideshow-item {
   position: absolute;

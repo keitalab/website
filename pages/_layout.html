@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="keywords" content="明治大学,総合数理,先端メディアサイエンス,FMS,keita lab,渡邊恵太,keita watanabe,Integlass,渡邊研究室">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Keita Watanabe Laboratory</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
@@ -20,16 +21,22 @@
   {% endblock %}
 </head>
 <body>
+  <section class="loader">
+    {% include "_loading.html" %}
+  </section>
   <!-- Menu bar -->
-  {% include "_header.html" %}
-
+  <header>
+    {% include "_header.html" %}
+  </header>
   <section class="main">
     {% block main %}
     {% endblock %}
   </section>
   <hr>
   <!-- footer -->
-  {% include "_footer.html" %}
+  <footer>
+    {% include "_footer.html" %}
+  </footer>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
