@@ -86,20 +86,46 @@ section.loader {
     transform: rotate(360deg); } }
 
 header {
-  height: 80px; }
+  width: 100%;
+  height: 100px; }
   header section.logo {
-    display: inline-block;
-    width: 50%; }
-  header section.menu {
-    display: inline-block;
-    width: 49%; }
-    header section.menu div.menu-item {
+    display: inline-block; }
+    @media screen and (min-width: 769px) {
+      header section.logo {
+        width: 50%; } }
+    @media screen and (max-width: 768px) {
+      header section.logo {
+        width: 30%; }
+        header section.logo a img {
+          width: 175px; } }
+  @media screen and (min-width: 769px) {
+    header section.menu {
       display: inline-block;
-      width: 32%; }
-      header section.menu div.menu-item a {
+      width: 49%; }
+      header section.menu div.menu-item {
         display: inline-block;
-        width: 100%;
-        text-align: right; }
+        width: 32%; }
+        header section.menu div.menu-item a {
+          display: inline-block;
+          width: 100%;
+          text-align: right; } }
+  @media screen and (max-width: 768px) {
+    header section.menu {
+      display: none; } }
+  @media screen and (min-width: 769px) {
+    header section.hamburger {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    header section.hamburger {
+      display: inline-block;
+      float: right;
+      width: 40px;
+      height: 50px; }
+      header section.hamburger div.hamburger-icon {
+        display: inline-block; }
+        header section.hamburger div.hamburger-icon a img {
+          width: 40px;
+          height: auto; } }
 
 div.headline {
   margin: 0 0 1em 0;
@@ -109,8 +135,10 @@ div.headline {
 .bold {
   font-weight: bold; }
 
-section.main section.slideshow div.slideshow-item {
-  position: absolute;
-  width: 80%; }
-  section.main section.slideshow div.slideshow-item img {
-    width: 100%; }
+section.main section {
+  margin: 0 0 30px 0; }
+  section.main section.slideshow div.slideshow-item {
+    position: absolute;
+    width: 80%; }
+    section.main section.slideshow div.slideshow-item img {
+      width: 100%; }

@@ -1,6 +1,6 @@
 // Definitions
 var common = {
-  fadeInDuration: 3000,
+  fadeInDuration: 800,
   fadeOutDuration: 1000
 }
 var slideshow = {
@@ -54,8 +54,9 @@ var modifySlideshowSize = function() {
   $('section.slideshow').height(height);
 }
 
-// Loading
 
+// Main stream
+// Loading
 initSlideshow();
 startLoadingSpinner();
 
