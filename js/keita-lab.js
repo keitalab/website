@@ -41,11 +41,15 @@ var updateSlideshow = function() {
     var active = $('section.slideshow div.active');
     var next = active.next().length?
       active.next(): $('section.slideshow div.slideshow-item').eq(0);
+    active.addClass('fading');
+    next.addClass('fading');
     active.fadeOut(slideshow.fadeDuration, function() {
       active.removeClass('active');
+      active.removeClass('fading');
     });
     next.fadeIn(slideshow.fadeDuration, function() {
       next.addClass('active');
+      next.removeClass('fading');
     });
   }, slideshow.interval);
 }

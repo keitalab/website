@@ -50,7 +50,6 @@
   font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif'; }
 
 body {
-  margin: 0 10% 0 10%;
   background-color: #ffffff; }
 
 a {
@@ -63,6 +62,11 @@ a {
     text-decoration: none; }
   a:active {
     text-decoration: none; }
+
+div.contents {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto; }
 
 section.loader {
   background: #ffffff;
@@ -87,12 +91,13 @@ section.loader {
 
 header {
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  padding: 20px 0 0 0; }
   header section.logo {
     display: inline-block; }
     @media screen and (min-width: 769px) {
       header section.logo {
-        width: 50%; } }
+        width: 30%; } }
     @media screen and (max-width: 768px) {
       header section.logo {
         width: 30%; }
@@ -101,14 +106,18 @@ header {
   @media screen and (min-width: 769px) {
     header section.menu {
       display: inline-block;
-      width: 49%; }
+      width: 312px;
+      float: right; }
       header section.menu div.menu-item {
         display: inline-block;
-        width: 32%; }
+        width: auto;
+        margin: 0 10px 0 0; }
+        header section.menu div.menu-item.right-edge {
+          margin: 0; }
         header section.menu div.menu-item a {
           display: inline-block;
           width: 100%;
-          text-align: right; } }
+          letter-spacing: .5em; } }
   @media screen and (max-width: 768px) {
     header section.menu {
       display: none; } }
@@ -135,10 +144,15 @@ div.headline {
 .bold {
   font-weight: bold; }
 
-section.main section {
-  margin: 0 0 30px 0; }
-  section.main section.slideshow div.slideshow-item {
+section.main section.slideshow div.slideshow-item img {
+  position: relative;
+  width: 100%; }
+
+section.main section.slideshow div.slideshow-item.fading {
+  position: relative; }
+  section.main section.slideshow div.slideshow-item.fading img {
     position: absolute;
-    width: 80%; }
-    section.main section.slideshow div.slideshow-item img {
-      width: 100%; }
+    width: 100%; }
+
+section.main section.contact article.map {
+  width: auto; }
