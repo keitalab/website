@@ -154,5 +154,8 @@ section.main section.slideshow div.slideshow-item.fading {
     position: absolute;
     width: 100%; }
 
-section.main section.contact article.map {
-  width: auto; }
+section.main section.contact article.map div.map-wrapper {
+  position: relative;
+  width: 100%; }
+  section.main section.contact article.map div.map-wrapper img {
+    width: 100%; }

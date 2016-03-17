@@ -199,6 +199,12 @@ span {
   &.bold {
 
   }
+  &.serif {
+
+  }
+  &.san-serif {
+
+  }
 }
 div.headline {
   margin: 0 0 1em 0;
@@ -238,7 +244,13 @@ section.main {
     &.contact {
       article {
         &.map {
-          width: auto;
+          div.map-wrapper {
+            position: relative;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
         }
       }
     }
