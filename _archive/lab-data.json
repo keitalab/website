@@ -5,25 +5,24 @@
     { "date": "2015.4.1", "text_en": "New keita lab has been started!", "text_ja": "新生渡邊研究室が発足しました!", "link": "" }
   ],
   "members": {
-    "b2": [
-      {"firstname_ja": "祥一", "lastname_ja": "國松", "firstname_en": "Shoichi", "lastname_en": "Kunimatsu", "image": "john_smith-150sq.jpg"},
-      {"firstname_ja": "優人", "lastname_ja": "黒木", "firstname_en": "Yuto", "lastname_en": " Kuroki", "image": "john_smith-150sq.jpg"},
-      {"firstname_ja": "里奈", "lastname_ja": "高瀬", "firstname_en": "Rina", "lastname_en": "Takase", "image": "john_smith-150sq.jpg"},
-      {"firstname_ja": "一真", "lastname_ja": "高田", "firstname_en": "Kazuma", "lastname_en": "Takada", "image": "john_smith-150sq.jpg"},
-      {"firstname_ja": "拓", "lastname_ja": "高橋", "firstname_en": "Taku", "lastname_en": "Takahashi", "image": "john_smith-150sq.jpg"},
-      {"firstname_ja": "孝一", "lastname_ja": "楯岡", "firstname_en": "Koichi", "lastname_en": "Tateoka", "image": "john_smith-150sq.jpg"},
-      {"firstname_ja": "健也", "lastname_ja": "中里", "firstname_en": "Kenya", "lastname_en": "Nakazato", "image": "john_smith-150sq.jpg"}
+    "b1": [
+      {"firstname_ja": "亮汰", "lastname_ja": "浅岡", "firstname_en": "Ryota", "lastname_en": "Asaoka", "image": "asa-150sq.jpg"},
+      {"firstname_ja": "巧", "lastname_ja": "小林", "firstname_en": "Takumi", "lastname_en": "Kobayashi", "image": "kobayashi-150sq.jpg"},
+      {"firstname_ja": "美香子", "lastname_ja": "佐々木", "firstname_en": "Mikako", "lastname_en": "Sasaki", "image": "sasaki-150sq.jpg"},
+      {"firstname_ja": "早紀", "lastname_ja": "羽鳥", "firstname_en": "Saki", "lastname_en": "Hatori", "image": "john_smith-150sq.jpg"},
+      {"firstname_ja": "颯", "lastname_ja": "水野", "firstname_en": "Hayate", "lastname_en": "Mizuno", "image": "mizuno-150sq.jpg"},
+      {"firstname_ja": "清優", "lastname_ja": "安田", "firstname_en": "Seiyu", "lastname_en": "Yasuda", "image": "john_smith-150sq.jpg"}
     ],
-    "b3": [
+    "b2": [
       {"firstname_ja": "泰良", "lastname_ja": "大内", "firstname_en": "Taira", "lastname_en": "Ouchi", "image": "tiara-150sq.jpg"},
       {"firstname_ja": "翔麻", "lastname_ja": "金子", "firstname_en": "Shoma", "lastname_en": "Kaneko", "image": "kaneko-150sq.jpg"},
-      {"firstname_ja": "麻里奈", "lastname_ja": "長嶋", "firstname_en": "Marina", "lastname_en": "Nagashima", "image": "john_smith-150sq.jpg"},
+      {"firstname_ja": "恵理", "lastname_ja": "上河", "firstname_en": "Eri", "lastname_en": "Kamikawa", "image": "erigon-150sq.jpg"},
+      {"firstname_ja": "一貴", "lastname_ja": "谷森", "firstname_en": "Kazuki", "lastname_en": "Tanimori", "image": "tnmr-150sq.jpg"},
       {"firstname_ja": "龍太郎", "lastname_ja": "永須", "firstname_en": "Ryotaro", "lastname_en": "Nagasu", "image": "ngs-150sq.jpg"},
       {"firstname_ja": "瞳", "lastname_ja": "西條", "firstname_en": "Hitomi", "lastname_en": "Nishijo", "image": "jo-150sq.jpg"},
-      {"firstname_ja": "康輔", "lastname_ja": "八木", "firstname_en": "Kosuke", "lastname_en": "Yagi", "image": "john_smith-150sq.jpg"},
-      {"firstname_ja": "朝香", "lastname_ja": "吉益", "firstname_en": "Tomoka", "lastname_en": "Yoshimasu", "image": "john_smith-150sq.jpg"}
+      {"firstname_ja": "翼", "lastname_ja": "福地", "firstname_en": "Tsubasa", "lastname_en": "Fukuchi", "image": "fukuchi-150sq.jpg"}
     ],
-    "b4": [
+    "b3": [
       {"firstname_ja": "大智", "lastname_ja": "伊藤", "firstname_en": "Daichi", "lastname_en": "Ito", "image": "itoh-150sq.jpg"},
       {"firstname_ja": "陽太", "lastname_ja": "尾髙", "firstname_en": "Yota", "lastname_en": "Odaka", "image": "odk-150sq.jpg"},
       {"firstname_ja": "翔平", "lastname_ja": "片倉", "firstname_en": "Shohei", "lastname_en": "Katakura", "image": "kaffcop-150sq.jpg"},
@@ -36,9 +35,6 @@
       {"firstname_ja": "裕登", "lastname_ja": "中屋", "firstname_en": "Hiroto", "lastname_en": "Nakaya", "image": "hiron-150sq.jpg"},
       {"firstname_ja": "健太", "lastname_ja": "原", "firstname_en": "Kenta", "lastname_en": "Hara", "image": "mactkg-150sq.jpg"},
       {"firstname_ja": "佳純", "lastname_ja": "吉村", "firstname_en": "Kazumi", "lastname_en": "Yoshimura", "image": "ysmr-150sq.jpg"}
-    ],
-    "m1": [
-      {"firstname_ja": "朋美", "lastname_ja": "幸野", "firstname_en": "Tomomi", "lastname_en": "Kono", "image": "john_smith-150sq.jpg"}
     ],
     "other": [
       {"firstname_ja": "恵太", "lastname_ja": "渡邊", "firstname_en": "Keita", "lastname_en": "Watanabe", "image": "100kw-150sq.jpg"}
