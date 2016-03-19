@@ -9,9 +9,9 @@
       {"firstname_ja": "亮汰", "lastname_ja": "浅岡", "firstname_en": "Ryota", "lastname_en": "Asaoka", "image": "asa-150sq.jpg"},
       {"firstname_ja": "巧", "lastname_ja": "小林", "firstname_en": "Takumi", "lastname_en": "Kobayashi", "image": "kobayashi-150sq.jpg"},
       {"firstname_ja": "美香子", "lastname_ja": "佐々木", "firstname_en": "Mikako", "lastname_en": "Sasaki", "image": "sasaki-150sq.jpg"},
-      {"firstname_ja": "早紀", "lastname_ja": "羽鳥", "firstname_en": "Saki", "lastname_en": "Hatori", "image": ""},
+      {"firstname_ja": "早紀", "lastname_ja": "羽鳥", "firstname_en": "Saki", "lastname_en": "Hatori", "image": "john_smith-150sq.jpg"},
       {"firstname_ja": "颯", "lastname_ja": "水野", "firstname_en": "Hayate", "lastname_en": "Mizuno", "image": "mizuno-150sq.jpg"},
-      {"firstname_ja": "清優", "lastname_ja": "安田", "firstname_en": "Seiyu", "lastname_en": "Yasuda", "image": ""}
+      {"firstname_ja": "清優", "lastname_ja": "安田", "firstname_en": "Seiyu", "lastname_en": "Yasuda", "image": "john_smith-150sq.jpg"}
     ],
     "b2": [
       {"firstname_ja": "泰良", "lastname_ja": "大内", "firstname_en": "Taira", "lastname_en": "Ouchi", "image": "tiara-150sq.jpg"},
