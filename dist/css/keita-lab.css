@@ -1,56 +1,9 @@
 /* Color set */
 /* Font family */
-@font-face {
-  font-family: 'YuMincho';
-  src: url("../font/YuMincho.ttc") format("ttc"); }
-
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: thin;
-  font-weight: 200;
-  src: url("../font/NotoSansCJKjp-Thin.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: light;
-  font-weight: 300;
-  src: url("../font/NotoSansCJKjp-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../font/NotoSansCJKjp-DemiLight.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: normal;
-  font-weight: 500;
-  src: url("../font/NotoSansCJKjp-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../font/NotoSansCJKjp-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: bold;
-  font-weight: 800;
-  src: url("../font/NotoSansCJKjp-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Noto Sans Japanese';
-  font-style: normal;
-  font-weight: 1000;
-  src: url("../font/NotoSansCJKjp-Black.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif'; }
-
 body {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 200; }
 
 a {
   color: #696969; }
@@ -92,7 +45,7 @@ section.loader {
 header {
   width: 100%;
   height: 100px;
-  padding: 20px 0 0 0; }
+  padding: 0; }
   header section.logo {
     display: inline-block; }
     @media screen and (min-width: 769px) {
@@ -106,18 +59,11 @@ header {
   @media screen and (min-width: 769px) {
     header section.menu {
       display: inline-block;
-      width: 312px;
-      float: right; }
+      text-align: right;
+      width: 69%; }
       header section.menu div.menu-item {
         display: inline-block;
-        width: auto;
-        margin: 0 10px 0 0; }
-        header section.menu div.menu-item.right-edge {
-          margin: 0; }
-        header section.menu div.menu-item a {
-          display: inline-block;
-          width: 100%;
-          letter-spacing: .5em; } }
+        margin: 0 0 0 30px; } }
   @media screen and (max-width: 768px) {
     header section.menu {
       display: none; } }
@@ -136,26 +82,71 @@ header {
           width: 40px;
           height: auto; } }
 
+span::selection {
+  background-color: #bababa;
+  color: #ffffff; }
+
+span.single-byte {
+  letter-spacing: 0.09em;
+  font-size: 1.01em;
+  font-family: Noto Sans Japanese, sans-serif; }
+  span.single-byte.serif {
+    font-family: serif; }
+
+span.double-byte {
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  font-size: 1em;
+  font-family: Noto Sans Japanese, sans-serif; }
+  span.double-byte.serif {
+    font-family: serif; }
+
+span.bold {
+  font-weight: bold; }
+
+span.light {
+  font-weight: 300; }
+
+span.underline {
+  text-decoration: underline; }
+
 div.headline {
-  margin: 0 0 1em 0;
-  font-size: 18px;
-  font-weight: bold; }
+  margin: 0 0 20px 0;
+  font-size: 1.5em;
+  font-weight: 100; }
 
-.bold {
-  font-weight: bold; }
-
-section.main section.slideshow div.slideshow-item img {
-  position: relative;
-  width: 100%; }
-
-section.main section.slideshow div.slideshow-item.fading {
-  position: relative; }
-  section.main section.slideshow div.slideshow-item.fading img {
-    position: absolute;
+section.main section {
+  margin: 50px 0 50px 0; }
+  section.main section.slideshow {
+    margin: 0 0 50px 0; }
+    section.main section.slideshow div.slideshow-item img {
+      position: relative;
+      width: 100%; }
+    section.main section.slideshow div.slideshow-item.fading {
+      position: relative; }
+      section.main section.slideshow div.slideshow-item.fading img {
+        position: absolute;
+        width: 100%; }
+  section.main section.lab-theme article div.theme-description {
+    margin: 0 0 15px 0; }
+  section.main section.lab-theme article div.theme-item {
+    margin: 0 0 15px 0; }
+    section.main section.lab-theme article div.theme-item div.theme-item-label {
+      font-size: 1.1em; }
+    section.main section.lab-theme article div.theme-item div.theme-item-description {
+      font-size: 0.9em; }
+  section.main section.contact article.caption div.caption-item {
+    display: inline-block;
+    width: 49.5%; }
+    section.main section.contact article.caption div.caption-item.caption-item-access {
+      margin: 0; }
+    section.main section.contact article.caption div.caption-item div.contact-label {
+      margin: 0 0 5px 0;
+      font-size: 1.1em; }
+    section.main section.contact article.caption div.caption-item div.contact-content {
+      font-size: 0.9em; }
+  section.main section.contact article.map div.map-wrapper {
+    position: relative;
     width: 100%; }
-
-section.main section.contact article.map div.map-wrapper {
-  position: relative;
-  width: 100%; }
-  section.main section.contact article.map div.map-wrapper img {
-    width: 100%; }
+    section.main section.contact article.map div.map-wrapper img {
+      width: 100%; }

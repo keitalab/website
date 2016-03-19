@@ -21,63 +21,12 @@ $keita-lab-brown: #5C3926;
 
 /* Font family */
 
-@font-face {
-    font-family: 'YuMincho';
-    src: url('../font/YuMincho.ttc') format('ttc');
-}
-
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: thin;
-    font-weight: 200;
-    src: url('../font/NotoSansCJKjp-Thin.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: light;
-    font-weight: 300;
-    src: url('../font/NotoSansCJKjp-Light.woff') format('woff')
-
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../font/NotoSansCJKjp-DemiLight.woff')  format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../font/NotoSansCJKjp-Regular.woff')  format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../font/NotoSansCJKjp-Medium.woff') format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: bold;
-    font-weight: 800;
-    src: url('../font/NotoSansCJKjp-Bold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 1000;
-    src: url('../font/NotoSansCJKjp-Black.woff') format('woff');
-}
-@font-face {
-  font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif';
-}
-
 // Common
 body {
   // margin: 0 $whole-margin-right 0 $whole-margin-left;
   background-color: $keita-lab-white;
+  font-size: 16px;
+  font-weight: 200;
 }
 a {
   color: $keita-lab-gray;
@@ -128,7 +77,7 @@ section.loader {
 header {
   width: 100%;
   height: 100px;
-  padding: 20px 0 0 0;
+  padding: 0;
   section {
     &.logo {
       display: inline-block;
@@ -147,19 +96,13 @@ header {
     &.menu {
       @media screen and (min-width: $large-min) {
         display: inline-block;
-        width: 312px;
-        float: right;
+        text-align: right;
+        width: 69%;
         div.menu-item {
           display: inline-block;
-          width: auto;
-          margin: 0 10px 0 0;
-          &.right-edge {
-            margin: 0;
-          }
-          a {
-            display: inline-block;
-            width: 100%;
-            letter-spacing: .5em;
+          margin: 0 0 0 30px;
+          &.left-edge {
+
           }
         }
       }
@@ -190,47 +133,54 @@ header {
   }
 }
 span {
+  &::selection {
+    background-color: $keita-lab-lightgray;
+    color: $keita-lab-white;
+  }
   &.single-byte {
+    letter-spacing: 0.09em;
+    font-size: 1.01em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
 
   }
   &.double-byte {
-
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 1em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
   }
   &.bold {
-
+    font-weight: bold;
   }
-  &.serif {
-
+  &.light {
+    font-weight: 300;
   }
-  &.san-serif {
-
+  &.underline {
+    text-decoration: underline;
   }
 }
 div.headline {
-  margin: 0 0 1em 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-.single-byte {
-
-}
-.double-byte {
-
-}
-.bold {
-  font-weight: bold;
+  margin: 0 0 20px 0;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
 // Top page
 section.main {
   section {
-    // margin: 0 0 30px 0;
+    margin: 50px 0 50px 0;
     &.slideshow {
+      margin: 0 0 50px 0;
       div.slideshow-item {
         img {
           position: relative;
           width: 100%;
-
         }
         &.fading {
           position: relative;
@@ -241,8 +191,48 @@ section.main {
         }
       }
     }
+    &.description {
+
+    }
+    &.headline {
+
+    }
+    &.lab-theme {
+      article {
+        div.theme-description {
+          margin: 0 0 15px 0;
+        }
+        div.theme-item {
+          margin: 0 0 15px 0;
+          div.theme-item-label {
+            font-size: 1.1em;
+          }
+          div.theme-item-description {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
     &.contact {
       article {
+        &.caption {
+          div.caption-item {
+            display: inline-block;
+            width: 49.5%;
+            &.caption-item-access {
+              margin: 0;
+            }
+            &.caption-item-email {
+            }
+            div.contact-label {
+              margin: 0 0 5px 0;
+              font-size: 1.1em;
+            }
+            div.contact-content {
+              font-size: 0.9em;
+            }
+          }
+        }
         &.map {
           div.map-wrapper {
             position: relative;
