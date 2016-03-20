@@ -73,6 +73,45 @@ section.loader {
 }
 
 
+span {
+  &::selection {
+    background-color: $keita-lab-lightgray;
+    color: $keita-lab-white;
+  }
+  &.single-byte {
+    letter-spacing: 0.09em;
+    font-size: 1.01em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+
+  }
+  &.double-byte {
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 1em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.light {
+    font-weight: 300;
+  }
+  &.underline {
+    text-decoration: underline;
+  }
+}
+div.headline {
+  margin: 0 0 20px 0;
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
 // Header
 header {
   width: 100%;
@@ -132,46 +171,8 @@ header {
     }
   }
 }
-span {
-  &::selection {
-    background-color: $keita-lab-lightgray;
-    color: $keita-lab-white;
-  }
-  &.single-byte {
-    letter-spacing: 0.09em;
-    font-size: 1.01em;
-    font-family: Noto Sans Japanese, sans-serif;
-    &.serif {
-      font-family: serif;
-    }
 
-  }
-  &.double-byte {
-    letter-spacing: 0.1em;
-    line-height: 2em;
-    font-size: 1em;
-    font-family: Noto Sans Japanese, sans-serif;
-    &.serif {
-      font-family: serif;
-    }
-  }
-  &.bold {
-    font-weight: bold;
-  }
-  &.light {
-    font-weight: 300;
-  }
-  &.underline {
-    text-decoration: underline;
-  }
-}
-div.headline {
-  margin: 0 0 20px 0;
-  font-size: 1.5em;
-  font-weight: 100;
-}
-
-// Top page
+// About page
 section.main {
   section {
     margin: 50px 0 50px 0;
@@ -239,6 +240,68 @@ section.main {
             width: 100%;
             img {
               width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Member page
+section.main {
+  section {
+    &.container {
+      div.headline {
+        text-align: left;
+      }
+      text-align: center;
+      article.member-list {
+        font-size: 0;
+        div.profile-item {
+          display: inline-block;
+          position: relative;
+          width: 150px;
+          height: 150px;
+          margin: 0;
+          padding: 0;
+          div.profile-thumbnail {
+            position: absolute;
+            top: auto;
+            left: auto;
+            width: 150px;
+            height: 150px;
+            margin: 0;
+            padding: 0;
+          }
+          div.profile-filter {
+          text-align: left;
+            position: absolute;;
+            top: auto;
+            left: auto;
+            z-index: 9999;
+            width: 150px;
+            height: 150px;
+            margin: 0 0 0 0;
+            padding: 0;
+            vertical-align: auto;
+            background: $keita-lab-black;
+            opacity: .8;
+            div.profile-position {
+              display: block;
+              margin: 50px 0 0 10px;
+              span {
+                font-size: 10px;
+                color: $keita-lab-white;
+              }
+            }
+            div.profile-name {
+              display: block;
+              margin: 0 0 0 10px;
+              span {
+                font-size: 12px;
+                color: $keita-lab-white;
+              }
             }
           }
         }

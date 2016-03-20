@@ -7,6 +7,9 @@ var slideshow = {
   fadeDuration: 800,
   interval: 3000
 }
+var member = {
+  hoverFadeDuration: 500
+}
 // Loading
 var startLoadingSpinner = function() {
 	$('section.loader').css('display', 'block').height($(window).height());
@@ -75,6 +78,18 @@ $(window).load(function() {
     });
 });
 
+// Window Resize
 $(window).resize(function() {
   modifySlideshowSize();
+});
+
+// Hovered Member Images
+$('div.profile-item').hover(function() {
+  $(this)
+    .find('div.profile-filter')
+    .fadeIn(member.hoverFadeDuration);
+}, function() {
+  $(this)
+    .find('div.profile-filter')
+    .fadeOut(member.hoverFadeDuration);
 });
