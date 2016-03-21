@@ -193,7 +193,7 @@ header {
         display: block;
         position: absolute;
         top: 50px;
-        z-index: 999;
+        z-index: 9999;
         width: 100%;
         height: 100%;
         background: rgba(200, 200, 200, 0.95); }
@@ -221,7 +221,8 @@ section.top-image section.slideshow {
     position: relative; }
     section.top-image section.slideshow div.slideshow-item.fading img {
       position: absolute;
-      width: 100%; }
+      width: 100%;
+      z-index: 9989; }
 
 section.main section {
   margin: 50px 0 50px 0; }
@@ -290,6 +291,13 @@ section.main section.container {
           section.main section.container article.member-list div.profile-item div.profile-thumbnail {
             width: 140px;
             height: 140px; } }
+        section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
+          width: 150px;
+          height: 150px; }
+          @media screen and (max-width: 350px) {
+            section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
+              width: 140px;
+              height: 140px; } }
       section.main section.container article.member-list div.profile-item div.profile-filter {
         text-align: left;
         position: absolute;
