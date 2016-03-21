@@ -1,6 +1,6 @@
 {% extends "_layout.html" %}
 
-{% block main %}
+{% block topimage %}
 <!-- Slideshow -->
 {{ images }}
 {% set images = ['03.jpg', '02.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg'] %}
@@ -11,7 +11,9 @@
   </div>
   {% endfor %}
 </section>
+{% endblock %}
 
+{% block main %}
 <!-- main container -->
 <section class="description">
   <div class="headline">
@@ -47,9 +49,7 @@
       <div class="theme-item-label">
         <span class="single-byte bold serif underline">1</span><!--
         --><span class="single-byte bold serif underline">.&nbsp;Sense&nbsp;of&nbsp;Self-Ownership&nbsp;:&nbsp;</span><!--
-        --><span class="double-byte serif underline">自己帰属感の高い道具</span><!--
-        --><span class="single-byte serif underline">/</span><!--
-        --><span class="double-byte serif underline">身体・知覚拡張研究</span>
+        --><span class="double-byte serif underline theme-item-label-after">自己帰属感の高い道具/身体・知覚拡張研究</span>
       </div>
       <div class="theme-item-description">
         <span class="double-byte">情報と身体を結びつける自己帰属感とそのインタラクション手法についての研究。</span>
@@ -59,7 +59,7 @@
       <div class="theme-item-label">
         <span class="single-byte bold serif underline">2</span><!--
         --><span class="single-byte bold serif underline">.&nbsp;Human&nbsp;Internet&nbsp;Interaction&nbsp;:&nbsp;</span><!--
-        --><span class="double-byte serif underline">次のインターネット体験をつくる</span>
+        --><span class="double-byte serif underline theme-item-label-after">次のインターネット体験をつくる</span>
       </div>
       <div class="theme-item-description">
         <span class="double-byte">ディスプレイを越えたインターネットのインターフェースの研究。</span>
@@ -69,7 +69,7 @@
       <div class="theme-item-label">
         <span class="single-byte bold serif underline">3</span><!--
         --><span class="single-byte bold serif underline">.&nbsp;Inprovised&nbsp;Creation&nbsp;:&nbsp;</span><!--
-        --><span class="double-byte serif underline">「今ここで作れる」即応創造環境の研究</span>
+        --><span class="double-byte serif underline theme-item-label-after">「今ここで作れる」即応創造環境の研究</span>
       </div>
       <div class="theme-item-description">
         <span class="double-byte">今欲しい、必要なもの、アイデアをすぐに形にする環境の研究。</span>

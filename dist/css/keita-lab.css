@@ -1,9 +1,16 @@
 /* Color set */
 /* Font family */
 body {
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
-  font-size: 16px;
   font-weight: 200; }
+  @media screen and (min-width: 769px) {
+    body {
+      font-size: 16px; } }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px; } }
 
 a {
   color: #696969; }
@@ -16,14 +23,24 @@ a {
   a:active {
     text-decoration: none; }
 
-div.contents {
-  width: 80%;
-  max-width: 900px;
-  margin: 0 auto; }
+@media screen and (min-width: 769px) {
+  div.contents header, div.contents section.top-image, div.contents section.main, div.contents footer {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 768px) {
+  div.contents section.main, div.contents footer {
+    width: 95%;
+    margin: 0 auto; }
+  div.contents header {
+    width: 100%; }
+  div.contents section.top-image {
+    width: 100%; } }
 
 section.loader {
   background: #ffffff;
-  z-index: 999; }
+  z-index: 9999; }
   section.loader .loading-spinner {
     position: absolute;
     top: 50%;
@@ -34,13 +51,13 @@ section.loader {
     border-radius: 50%;
     border: 6px solid #bababa;
     border-right-color: #f0f0f0;
-    animation: spin 1s linear infinite; }
+    -webkit-animation: spin 1s linear 0s infinite; }
 
-@keyframes spin {
+@-webkit-keyframes spin {
   0% {
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg); }
   100% {
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(360deg); } }
 
 span::selection {
   background-color: #bababa;
@@ -86,7 +103,8 @@ header {
         width: 30%; } }
     @media screen and (max-width: 768px) {
       header section.logo {
-        width: 30%; }
+        width: 30%;
+        margin: 0 0 0 2.5%; }
         header section.logo a img {
           width: 175px; } }
   @media screen and (min-width: 769px) {
@@ -108,31 +126,98 @@ header {
       display: inline-block;
       float: right;
       width: 40px;
-      height: 50px; }
+      height: 40px;
+      margin: 0 2.5% 0 0; }
       header section.hamburger div.hamburger-icon {
-        display: inline-block; }
-        header section.hamburger div.hamburger-icon a img {
-          width: 40px;
-          height: auto; } }
+        display: inline-block;
+        margin: 12px 0 0 0; }
+        header section.hamburger div.hamburger-icon a {
+          display: inline-block; }
+          header section.hamburger div.hamburger-icon a div.hamburger-container {
+            display: inline-block;
+            width: 40px;
+            height: 40px; }
+            header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff {
+              display: block;
+              position: absolute;
+              background: #bababa;
+              width: 40px;
+              height: 4px;
+              margin: 0 0 12px 0;
+              border-radius: 3px;
+              transition: 0.5s; }
+              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
+                top: 10px; }
+              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
+                top: 25px; }
+              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+                top: 40px; }
+        header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff {
+          position: absolute;
+          top: 27px; }
+          header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-top {
+            -webkit-transform: rotate(45deg); }
+          header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-middle {
+            background: transparent; }
+          header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+            -webkit-transform: rotate(-45deg); }
+    @keyframes rotateTop {
+      0% {
+        -webkit-transform: rotate(0deg); }
+      100% {
+        -webkit-transform: rotate(45deg); } }
+    @keyframes rotateBottom {
+      0% {
+        -webkit-transform: rotate(0deg); }
+      100% {
+        -webkit-transform: rotate(-45deg); } } }
+  @media screen and (min-width: 769px) {
+    header section.expanded-menu {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    header section.expanded-menu {
+      height: 0px;
+      color: #ffffff;
+      transition: 0.7s; }
+      header section.expanded-menu div.expanded-menu-list {
+        display: none;
+        transition: 0.7s; }
+      header section.expanded-menu.active {
+        display: block;
+        position: absolute;
+        top: 50px;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        background: rgba(200, 200, 200, 0.95); }
+        header section.expanded-menu.active div.expanded-menu-list {
+          display: block; } }
+
+section.top-image section.slideshow {
+  margin: 0 0 50px 0; }
+  section.top-image section.slideshow div.slideshow-item img {
+    position: relative;
+    width: 100%; }
+  section.top-image section.slideshow div.slideshow-item.fading {
+    position: relative; }
+    section.top-image section.slideshow div.slideshow-item.fading img {
+      position: absolute;
+      width: 100%; }
 
 section.main section {
   margin: 50px 0 50px 0; }
-  section.main section.slideshow {
-    margin: 0 0 50px 0; }
-    section.main section.slideshow div.slideshow-item img {
-      position: relative;
-      width: 100%; }
-    section.main section.slideshow div.slideshow-item.fading {
-      position: relative; }
-      section.main section.slideshow div.slideshow-item.fading img {
-        position: absolute;
-        width: 100%; }
   section.main section.lab-theme article div.theme-description {
     margin: 0 0 15px 0; }
   section.main section.lab-theme article div.theme-item {
     margin: 0 0 15px 0; }
-    section.main section.lab-theme article div.theme-item div.theme-item-label {
-      font-size: 1.1em; }
+    @media screen and (min-width: 769px) {
+      section.main section.lab-theme article div.theme-item div.theme-item-label {
+        font-size: 1.1em; } }
+    @media screen and (max-width: 768px) {
+      section.main section.lab-theme article div.theme-item div.theme-item-label {
+        font-size: 1em; }
+        section.main section.lab-theme article div.theme-item div.theme-item-label span.theme-item-label-after {
+          display: block; } }
     section.main section.lab-theme article div.theme-item div.theme-item-description {
       font-size: 0.9em; }
   section.main section.contact article.caption div.caption-item {

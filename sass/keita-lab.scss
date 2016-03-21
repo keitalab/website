@@ -3,9 +3,12 @@ $large-min: 769px;
 $medium-max: 768px;
 
 // Size set
-$whole-margin-left: 10%;
-$whole-margin-right: 10%;
-$whole-width: 80%;
+$whole-margin-left-pc: 10%;
+$whole-margin-right-pc: 10%;
+$whole-width-pc: 80%;
+$whole-margin-left-sp: 2.5%;
+$whole-margin-right-sp: 2.5%;
+$whole-width-sp: 95%;
 
 /* Color set */
 $keita-lab-white: #ffffff;
@@ -24,10 +27,18 @@ $keita-lab-brown: #5C3926;
 // Common
 body {
   // margin: 0 $whole-margin-right 0 $whole-margin-left;
+  margin: 0;
+  padding: 0;
   background-color: $keita-lab-white;
-  font-size: 16px;
   font-weight: 200;
+  @media screen and (min-width: $large-min) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $medium-max) {
+    font-size: 14px;
+  }
 }
+
 a {
   color: $keita-lab-gray;
   &:hover {
@@ -44,15 +55,31 @@ a {
   }
 }
 div.contents {
-  width: $whole-width;
-  max-width: 900px;
-  margin: 0 auto;
+  @media screen and (min-width: $large-min) {
+    header, section.top-image, section.main, footer {
+      width: $whole-width-pc;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: $medium-max) {
+    section.main, footer {
+      width: $whole-width-sp;
+      margin: 0 auto;
+    }
+    header {
+      width: 100%;
+    }
+    section.top-image {
+      width: 100%;
+    }
+  }
 }
 
 // loader
 section.loader {
   background: $keita-lab-white;
-  z-index: 999;
+  z-index: 9999;
   .loading-spinner {
     position: absolute;
     top: 50%;
@@ -63,10 +90,10 @@ section.loader {
     border-radius: 50%;
     border: 6px solid $keita-lab-lightgray;
     border-right-color: $keita-lab-darkwhite;
-    animation: spin 1s linear infinite;
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100%   { transform: rotate(360deg); }
+    -webkit-animation: spin 1s linear 0s infinite;
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100%   { -webkit-transform: rotate(360deg); }
     }
   }
 
@@ -125,6 +152,7 @@ header {
       }
       @media screen and (max-width: $medium-max) {
         width: 30%;
+        margin: 0 0 0 $whole-margin-left-sp;
         a {
           img {
             width: 175px;
@@ -157,14 +185,102 @@ header {
         display: inline-block;
         float: right;
         width: 40px;
-        height: 50px;
+        height: 40px;
+        margin: 0 $whole-margin-right-sp 0 0;
         div.hamburger-icon {
           display: inline-block;
+          margin: 12px 0 0 0;
           a {
-            img {
+            display: inline-block;
+            div.hamburger-container {
+              display: inline-block;
               width: 40px;
-              height: auto;
+              height: 40px;
+              span.hamburger-stuff {
+                display: block;
+                position: absolute;
+                background: $keita-lab-lightgray;
+                width: 40px;
+                height: 4px;
+                margin: 0 0 12px 0;
+                border-radius: 3px;
+                transition: 0.5s;
+                &.hamburger-top {
+                  // -webkit-transform: -webkit-translateY(10px);
+                  top: 10px;
+                }
+                &.hamburger-middle {
+                  // -webkit-transform: -webkit-translateY(20px);
+                  top: 25px;
+                }
+                &.hamburger-bottom {
+                  // -webkit-transform: -webkit-translateY(30px);
+                  top: 40px;
+                }
+              }
             }
+          }
+          &.cross {
+            a {
+              div.hamburger-container {
+                span.hamburger-stuff {
+                  position: absolute;
+                  top: 27px;
+                  &.hamburger-top {
+                    // -webkit-animation-name: rotateTop;
+                    // -webkit-animation-duration: 1s;
+                    // -webkit-animation-iteration-count: 1;
+                    // -webkit-animation-fill-mode: forwards;
+                    -webkit-transform: rotate(45deg);
+                  }
+                  &.hamburger-middle {
+                    background: rgba(0, 0, 0, 0);
+                  }
+                  &.hamburger-bottom {
+                    // -webkit-animation-name: rotateBottom;
+                    // -webkit-animation-duration: 1s;
+                    // -webkit-animation-iteration-count: 1;
+                    // -webkit-animation-fill-mode: forwards;
+                    -webkit-transform: rotate(-45deg);
+                  }
+                  @keyframes rotateTop {
+                    0% { -webkit-transform: rotate(0deg); }
+                    100% { -webkit-transform: rotate(45deg); }
+                  }
+                  @keyframes rotateBottom {
+                    0% { -webkit-transform: rotate(0deg); }
+                    100% { -webkit-transform: rotate(-45deg); }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.expanded-menu {
+      @media screen and (min-width: $large-min) {
+        display: none;
+      }
+      @media screen and (max-width: $medium-max) {
+        // display: none;
+        height: 0px;
+        color: $keita-lab-white;
+        transition: 0.7s;
+        div.expanded-menu-list {
+          display: none;
+          transition: 0.7s;
+        }
+        &.active {
+          display: block;
+          position: absolute;
+          top: 50px;
+          z-index: 999;
+          width: 100%;
+          height: 100%;
+          background: rgba(200, 200, 200, 0.95);
+          div.expanded-menu-list {
+            display: block;
           }
         }
       }
@@ -173,9 +289,8 @@ header {
 }
 
 // About page
-section.main {
+section.top-image {
   section {
-    margin: 50px 0 50px 0;
     &.slideshow {
       margin: 0 0 50px 0;
       div.slideshow-item {
@@ -192,6 +307,11 @@ section.main {
         }
       }
     }
+  }
+}
+section.main {
+  section {
+    margin: 50px 0 50px 0;
     &.description {
 
     }
@@ -206,7 +326,15 @@ section.main {
         div.theme-item {
           margin: 0 0 15px 0;
           div.theme-item-label {
-            font-size: 1.1em;
+            @media screen and (min-width: $large-min) {
+              font-size: 1.1em;
+            }
+            @media screen and (max-width: $medium-max) {
+              font-size: 1em;
+              span.theme-item-label-after {
+                display: block;
+              }
+            }
           }
           div.theme-item-description {
             font-size: 0.9em;
@@ -275,7 +403,7 @@ section.main {
             padding: 0;
           }
           div.profile-filter {
-          text-align: left;
+            text-align: left;
             position: absolute;;
             top: auto;
             left: auto;

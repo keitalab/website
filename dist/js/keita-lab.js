@@ -14,13 +14,7 @@ var member = {
 var startLoadingSpinner = function() {
 	$('section.loader').css('display', 'block').height($(window).height());
 	// modifySlideshowSize();
-	$('header, section.main, footer').css('display', 'none');
-}
-var finishLoadingSpinner = function() {
-	$('section.loader')
-    .css('display', 'none');
-	$('section.main, header, footer')
-    .fadeIn(common.fadeInDuration);
+	$('header, section.top-image, section.main, footer').css('display', 'none');
 }
 // Slideshow functions
 var initSlideshow = function() {
@@ -71,11 +65,30 @@ startLoadingSpinner();
 $(window).load(function() {
   $('section.loader')
     .fadeOut(common.fadeOutDuration, function() {
-      $('section.main, header, footer')
+      $('header, section.top-image, section.main, footer')
         .fadeIn(common.fadeInDuration, function() {
           updateSlideshow();
         });
     });
+});
+
+// Header
+$('.hamburger .hamburger-icon a').click(function() {
+  if (!$('.hamburger-icon').hasClass('cross')) {
+    $('section.expanded-menu')
+      .addClass('active')
+      .height($('body').height());
+    $('div.hamburger-icon')
+      .addClass('cross');
+  }
+  else {
+    $('section.expanded-menu')
+      .removeClass('active')
+      .height(0);
+    $('div.hamburger-icon')
+      .removeClass('cross');
+  }
+  return false;
 });
 
 // Window Resize
