@@ -31,7 +31,7 @@ a {
 
 @media screen and (max-width: 768px) {
   div.contents section.main, div.contents footer {
-    width: 95%;
+    width: 92%;
     margin: 0 auto; }
   div.contents header {
     width: 100%; }
@@ -87,10 +87,17 @@ span.light {
 span.underline {
   text-decoration: underline; }
 
-div.headline {
-  margin: 0 0 20px 0;
-  font-size: 1.5em;
-  font-weight: 100; }
+@media screen and (min-width: 769px) {
+  div.headline {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    font-weight: 100; } }
+
+@media screen and (max-width: 768px) {
+  div.headline {
+    margin: 0 0 12px 0;
+    font-size: 1.3em;
+    font-weight: 200; } }
 
 header {
   width: 100%;
@@ -104,7 +111,7 @@ header {
     @media screen and (max-width: 768px) {
       header section.logo {
         width: 30%;
-        margin: 0 0 0 2.5%; }
+        margin: 0 0 0 4%; }
         header section.logo a img {
           width: 175px; } }
   @media screen and (min-width: 769px) {
@@ -127,8 +134,7 @@ header {
       float: right;
       width: 40px;
       height: 40px;
-      margin: 0 2.5% 0 0;
-      z-index: -100; }
+      margin: 0 4% 0 0; }
       header section.hamburger div.hamburger-icon {
         display: inline-block;
         margin: 12px 0 0 0; }
@@ -222,15 +228,21 @@ section.main section {
     section.main section.lab-theme article div.theme-item div.theme-item-description {
       font-size: 0.9em; }
   section.main section.contact article.caption div.caption-item {
-    display: inline-block;
-    width: 49.5%; }
-    section.main section.contact article.caption div.caption-item.caption-item-access {
-      margin: 0; }
-    section.main section.contact article.caption div.caption-item div.contact-label {
-      margin: 0 0 5px 0;
-      font-size: 1.1em; }
-    section.main section.contact article.caption div.caption-item div.contact-content {
-      font-size: 0.9em; }
+    display: inline-block; }
+    @media screen and (min-width: 769px) {
+      section.main section.contact article.caption div.caption-item {
+        width: 49.5%; }
+        section.main section.contact article.caption div.caption-item.caption-item-access {
+          margin: 0; }
+        section.main section.contact article.caption div.caption-item div.contact-label {
+          margin: 0 0 5px 0;
+          font-size: 1.1em; }
+        section.main section.contact article.caption div.caption-item div.contact-content {
+          font-size: 0.9em; } }
+    @media screen and (max-width: 768px) {
+      section.main section.contact article.caption div.caption-item {
+        width: 100%;
+        margin: 0 0 10px 0; } }
   section.main section.contact article.map div.map-wrapper {
     position: relative;
     width: 100%; }

@@ -6,9 +6,9 @@ $medium-max: 768px;
 $whole-margin-left-pc: 10%;
 $whole-margin-right-pc: 10%;
 $whole-width-pc: 80%;
-$whole-margin-left-sp: 2.5%;
-$whole-margin-right-sp: 2.5%;
-$whole-width-sp: 95%;
+$whole-margin-left-sp: 4%;
+$whole-margin-right-sp: 4%;
+$whole-width-sp: 92%;
 
 /* Color set */
 $keita-lab-white: #ffffff;
@@ -134,9 +134,16 @@ span {
   }
 }
 div.headline {
-  margin: 0 0 20px 0;
-  font-size: 1.5em;
-  font-weight: 100;
+  @media screen and (min-width: $large-min) {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+  @media screen and (max-width: $medium-max) {
+    margin: 0 0 12px 0;
+    font-size: 1.3em;
+    font-weight: 200;
+  }
 }
 
 // Header
@@ -187,7 +194,6 @@ header {
         width: 40px;
         height: 40px;
         margin: 0 $whole-margin-right-sp 0 0;
-        z-index: -100;
         div.hamburger-icon {
           display: inline-block;
           margin: 12px 0 0 0;
@@ -348,19 +354,28 @@ section.main {
         &.caption {
           div.caption-item {
             display: inline-block;
-            width: 49.5%;
-            &.caption-item-access {
-              margin: 0;
+            @media screen and (min-width: $large-min) {
+              width: 49.5%;
+              &.caption-item-access {
+                margin: 0;
+              }
+              &.caption-item-email {
+              }
+              div.contact-label {
+                margin: 0 0 5px 0;
+                font-size: 1.1em;
+              }
+              div.contact-content {
+                font-size: 0.9em;
+              }
             }
-            &.caption-item-email {
+            @media screen and (max-width: $medium-max) {
+              width: 100%;
+              margin: 0 0 10px 0;
+              &.caption-item-access {
+              }
             }
-            div.contact-label {
-              margin: 0 0 5px 0;
-              font-size: 1.1em;
-            }
-            div.contact-content {
-              font-size: 0.9em;
-            }
+
           }
         }
         &.map {
