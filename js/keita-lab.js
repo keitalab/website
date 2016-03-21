@@ -14,7 +14,7 @@ var member = {
 var startLoadingSpinner = function() {
 	$('section.loader').css('display', 'block').height($(window).height());
 	// modifySlideshowSize();
-	$('header, section.top-image, section.main, footer').css('display', 'none');
+
 }
 // Slideshow functions
 var initSlideshow = function() {
@@ -55,19 +55,29 @@ var modifySlideshowSize = function() {
   $('section.slideshow').height(height);
 }
 
+var onLoaded = function() {
+  $('div.contents').css('display', 'block');
+  $.when(initSlideshow()).done($('div.contents').css('display', 'none'));
+}
 
 // Main stream
 // Loading
-initSlideshow();
 startLoadingSpinner();
 
+$(document).ready(function() {
+
+});
 // Loaded
 $(window).load(function() {
-  $('section.loader')
-    .fadeOut(common.fadeOutDuration, function() {
-      $('header, section.top-image, section.main, footer')
-        .fadeIn(common.fadeInDuration, function() {
-          updateSlideshow();
+
+  $.when(onLoaded())
+    .done(function() {
+      $('section.loader')
+        .fadeOut(common.fadeOutDuration, function() {
+          $('div.contents, header, section.top-image, section.main, footer')
+            .fadeIn(common.fadeInDuration, function() {
+              updateSlideshow();
+            });
         });
     });
 });
