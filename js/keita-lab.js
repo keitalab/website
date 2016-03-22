@@ -86,23 +86,33 @@ $(window).load(function() {
 $('.hamburger .hamburger-icon a').click(function() {
   if (!$('.hamburger-icon').hasClass('cross')) {
     $('section.expanded-menu')
+      .removeClass('inactive')
       .addClass('active')
-      .height($('body').height());
+      .animate({ height: '1000px' }, 500, function() {
+        $('section.top-image, section.main, footer, div>hr')
+          .hide();
+      });
     $('div.hamburger-icon')
       .addClass('cross');
   }
   else {
     $('section.expanded-menu')
-      .removeClass('active')
-      .height(0);
+      .animate({ height: 0 }, 500, function() {
+        $(this)
+          .removeClass('active')
+          .addClass('inactive');
+      });
     $('div.hamburger-icon')
       .removeClass('cross');
+    $('section.top-image, section.main, footer, div>hr')
+      .show();
   }
   return false;
 });
 
 // Window Resize
 $(window).resize(function() {
+  modifySlideshowSize();
   modifySlideshowSize();
 });
 
