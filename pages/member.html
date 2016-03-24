@@ -1,52 +1,87 @@
 {% extends "_layout.html" %}
 
 {% block main %}
-
-<div class="container">
-  <h1>Member</h1>
-    <hr>
-  <h2>Administrator</h2>
-  <div class="row">
+<section class="container">
+  <div class="headline">
+    <span class="single-byte">Member</span>
+  </div>
+  <article class="member-list">
     {% for member in members.other %}
-    <div class="profile-container col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img class="profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="image/members/{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Administrator</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
     </div>
     {% endfor %}
-  </div>
-
-  <hr>
-
-  <h2>Bachelor</h2>
-    <h3>3rd year</h3></br>
-  <div class="row">
+    {% for member in members.m1 %}
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="image/members/{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Master 1st</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for member in members.b4 %}
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="image/members/{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Bachelor 4th</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
     {% for member in members.b3 %}
-    <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <img class=" profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="image/members/{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Bachelor 3rd</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
     </div>
     {% endfor %}
-  </div>
-
-  <h3>2nd year</h3>
-  <div class="row">
     {% for member in members.b2 %}
-    <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <img class="profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="image/members/{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Bachelor 2nd</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
     </div>
     {% endfor %}
-  </div>
-
-  <h3>1st year</h3>
-  <div class="row">
-    {% for member in members.b1 %}
-    <div class="profile-container col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <img class="profile-thumbnail" src="image/members/{{ member.image }}" alt="" width="150px" height="150px" />
-      <div class="profile-name">{{ member.firstname_en }}<br>{{ member.lastname_en }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
+  </article>
+</section>
 
 {% endblock %}

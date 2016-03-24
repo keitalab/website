@@ -1,92 +1,138 @@
-$(window).load(function(){
-/*
-  var $window = $(window);
-  //smooth scroll
-  $('li.menu-element>a').smoothScroll();
+// Definitions
+var common = {
+  fadeInDuration: 800,
+  fadeOutDuration: 1000
+}
+var slideshow = {
+  fadeDuration: 800,
+  interval: 3000
+}
+var hover = {
+  FadeDuration: 500
+}
+// Loading
+var startLoadingSpinner = function() {
+	$('section.loader').css('display', 'block').height($(window).height());
+	// modifySlideshowSize();
 
-    /*
-  //sticky menu bar
-  $("header").each(function(){
-    var $menubar = $(this);
-    var menubarOffsetTop = $menubar.offset().top;
-    $window.on('scroll', function(){
-      if($window.scrollTop() > menubarOffsetTop){
-        $menubar.removeClass('no-sticky');
-        $menubar.addClass('sticky');
-      }
-      else{
-        $menubar.removeClass('sticky');
-        $menubar.addClass('no-sticky');
-      }
-    });
-    $window.trigger('scroll');
+}
+// Slideshow functions
+var initSlideshow = function() {
+  modifySlideshowSize();
+  $.each($('section.slideshow div.slideshow-item'), function(i) {
+    $('section.slideshow div.slideshow-item')
+      .eq(i)
+      .css('display', 'none');
   });
-
-  // sticky headline
-  $(".headword").each(function(){
-    var $h_word = $(this);
-    var h_wordOffsetTop = $h_word.offset().top;
-    $window.on('scroll', function(){
-      if($window.scrollTop() > h_wordOffsetTop-500){
-        $h_word.removeClass('no-sticky');
-        $h_word.addClass('sticky');
-      }
-      else{
-        $h_word.removeClass('sticky');
-        $h_word.addClass('no-sticky');
-      }
+  $('section.slideshow div.slideshow-item')
+    .eq(0)
+    .css('display', 'block')
+    .addClass('active');
+}
+var updateSlideshow = function() {
+  $('section.slideshow div.slideshow-item')
+    .eq(0)
+    .fadeIn(slideshow.fadeDuration);
+  modifySlideshowSize();
+  setInterval(function() {
+    var active = $('section.slideshow div.active');
+    var next = active.next().length?
+      active.next(): $('section.slideshow div.slideshow-item').eq(0);
+    active.addClass('fading');
+    next.addClass('fading');
+    active.fadeOut(slideshow.fadeDuration, function() {
+      active.removeClass('active');
+      active.removeClass('fading');
     });
-    $window.trigger('scroll');
-  });
-
-/*
-  // Window resize event
-  var onResize = function () {
-    if (window.innerWidth < 590) {
-      $('#menu').css('height', '120px');
-      $('div.menu-element').css('width', '70px');
-      $('div.menu-element').css('height', '50px');
-      $('div.menu-element>a').css('width', '70px');
-      $('div.menu-element>a').css('height', '50px');
-      $('div.menu-element>a').css('margin-top', '0px');
-      $('div.menu-element>a').css('font-size', '20px');
-      $('div.menu-title').css('margin-right', '100%');
-    }
-    else if (window.innerWidth < 740) {
-      $('#menu').css('height', '100px');
-      $('div.menu-element').css('width', '70px');
-      $('div.menu-element').css('height', '100px');
-      $('div.menu-element>a').css('width', '70px');
-      $('div.menu-element>a').css('height', '50px');
-      $('div.menu-element>a').css('margin-top', '35px');
-      $('div.menu-element>a').css('font-size', '20px');
-      $('div.menu-title').css('margin-right', '0px');
-    }
-    else {
-      $('#menu').css('height', '100px');
-      $('div.menu-element').css('width', '100px');
-      $('div.menu-element').css('height', '100px');
-      $('div.menu-element>a').css('width', '100px');
-      $('div.menu-element>a').css('height', '65px');
-      $('div.menu-element>a').css('margin-top', '35px');
-      $('div.menu-element>a').css('font-size', '25px');
-      $('div.menu-title').css('margin-right', '0');
-    }
-    $('.filled-video').attr('width', window.innerWidth+"px");
-  };
-  */
-  //onResize();
-  //$(window).bind("resize", onResize);
-
-  // swiper
-  var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        autoplay: 7000,
-        autoplayDisableOnInteraction: false,
-      effect: 'fade',
-        loop: true
+    next.fadeIn(slideshow.fadeDuration, function() {
+      next.addClass('active');
+      next.removeClass('fading');
     });
+  }, slideshow.interval);
+}
+var modifySlideshowSize = function() {
+  var height = $('.slideshow-item').height();
+  $('section.slideshow').height(height);
+}
+
+var onLoaded = function() {
+  $('div.contents').css('display', 'block');
+  $.when(initSlideshow()).done($('div.contents').css('display', 'none'));
+}
+
+// Main stream
+// Loading
+startLoadingSpinner();
+
+$(document).ready(function() {
+
+});
+// Loaded
+$(window).load(function() {
+
+  $.when(onLoaded())
+    .done(function() {
+      $('section.loader')
+        .fadeOut(common.fadeOutDuration, function() {
+          $('div.contents, header, section.top-image, section.main, footer')
+            .fadeIn(common.fadeInDuration, function() {
+              updateSlideshow();
+            });
+        });
+    });
+});
+
+// Header
+$('.hamburger .hamburger-icon a').click(function() {
+  if (!$('.hamburger-icon').hasClass('cross')) {
+    $('section.expanded-menu')
+      .removeClass('inactive')
+      .addClass('active')
+      .animate({ height: '1000px' }, 500, function() {
+        $('section.top-image, section.main, footer, div>hr')
+          .hide();
+      });
+    $('div.hamburger-icon')
+      .addClass('cross');
+  }
+  else {
+    $('section.expanded-menu')
+      .animate({ height: 0 }, 500, function() {
+        $(this)
+          .removeClass('active')
+          .addClass('inactive');
+      });
+    $('div.hamburger-icon')
+      .removeClass('cross');
+    $('section.top-image, section.main, footer, div>hr')
+      .show();
+  }
+  return false;
+});
+
+// Window Resize
+$(window).resize(function() {
+  modifySlideshowSize();
+  modifySlideshowSize();
+});
+
+// Hovered Images
+$('div.profile-item').hover(function() {
+  $(this)
+    .find('div.profile-filter')
+    .fadeIn(hover.FadeDuration);
+}, function() {
+  $(this)
+    .find('div.profile-filter')
+    .fadeOut(hover.FadeDuration);
+});
+
+$('div.project-item').hover(function() {
+  $(this)
+    .find('div.project-filter')
+    .fadeIn(hover.FadeDuration);
+}, function() {
+  $(this)
+    .find('div.project-filter')
+    .fadeOut(hover.FadeDuration);
 });

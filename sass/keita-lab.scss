@@ -1,5 +1,22 @@
+// Responsive
+$large-min: 769px;
+$medium-max: 768px;
+$small-max: 350px;
+
+// Size set
+$whole-margin-left-pc: 10%;
+$whole-margin-right-pc: 10%;
+$whole-width-pc: 80%;
+$whole-margin-left-sp: 4%;
+$whole-margin-right-sp: 4%;
+$whole-width-sp: 92%;
+
 /* Color set */
+$keita-lab-white: #ffffff;
+$keita-lab-darkwhite: #f0f0f0;
 $keita-lab-black: #252525;
+$keita-lab-gray: #696969;
+$keita-lab-lightgray: #bababa;
 $keita-lab-blue: #6490D3;
 $keita-lab-yellow: #EACA2A;
 $keita-lab-red: #CA3842;
@@ -8,312 +25,552 @@ $keita-lab-brown: #5C3926;
 
 /* Font family */
 
-@font-face {
-    font-family: 'YuMincho';
-    src: url('../font/YuMincho.ttc') format('ttc');
-}
-
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: thin;
-    font-weight: 200;
-    src: url('../font/NotoSansCJKjp-Thin.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: light;
-    font-weight: 300;
-    src: url('../font/NotoSansCJKjp-Light.woff') format('woff')
-
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../font/NotoSansCJKjp-DemiLight.woff')  format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../font/NotoSansCJKjp-Regular.woff')  format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../font/NotoSansCJKjp-Medium.woff') format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: bold;
-    font-weight: 800;
-    src: url('../font/NotoSansCJKjp-Bold.woff') format('woff');
-}
-@font-face {
-    font-family: 'Noto Sans Japanese';
-    font-style: normal;
-    font-weight: 1000;
-    src: url('../font/NotoSansCJKjp-Black.woff') format('woff');
-}
-@font-face {
-  font-family: 'Lato', 'Noto Sans Japanese', 'sans-serif';
-}
-
-/* Common */
+// Common
 body {
-    color: #4D4D4D;
-    
-    font-family: 'Noto Sans Japanese' sans-serif;
-    font-size: 14px;
-}
-p {
-   line-height: 200%; 
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family:  'Noto Sans Japanese',sans-serif;
-  font-size: 35px;
-}
-h1 {
-  font-weight: 800;
-  font-size: 20px;
+  // margin: 0 $whole-margin-right 0 $whole-margin-left;
   margin: 0;
   padding: 0;
-}
-h2 {
-  font-weight: 800;
-  font-size: 16px;
-}
-h3 {
-  font-weight: 300;
-  font-size: 14px;
-}
-h4 {
-  font-weight: 400;
-  font-size: 20px;
-}
-h5 {
-  font-weight: 500;
-        
-text-decoration: underline;
-    font-family:  'YuMincho',sans-serif;
-  font-size: 16px;
-}
-h6 {
-  font-weight: 300;
-  font-size: 10px;
+  background-color: $keita-lab-white;
+  font-weight: 200;
+  @media screen and (min-width: $large-min) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $medium-max) {
+    font-size: 14px;
+  }
 }
 
-/* Menu header */
-.n{ 
-    font-size: 12px;
-     margin-top:40px;
-     margin-bottom: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    background: #fff;
-    width:898px;
-    
-    .simg{
-    
-        margin-bottom: -20px;
-    
-    }
-    a{
-       color: #696969;  
-    }
-    a:hover{
-        
-     text-decoration: none;
-     color:#9A9A9A;
-     background-color:#ffffff;
-    }
-    
-    ul{
-       
-       text-align:right;
-        
-    }
-    
-    li{
-        display: inline-block;
-        margin-left: 30px;
-        
-    }
+a {
+  color: $keita-lab-gray;
+  &:hover {
+    text-decoration: none;
+  }
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
 }
-/*
-nav {
-  background: #fff;
-  width:900px;
-  left:50%;
-  margin-left:-450px;
-    
-  .menu {
+div.contents {
+  margin: 20px 0 0 0;
+  @media screen and (min-width: $large-min) {
+    header, section.top-image, section.main, footer {
+      width: $whole-width-pc;
+      max-width: 900px;
+      margin: 0px auto;
+    }
+  }
+  @media screen and (max-width: $medium-max) {
+    section.main, footer {
+      width: $whole-width-sp;
+      margin: 0px auto;
+    }
+    header {
       width: 100%;
+    }
+    section.top-image {
+      width: 100%;
+    }
+  }
+}
 
-    a {
-      color: #696969;
-      background-color: #fff;
-        
-      display: block;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight:400;
-
-      @media(max-width: 768px) {
-        padding-bottom: 2px;
+// loader
+section.loader {
+  background: $keita-lab-white;
+  z-index: 9999;
+  .loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -15px 0 0 -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 6px solid $keita-lab-lightgray;
+    border-right-color: $keita-lab-darkwhite;
+    animation: spin 1s linear 0s infinite;
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
       }
     }
+  }
 
-    .navbar-menu {
-      padding :70px 0 2px 0;
-      float: right;
-      li {
-        float: left;
+}
+
+
+span {
+  &::selection {
+    background-color: $keita-lab-lightgray;
+    color: $keita-lab-white;
+  }
+  &.single-byte {
+    letter-spacing: 0.09em;
+    font-size: 1.01em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+
+  }
+  &.double-byte {
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 1em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.light {
+    font-weight: 300;
+  }
+  &.underline {
+    text-decoration: underline;
+  }
+}
+div.headline {
+  @media screen and (min-width: $large-min) {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+  @media screen and (max-width: $medium-max) {
+    margin: 0 0 12px 0;
+    font-size: 1.3em;
+    font-weight: 200;
+  }
+}
+
+// Header
+header {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  section {
+    &.logo {
+      display: inline-block;
+      @media screen and (min-width: $large-min) {
+        width: 30%;
       }
-
-      @media(max-width: 768px) {
-        float: left;
-
-        ul {
-          margin: 0;
+      @media screen and (max-width: $medium-max) {
+        width: 30%;
+        margin: 0 0 0 $whole-margin-left-sp;
+        a {
+          img {
+            width: 175px;
+          }
         }
       }
     }
+    &.menu {
+      @media screen and (min-width: $large-min) {
+        display: inline-block;
+        text-align: right;
+        width: 69%;
+        div.menu-item {
+          display: inline-block;
+          margin: 0 0 0 30px;
+          &.left-edge {
 
-    .navbar-brand {
-      padding :50px 40px 2px 10px;
-      vertical-align: middle;
-      font-family: 'Noto Sans Japanese', sans-serif;
-      font-weight: 400;
-      font-size: 40px;
+          }
+        }
+      }
+      @media screen and (max-width: $medium-max) {
+        display: none;
+      }
+    }
+    &.hamburger {
+      @media screen and (min-width: $large-min) {
+        display: none;
+      }
+      @media screen and (max-width: $medium-max) {
+        display: inline-block;
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin: 0 $whole-margin-right-sp 0 0;
+        div.hamburger-icon {
+          display: inline-block;
+          margin: 12px 0 0 0;
+          a {
+            display: inline-block;
+            div.hamburger-container {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+              span.hamburger-stuff {
+                display: block;
+                position: absolute;
+                background: $keita-lab-lightgray;
+                width: 40px;
+                height: 4px;
+                margin: 0 0 12px 0;
+                border-radius: 3px;
+                transition: 0.5s;
+                &.hamburger-top {
+                  // -webkit-transform: -webkit-translateY(10px);
+                  top: 25px;
+                }
+                &.hamburger-middle {
+                  // -webkit-transform: -webkit-translateY(20px);
+                  top: 40px;
+                }
+                &.hamburger-bottom {
+                  // -webkit-transform: -webkit-translateY(30px);
+                  top: 55px;
+                }
+              }
+            }
+          }
+          &.cross {
+            a {
+              div.hamburger-container {
+                span.hamburger-stuff {
+                  position: absolute;
+                  top: 27px;
+                  &.hamburger-top {
+                    transform: rotate(45deg);
+                  }
+                  &.hamburger-middle {
+                    background: rgba(0, 0, 0, 0);
+                  }
+                  &.hamburger-bottom {
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.expanded-menu {
+      @media screen and (min-width: $large-min) {
+        display: none;
+      }
+      @media screen and (max-width: $medium-max) {
+        &.inactive {
+          display: block;
+          position: relative;;
+          width: 100%;
+          height: 0;
+          div.expanded-menu-list {
+            display: none;
+            div.expanded-menu-item {
+              display: none;
+            }
+          }
+        }
+        &.active {
+          display: block;
+          position: relative;;
+          z-index: 9999;
+          width: 100%;
+          background: $keita-lab-white;
+          div.expanded-menu-list {
+            display: block;
+            text-align: center;
+            div.expanded-menu-item {
+              border-bottom: solid 1px $keita-lab-lightgray;
+              a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                span {
+                  display: inline-block;
+                  color: $keita-lab-gray;
+                  font-size: 20px;
+                  line-height: 4em;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
-*/
-div.main {
-  padding: 0;
-}
 
-.swiper-container {
-  border-radius:6px;
-  width: 900px;
-  height: 400px;
-  margin-top: -10px;
-}
-
-.swiper-wrapper {
-  height: auto;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  height: auto;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-}
-
-
-/* Index.html */
-div.swiper-container {
-   max-width: none !important;
-}
-
-
-
-/*紹介文など*/
-div.container {
-  width:928px;
-  max-width: none !important;
-  margin-top: 40px;
-
-    
-  div.introduce {
-    margin-top: 15px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  div.news-container {
-    margin-top: 15px;
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-  div.contact-container {
-    margin-top: 0px;
+// About page
+section.top-image {
+  section {
+    &.slideshow {
+      margin: 0 0 50px 0;
+      div.slideshow-item {
+        img {
+          position: relative;
+          width: 100%;
+        }
+        &.fading {
+          position: relative;
+          img {
+            position: absolute;
+            width: 100%;
+            z-index: 9989
+          }
+        }
+      }
+    }
   }
 }
+section.main {
+  section {
+    margin: 50px 0 50px 0;
+    &.description {
 
-/* Member Profile */
-div.profile-container {
-  margin-bottom: 15px;
-  background-color: #fff;
-  img.profile-thumbnail {
-    border-radius:3px;
-    float: left;
-  }
-  div.profile-name {
-    margin-top: 0px;
-    margin-left: 15px;
-    margin-right: 0px;
-    font-size: 16px;
-    font-weight: 300;
-    // font-style: thin;
-    text-align: left;
-    float: left;
+    }
+    &.headline {
+
+    }
+    &.lab-theme {
+      article {
+        div.theme-description {
+          margin: 0 0 15px 0;
+        }
+        div.theme-item {
+          margin: 0 0 15px 0;
+          div.theme-item-label {
+            @media screen and (min-width: $large-min) {
+              font-size: 1.1em;
+            }
+            @media screen and (max-width: $medium-max) {
+              font-size: 1em;
+              span.theme-item-label-after {
+                display: block;
+              }
+            }
+          }
+          div.theme-item-description {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+    &.contact {
+      article {
+        &.caption {
+          div.caption-item {
+            display: inline-block;
+            @media screen and (min-width: $large-min) {
+              width: 49.5%;
+              &.caption-item-access {
+                margin: 0;
+              }
+              &.caption-item-email {
+              }
+              div.contact-label {
+                margin: 0 0 5px 0;
+                font-size: 1.1em;
+              }
+              div.contact-content {
+                font-size: 0.9em;
+              }
+            }
+            @media screen and (max-width: $medium-max) {
+              width: 100%;
+              margin: 0 0 10px 0;
+              &.caption-item-access {
+              }
+            }
+
+          }
+        }
+        &.map {
+          div.map-wrapper {
+            position: relative;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-/* Project */
-div.project-container {
- border-radius:3px;
-  width: 240px;
-  height: 250px;
-  margin: 20px 0px 20px 0px;
-  vertical-align: top;
-  img.project-thumbnail{
-    border-radius:3px;
-  }
-  .project-thumbnail-trimming {
-    width: 240px;
-    height: 135px;
-    display: block;
-    overflow: hidden;
-      }  
-  .project-thumbnail {
-    width: 240px;
-    height: auto;
-  }
-  .project-title {
-    margin-top: 10px;
-    font-family: normal;
-    font-size: 16px;
-  }
-  .project-author {
-      color:#6A6A6A;
-      margin-top: -2px;
-    font-size: 12px;
-  }
-  .project-brief {
-      
-   color:#9A9A9A;
-    margin-top: 5px;
-    font-size: 12px;
+// Member page
+section.main {
+  section {
+    &.container {
+      div.headline {
+        text-align: left;
+      }
+      text-align: center;
+      article.member-list {
+        font-size: 0;
+        div.profile-item {
+          display: inline-block;
+          position: relative;
+          width: 150px;
+          height: 150px;
+          margin: 0;
+          padding: 0;
+          @media screen and (max-width: $small-max) {
+            width: 140px;
+            height: 140px;
+          }
+          div.profile-thumbnail {
+            position: absolute;
+            top: auto;
+            left: auto;
+            width: 150px;
+            height: 150px;
+            margin: 0;
+            padding: 0;
+            @media screen and (max-width: $small-max) {
+              width: 140px;
+              height: 140px;
+            }
+            img {
+              width: 150px;
+              height: 150px;
+              @media screen and (max-width: $small-max) {
+                width: 140px;
+                height: 140px;
+              }
+            }
+          }
+          div.profile-filter {
+            text-align: left;
+            position: absolute;;
+            top: auto;
+            left: auto;
+            z-index: 9999;
+            width: 150px;
+            height: 150px;
+            margin: 0 0 0 0;
+            padding: 0;
+            vertical-align: auto;
+            background: $keita-lab-black;
+            opacity: .8;
+            @media screen and (max-width: $small-max) {
+              width: 140px;
+              height: 140px;
+            }
+            div.profile-position {
+              display: block;
+              margin: 50px 0 0 10px;
+              span {
+                font-size: 10px;
+                color: $keita-lab-white;
+              }
+            }
+            div.profile-name {
+              display: block;
+              margin: 0 0 0 10px;
+              span {
+                font-size: 12px;
+                color: $keita-lab-white;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
-    
-/* credit */
-footer {
-  div.credit {
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    vertical-align: middle;
+
+// Member page
+section.main {
+  section {
+    &.container {
+      div.headline {
+        text-align: left;
+      }
+      text-align: center;
+      article.project-list {
+        font-size: 0;
+        div.project-item {
+          display: inline-block;
+          position: relative;
+          width: 300px;
+          height: 225px;
+          margin: 0;
+          padding: 0;
+          @media screen and (max-width: $small-max) {
+            width: 200px;
+            height: 150px;
+          }
+          div.project-thumbnail {
+            position: absolute;
+            top: auto;
+            left: auto;
+            width: 300px;
+            height: 225px;
+            margin: 0;
+            padding: 0;
+            @media screen and (max-width: $small-max) {
+              width: 300px;
+              height: 150px;
+            }
+            img {
+              width: 300px;
+              height: 255px;
+              @media screen and (max-width: $small-max) {
+                width: 200px;
+                height: 150px;
+              }
+            }
+          }
+          div.project-filter {
+            text-align: left;
+            position: absolute;;
+            top: auto;
+            left: auto;
+            z-index: 9999;
+            width: 300px;
+            height: 225px;
+            margin: 0 0 0 0;
+            padding: 0;
+            vertical-align: auto;
+            background: $keita-lab-black;
+            opacity: .8;
+            @media screen and (max-width: $small-max) {
+              width: 200px;
+              height: 150px;
+            }
+            div.project-year {
+              display: block;
+              margin: 50px 0 0 15px;
+              span {
+                font-size: 10px;
+                color: $keita-lab-white;
+              }
+            }
+            div.project-title, div.project-author, div.project-brief {
+              display: block;
+              margin: 0 15px 5px 15px;
+              span {
+                font-size: 12px;
+                color: $keita-lab-white;
+              }
+            }
+            div.project-author {
+              span {
+                font-size: 10px;
+              }
+            }
+            div.project-title {
+              span {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
