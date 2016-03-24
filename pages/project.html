@@ -1,56 +1,77 @@
 {% extends "_layout.html" %}
 
 {% block main %}
-<div class="container">
-  <h1>Project</h1>
-    <hr>
-  <h2>2015</h2>
-  <div class="row">
+<section class="container">
+  <div class="headline">
+    <span class="single-byte">Project</span>
+  </div>
+  <article class="project-list">
     {% for project in projects[2015] %}
-    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-      <div class="project-container">
-        <a href="{{ project.link }}" class="project-thumbnail-trimming">
-          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="{{ project.title_ja }}"/>
-        </a>
-        <div class="project-title"><b>{{ project.title_ja }}</b></div>
-        <div class="project-author">{{ project.author_en }}</div>
-        <div class="project-brief">{{ project.brief_en }}</div>
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="image/projects/{{ project.image }}" alt="" />
+      </div>
+      <div class="project-filter" style="display:none;">
+        <div class="project-year">
+          <span class="single-byte">2015</span>
+        </div>
+        <div class="project-title">
+          <span class="single-byte">{{ project.title_en }}</span>
+        </div>
+        <div class="project-author">
+          <span class="single-byte">{{ project.author_en }}&nbsp;{{ project.lastname_en }}</span>
+        </div>
+        <div class="project-brief">
+          <span class="single-byte">{{ project.brief_en }}</span>
+        </div>
       </div>
     </div>
     {% endfor %}
-  </div>
-<hr>
-  <h2>2014</h2>
-  <div class="row">
+
     {% for project in projects[2014] %}
-    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-      <div class="project-container">
-        <a href="{{ project.link }}" class="project-thumbnail-trimming">
-          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="{{ project.title_ja }}"/>
-        </a>
-          <div class="project-title"><b>{{ project.title_ja }}</b></div>
-        <div class="project-author">{{ project.author_en }}</div>
-        <div class="project-brief">{{ project.brief_en }}</div>
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="image/projects/{{ project.image }}" alt="" />
+      </div>
+      <div class="project-filter" style="display:none;">
+        <div class="project-year">
+          <span class="single-byte">2014</span>
+        </div>
+        <div class="project-title">
+          <span class="single-byte">{{ project.title_en }}</span>
+        </div>
+        <div class="project-author">
+          <span class="single-byte">{{ project.author_en }}&nbsp;{{ project.lastname_en }}</span>
+        </div>
+        <div class="project-brief">
+          <span class="single-byte">{{ project.brief_en }}</span>
+        </div>
       </div>
     </div>
     {% endfor %}
-  </div>
-<hr>
-  <h2>2013</h2>
-  <div class="row">
+
     {% for project in projects[2013] %}
-    <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
-      <div class="project-container">
-        <a href="{{ project.link }}" class="project-thumbnail-trimming">
-          <img class="project-thumbnail" src="image/projects/{{ project.image }}" alt="{{ project.title_ja }}"/>
-        </a>
-        <div class="project-title"><b>{{ project.title_ja }}</b></div>
-        <div class="project-author">{{ project.author_en }}</div>
-        <div class="project-brief">{{ project.brief_en }}</div>
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="image/projects/{{ project.image }}" alt="" />
+      </div>
+      <div class="project-filter" style="display:none;">
+        <div class="project-year">
+          <span class="single-byte">2013</span>
+        </div>
+        <div class="project-title">
+          <span class="single-byte">{{ project.title_en }}</span>
+        </div>
+        <div class="project-author">
+          <span class="single-byte">{{ project.author_en }}&nbsp;{{ project.lastname_en }}</span>
+        </div>
+        <div class="project-brief">
+          <span class="single-byte">{{ project.brief_en }}</span>
+        </div>
       </div>
     </div>
     {% endfor %}
-  </div>
-</div>
+  </article>
+</section>
 
 {% endblock %}

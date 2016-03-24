@@ -7,8 +7,8 @@ var slideshow = {
   fadeDuration: 800,
   interval: 3000
 }
-var member = {
-  hoverFadeDuration: 500
+var hover = {
+  FadeDuration: 500
 }
 // Loading
 var startLoadingSpinner = function() {
@@ -116,13 +116,23 @@ $(window).resize(function() {
   modifySlideshowSize();
 });
 
-// Hovered Member Images
+// Hovered Images
 $('div.profile-item').hover(function() {
   $(this)
     .find('div.profile-filter')
-    .fadeIn(member.hoverFadeDuration);
+    .fadeIn(hover.FadeDuration);
 }, function() {
   $(this)
     .find('div.profile-filter')
-    .fadeOut(member.hoverFadeDuration);
+    .fadeOut(hover.FadeDuration);
+});
+
+$('div.project-item').hover(function() {
+  $(this)
+    .find('div.project-filter')
+    .fadeIn(hover.FadeDuration);
+}, function() {
+  $(this)
+    .find('div.project-filter')
+    .fadeOut(hover.FadeDuration);
 });
