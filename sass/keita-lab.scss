@@ -56,17 +56,18 @@ a {
   }
 }
 div.contents {
+  margin: 20px 0 0 0;
   @media screen and (min-width: $large-min) {
     header, section.top-image, section.main, footer {
       width: $whole-width-pc;
       max-width: 900px;
-      margin: 0 auto;
+      margin: 0px auto;
     }
   }
   @media screen and (max-width: $medium-max) {
     section.main, footer {
       width: $whole-width-sp;
-      margin: 0 auto;
+      margin: 0px auto;
     }
     header {
       width: 100%;
@@ -219,15 +220,15 @@ header {
                 transition: 0.5s;
                 &.hamburger-top {
                   // -webkit-transform: -webkit-translateY(10px);
-                  top: 10px;
+                  top: 25px;
                 }
                 &.hamburger-middle {
                   // -webkit-transform: -webkit-translateY(20px);
-                  top: 25px;
+                  top: 40px;
                 }
                 &.hamburger-bottom {
                   // -webkit-transform: -webkit-translateY(30px);
-                  top: 40px;
+                  top: 55px;
                 }
               }
             }

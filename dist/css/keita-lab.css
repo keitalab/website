@@ -23,20 +23,21 @@ a {
   a:active {
     text-decoration: none; }
 
-@media screen and (min-width: 769px) {
-  div.contents header, div.contents section.top-image, div.contents section.main, div.contents footer {
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto; } }
-
-@media screen and (max-width: 768px) {
-  div.contents section.main, div.contents footer {
-    width: 92%;
-    margin: 0 auto; }
-  div.contents header {
-    width: 100%; }
-  div.contents section.top-image {
-    width: 100%; } }
+div.contents {
+  margin: 20px 0 0 0; }
+  @media screen and (min-width: 769px) {
+    div.contents header, div.contents section.top-image, div.contents section.main, div.contents footer {
+      width: 80%;
+      max-width: 900px;
+      margin: 0px auto; } }
+  @media screen and (max-width: 768px) {
+    div.contents section.main, div.contents footer {
+      width: 92%;
+      margin: 0px auto; }
+    div.contents header {
+      width: 100%; }
+    div.contents section.top-image {
+      width: 100%; } }
 
 section.loader {
   background: #ffffff;
@@ -154,11 +155,11 @@ header {
               border-radius: 3px;
               transition: 0.5s; }
               header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
-                top: 10px; }
-              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
                 top: 25px; }
-              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
                 top: 40px; }
+              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+                top: 55px; }
         header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff {
           position: absolute;
           top: 27px; }
