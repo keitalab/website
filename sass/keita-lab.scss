@@ -483,7 +483,7 @@ section.main {
   }
 }
 
-// Member page
+// Project page
 section.main {
   section {
     &.container {
@@ -493,7 +493,9 @@ section.main {
       text-align: center;
       article.project-list {
         font-size: 0;
+        text-align: center;
         div.project-item {
+          text-align: left;
           display: inline-block;
           position: relative;
           width: 300px;
@@ -513,12 +515,12 @@ section.main {
             margin: 0;
             padding: 0;
             @media screen and (max-width: $small-max) {
-              width: 300px;
+              width: 200px;
               height: 150px;
             }
             img {
               width: 300px;
-              height: 255px;
+              height: 225px;
               @media screen and (max-width: $small-max) {
                 width: 200px;
                 height: 150px;
@@ -545,6 +547,9 @@ section.main {
             div.project-year {
               display: block;
               margin: 50px 0 0 15px;
+              @media screen and (max-width: $small-max) {
+                margin-top: 5px;
+              }
               span {
                 font-size: 10px;
                 color: $keita-lab-white;
