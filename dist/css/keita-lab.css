@@ -325,8 +325,10 @@ section.main section.container {
   section.main section.container div.headline {
     text-align: left; }
   section.main section.container article.project-list {
-    font-size: 0; }
+    font-size: 0;
+    text-align: center; }
     section.main section.container article.project-list div.project-item {
+      text-align: left;
       display: inline-block;
       position: relative;
       width: 300px;
@@ -347,11 +349,11 @@ section.main section.container {
         padding: 0; }
         @media screen and (max-width: 350px) {
           section.main section.container article.project-list div.project-item div.project-thumbnail {
-            width: 300px;
+            width: 200px;
             height: 150px; } }
         section.main section.container article.project-list div.project-item div.project-thumbnail img {
           width: 300px;
-          height: 255px; }
+          height: 225px; }
           @media screen and (max-width: 350px) {
             section.main section.container article.project-list div.project-item div.project-thumbnail img {
               width: 200px;
@@ -376,6 +378,9 @@ section.main section.container {
         section.main section.container article.project-list div.project-item div.project-filter div.project-year {
           display: block;
           margin: 50px 0 0 15px; }
+          @media screen and (max-width: 350px) {
+            section.main section.container article.project-list div.project-item div.project-filter div.project-year {
+              margin-top: 5px; } }
           section.main section.container article.project-list div.project-item div.project-filter div.project-year span {
             font-size: 10px;
             color: #ffffff; }
