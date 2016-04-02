@@ -5,6 +5,7 @@ var del = require('del')
 var sass = require('gulp-sass')
 var data = require('gulp-data')
 var nunjucksRender = require('gulp-nunjucks-render')
+var browserSync = require('browser-sync');
 var dataset = require('./lab-data.json')
 
 gulp.task('clean', function () {
@@ -74,5 +75,15 @@ gulp.task('assets:watch', function () {
               './image/**/*'], ['assets'])
 })
 
+gulp.task('browserSync', function () {
+  browserSync({
+    files: "dist/**/*",
+    server: {
+      baseDir: 'dist'
+    }
+  })
+})
+
 gulp.task('build', ['clean', 'nunjucks', 'js', 'sass', 'assets'])
 gulp.task('watch', ['build', 'nunjucks:watch', 'js:watch', 'sass:watch', 'assets:watch'])
+gulp.task('dev', ['watch', 'browserSync'])
