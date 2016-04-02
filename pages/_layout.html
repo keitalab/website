@@ -28,11 +28,11 @@
     <header>
       {% include "_header.html" %}
     </header>
-    <section class="top-image">
-      {% block topimage %}
-      {% endblock %}
-    </section>
     <section class="main">
+      <section class="top-image">
+        {% block topimage %}
+        {% endblock %}
+      </section>
       {% block main %}
       {% endblock %}
     </section>

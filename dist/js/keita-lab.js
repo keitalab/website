@@ -1,7 +1,8 @@
 // Definitions
 var common = {
   fadeInDuration: 800,
-  fadeOutDuration: 1000
+  fadeOutDuration: 1000,
+  breakpoint: 768
 }
 var slideshow = {
   fadeDuration: 800,
@@ -128,10 +129,16 @@ $('div.profile-item').hover(function() {
 });
 
 $('div.project-item').hover(function() {
+  if ($(window).width() <= common.breakpoint) {
+    return;
+  }
   $(this)
     .find('div.project-filter')
     .fadeIn(hover.FadeDuration);
 }, function() {
+  if ($(window).width() <= common.breakpoint) {
+    return;
+  }
   $(this)
     .find('div.project-filter')
     .fadeOut(hover.FadeDuration);

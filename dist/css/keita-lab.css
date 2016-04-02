@@ -1,4 +1,5 @@
 /* Color set */
+/* z index */
 /* Font family */
 body {
   margin: 0;
@@ -11,6 +12,136 @@ body {
   @media screen and (max-width: 768px) {
     body {
       font-size: 14px; } }
+  body div.contents {
+    margin: 20px 0 0 0; }
+    @media screen and (min-width: 769px) {
+      body div.contents header, body div.contents section.main, body div.contents footer {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto; }
+      body div.contents header div.header {
+        width: 88%;
+        margin: 0 auto; }
+      body div.contents section.main > section {
+        width: 88%;
+        margin: 0 auto; }
+        body div.contents section.main > section.top-image {
+          width: 90%; } }
+    @media screen and (max-width: 768px) {
+      body div.contents header, body div.contents section.main, body div.contents footer {
+        width: 100%;
+        margin: 0px auto; }
+      body div.contents header div.header {
+        width: 90%;
+        margin: 0 auto; }
+      body div.contents section.main > section {
+        width: 90%;
+        margin: 0 auto; }
+        body div.contents section.main > section.top-image {
+          width: 100%; } }
+  body header {
+    height: 100px;
+    margin: 0 auto;
+    padding: 0; }
+    body header div.header section.logo {
+      display: inline-block; }
+      @media screen and (min-width: 769px) {
+        body header div.header section.logo {
+          width: 30%; } }
+      @media screen and (max-width: 768px) {
+        body header div.header section.logo {
+          width: 30%;
+          margin: 0; }
+          body header div.header section.logo a img {
+            width: 175px; } }
+    @media screen and (min-width: 769px) {
+      body header div.header section.menu {
+        display: inline-block;
+        text-align: right;
+        width: 69%; }
+        body header div.header section.menu div.menu-item {
+          display: inline-block;
+          margin: 0 0 0 30px; } }
+    @media screen and (max-width: 768px) {
+      body header div.header section.menu {
+        display: none; } }
+    @media screen and (min-width: 769px) {
+      body header div.header section.hamburger {
+        display: none; } }
+    @media screen and (max-width: 768px) {
+      body header div.header section.hamburger {
+        display: inline-block;
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin: 0; }
+        body header div.header section.hamburger div.hamburger-icon {
+          display: inline-block;
+          margin: 12px 0 0 0; }
+          body header div.header section.hamburger div.hamburger-icon a {
+            display: inline-block; }
+            body header div.header section.hamburger div.hamburger-icon a div.hamburger-container {
+              display: inline-block;
+              width: 40px;
+              height: 40px; }
+              body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff {
+                display: block;
+                position: absolute;
+                background: #bababa;
+                width: 40px;
+                height: 4px;
+                margin: 0 0 12px 0;
+                border-radius: 3px;
+                transition: 0.5s; }
+                body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
+                  top: 25px; }
+                body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
+                  top: 40px; }
+                body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+                  top: 55px; }
+          body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff {
+            position: absolute;
+            top: 27px; }
+            body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-top {
+              transform: rotate(45deg); }
+            body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-middle {
+              background: transparent; }
+            body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg); } }
+    @media screen and (min-width: 769px) {
+      body header div.header section.expanded-menu {
+        display: none; } }
+    @media screen and (max-width: 768px) {
+      body header div.header section.expanded-menu.inactive {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 0; }
+        body header div.header section.expanded-menu.inactive div.expanded-menu-list {
+          display: none; }
+          body header div.header section.expanded-menu.inactive div.expanded-menu-list div.expanded-menu-item {
+            display: none; }
+      body header div.header section.expanded-menu.active {
+        display: block;
+        position: relative;
+        z-index: 998;
+        width: 100%;
+        background: #ffffff; }
+        body header div.header section.expanded-menu.active div.expanded-menu-list {
+          display: block;
+          text-align: center; }
+          body header div.header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item {
+            border-bottom: solid 1px #bababa; }
+            body header div.header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a {
+              display: inline-block;
+              width: 100%;
+              height: 100%; }
+              body header div.header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a span {
+                display: inline-block;
+                color: #696969;
+                font-size: 20px;
+                line-height: 4em; } }
 
 a {
   color: #696969; }
@@ -23,25 +154,9 @@ a {
   a:active {
     text-decoration: none; }
 
-div.contents {
-  margin: 20px 0 0 0; }
-  @media screen and (min-width: 769px) {
-    div.contents header, div.contents section.top-image, div.contents section.main, div.contents footer {
-      width: 80%;
-      max-width: 900px;
-      margin: 0px auto; } }
-  @media screen and (max-width: 768px) {
-    div.contents section.main, div.contents footer {
-      width: 92%;
-      margin: 0px auto; }
-    div.contents header {
-      width: 100%; }
-    div.contents section.top-image {
-      width: 100%; } }
-
 section.loader {
   background: #ffffff;
-  z-index: 9999; }
+  z-index: 999; }
   section.loader .loading-spinner {
     position: absolute;
     top: 50%;
@@ -100,110 +215,6 @@ span.underline {
     font-size: 1.3em;
     font-weight: 200; } }
 
-header {
-  width: 100%;
-  height: 100px;
-  padding: 0; }
-  header section.logo {
-    display: inline-block; }
-    @media screen and (min-width: 769px) {
-      header section.logo {
-        width: 30%; } }
-    @media screen and (max-width: 768px) {
-      header section.logo {
-        width: 30%;
-        margin: 0 0 0 4%; }
-        header section.logo a img {
-          width: 175px; } }
-  @media screen and (min-width: 769px) {
-    header section.menu {
-      display: inline-block;
-      text-align: right;
-      width: 69%; }
-      header section.menu div.menu-item {
-        display: inline-block;
-        margin: 0 0 0 30px; } }
-  @media screen and (max-width: 768px) {
-    header section.menu {
-      display: none; } }
-  @media screen and (min-width: 769px) {
-    header section.hamburger {
-      display: none; } }
-  @media screen and (max-width: 768px) {
-    header section.hamburger {
-      display: inline-block;
-      float: right;
-      width: 40px;
-      height: 40px;
-      margin: 0 4% 0 0; }
-      header section.hamburger div.hamburger-icon {
-        display: inline-block;
-        margin: 12px 0 0 0; }
-        header section.hamburger div.hamburger-icon a {
-          display: inline-block; }
-          header section.hamburger div.hamburger-icon a div.hamburger-container {
-            display: inline-block;
-            width: 40px;
-            height: 40px; }
-            header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff {
-              display: block;
-              position: absolute;
-              background: #bababa;
-              width: 40px;
-              height: 4px;
-              margin: 0 0 12px 0;
-              border-radius: 3px;
-              transition: 0.5s; }
-              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
-                top: 25px; }
-              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
-                top: 40px; }
-              header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
-                top: 55px; }
-        header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff {
-          position: absolute;
-          top: 27px; }
-          header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-top {
-            transform: rotate(45deg); }
-          header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-middle {
-            background: transparent; }
-          header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
-            transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg); } }
-  @media screen and (min-width: 769px) {
-    header section.expanded-menu {
-      display: none; } }
-  @media screen and (max-width: 768px) {
-    header section.expanded-menu.inactive {
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 0; }
-      header section.expanded-menu.inactive div.expanded-menu-list {
-        display: none; }
-        header section.expanded-menu.inactive div.expanded-menu-list div.expanded-menu-item {
-          display: none; }
-    header section.expanded-menu.active {
-      display: block;
-      position: relative;
-      z-index: 9999;
-      width: 100%;
-      background: #ffffff; }
-      header section.expanded-menu.active div.expanded-menu-list {
-        display: block;
-        text-align: center; }
-        header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item {
-          border-bottom: solid 1px #bababa; }
-          header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a {
-            display: inline-block;
-            width: 100%;
-            height: 100%; }
-            header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a span {
-              display: inline-block;
-              color: #696969;
-              font-size: 20px;
-              line-height: 4em; } }
-
 section.top-image section.slideshow {
   margin: 0 0 50px 0; }
   section.top-image section.slideshow div.slideshow-item img {
@@ -214,10 +225,11 @@ section.top-image section.slideshow {
     section.top-image section.slideshow div.slideshow-item.fading img {
       position: absolute;
       width: 100%;
-      z-index: 9989; }
+      z-index: 997; }
 
 section.main section {
-  margin: 50px 0 50px 0; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   section.main section.lab-theme article div.theme-description {
     margin: 0 0 15px 0; }
   section.main section.lab-theme article div.theme-item {
@@ -254,143 +266,218 @@ section.main section {
     section.main section.contact article.map div.map-wrapper img {
       width: 100%; }
 
-section.main section.container {
-  text-align: center; }
-  section.main section.container div.headline {
-    text-align: left; }
-  section.main section.container article.member-list {
-    font-size: 0; }
-    section.main section.container article.member-list div.profile-item {
-      display: inline-block;
-      position: relative;
+section.main section.container div.headline {
+  text-align: left; }
+
+section.main section.container article.member-list {
+  width: auto;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: left; }
+  @media screen and (min-width: 769px) {
+    section.main section.container article.member-list {
+      width: 600px; } }
+  @media screen and (min-width: 938px) {
+    section.main section.container article.member-list {
+      width: 750px; } }
+  section.main section.container article.member-list div.profile-item {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0; }
+    @media screen and (max-width: 380px) {
+      section.main section.container article.member-list div.profile-item {
+        width: 140px;
+        height: 140px; } }
+    section.main section.container article.member-list div.profile-item div.profile-thumbnail {
+      position: absolute;
+      top: auto;
+      left: auto;
       width: 150px;
       height: 150px;
       margin: 0;
       padding: 0; }
-      @media screen and (max-width: 350px) {
-        section.main section.container article.member-list div.profile-item {
+      @media screen and (max-width: 380px) {
+        section.main section.container article.member-list div.profile-item div.profile-thumbnail {
           width: 140px;
           height: 140px; } }
-      section.main section.container article.member-list div.profile-item div.profile-thumbnail {
-        position: absolute;
-        top: auto;
-        left: auto;
+      section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
         width: 150px;
-        height: 150px;
-        margin: 0;
-        padding: 0; }
-        @media screen and (max-width: 350px) {
-          section.main section.container article.member-list div.profile-item div.profile-thumbnail {
+        height: 150px; }
+        @media screen and (max-width: 380px) {
+          section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
             width: 140px;
             height: 140px; } }
-        section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
-          width: 150px;
-          height: 150px; }
-          @media screen and (max-width: 350px) {
-            section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
-              width: 140px;
-              height: 140px; } }
-      section.main section.container article.member-list div.profile-item div.profile-filter {
-        text-align: left;
-        position: absolute;
-        top: auto;
-        left: auto;
-        z-index: 9999;
-        width: 150px;
-        height: 150px;
-        margin: 0 0 0 0;
-        padding: 0;
-        vertical-align: auto;
-        background: #252525;
-        opacity: .8; }
-        @media screen and (max-width: 350px) {
-          section.main section.container article.member-list div.profile-item div.profile-filter {
-            width: 140px;
-            height: 140px; } }
-        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position {
-          display: block;
-          margin: 50px 0 0 10px; }
-          section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position span {
-            font-size: 10px;
-            color: #ffffff; }
-        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name {
-          display: block;
-          margin: 0 0 0 10px; }
-          section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name span {
-            font-size: 12px;
-            color: #ffffff; }
+    section.main section.container article.member-list div.profile-item div.profile-filter {
+      text-align: left;
+      position: absolute;
+      top: auto;
+      left: auto;
+      z-index: 997;
+      width: 150px;
+      height: 150px;
+      margin: 0 0 0 0;
+      padding: 0;
+      vertical-align: auto;
+      background: #252525;
+      opacity: .8; }
+      @media screen and (max-width: 380px) {
+        section.main section.container article.member-list div.profile-item div.profile-filter {
+          width: 140px;
+          height: 140px; } }
+      section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position {
+        display: block;
+        margin: 50px 0 0 10px; }
+        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position span {
+          font-size: 10px;
+          color: #ffffff; }
+      section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name {
+        display: block;
+        margin: 0 0 0 10px; }
+        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name span {
+          font-size: 12px;
+          color: #ffffff; }
 
 section.main section.container {
   text-align: center; }
   section.main section.container div.headline {
     text-align: left; }
   section.main section.container article.project-list {
+    width: auto;
+    margin: 0 auto;
     font-size: 0;
-    text-align: center; }
+    text-align: left; }
+    @media screen and (max-width: 900px) {
+      section.main section.container article.project-list {
+        width: 680px; } }
+    @media screen and (max-width: 768px) {
+      section.main section.container article.project-list {
+        width: 340px; } }
+    @media screen and (max-width: 380px) {
+      section.main section.container article.project-list {
+        width: 280px; } }
     section.main section.container article.project-list div.project-item {
       text-align: left;
       display: inline-block;
       position: relative;
-      width: 300px;
-      height: 225px;
+      width: 264px;
+      height: 198px;
       margin: 0;
       padding: 0; }
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 900px) {
         section.main section.container article.project-list div.project-item {
-          width: 200px;
-          height: 150px; } }
+          width: 340px;
+          height: 255px; } }
+      @media screen and (max-width: 768px) {
+        section.main section.container article.project-list div.project-item {
+          width: 340px;
+          height: 255px;
+          margin-bottom: 100px; } }
+      @media screen and (max-width: 380px) {
+        section.main section.container article.project-list div.project-item {
+          width: 280px;
+          height: 210px; } }
       section.main section.container article.project-list div.project-item div.project-thumbnail {
         position: absolute;
         top: auto;
         left: auto;
-        width: 300px;
-        height: 225px;
+        width: 264px;
+        height: 198px;
         margin: 0;
         padding: 0; }
-        @media screen and (max-width: 350px) {
+        @media screen and (max-width: 900px) {
           section.main section.container article.project-list div.project-item div.project-thumbnail {
-            width: 200px;
-            height: 150px; } }
+            width: 340px;
+            height: 255px; } }
+        @media screen and (max-width: 768px) {
+          section.main section.container article.project-list div.project-item div.project-thumbnail {
+            width: 340px;
+            height: 255px; } }
+        @media screen and (max-width: 380px) {
+          section.main section.container article.project-list div.project-item div.project-thumbnail {
+            width: 280px;
+            height: 210px; } }
         section.main section.container article.project-list div.project-item div.project-thumbnail img {
-          width: 300px;
-          height: 225px; }
-          @media screen and (max-width: 350px) {
+          width: 264px;
+          height: 198px; }
+          @media screen and (max-width: 900px) {
             section.main section.container article.project-list div.project-item div.project-thumbnail img {
-              width: 200px;
-              height: 150px; } }
+              width: 340px;
+              height: 255px; } }
+          @media screen and (max-width: 768px) {
+            section.main section.container article.project-list div.project-item div.project-thumbnail img {
+              width: 340px;
+              height: 255px; } }
+          @media screen and (max-width: 380px) {
+            section.main section.container article.project-list div.project-item div.project-thumbnail img {
+              width: 280px;
+              height: 210px; } }
       section.main section.container article.project-list div.project-item div.project-filter {
         text-align: left;
         position: absolute;
         top: auto;
         left: auto;
-        z-index: 9999;
-        width: 300px;
-        height: 225px;
+        z-index: 997;
+        width: 264px;
+        height: 198px;
         margin: 0 0 0 0;
         padding: 0;
         vertical-align: auto;
         background: #252525;
         opacity: .8; }
-        @media screen and (max-width: 350px) {
+        @media screen and (max-width: 900px) {
           section.main section.container article.project-list div.project-item div.project-filter {
-            width: 200px;
-            height: 150px; } }
+            width: 340px;
+            height: 255px; } }
+        @media screen and (max-width: 768px) {
+          section.main section.container article.project-list div.project-item div.project-filter {
+            display: inline-block !important;
+            height: 100px;
+            margin-top: 255px;
+            margin-bottom: 10px;
+            background: transparent; } }
+        @media screen and (max-width: 380px) {
+          section.main section.container article.project-list div.project-item div.project-filter {
+            width: 280px;
+            height: 210px;
+            margin-top: 210px; } }
         section.main section.container article.project-list div.project-item div.project-filter div.project-year {
           display: block;
           margin: 50px 0 0 15px; }
-          @media screen and (max-width: 350px) {
+          @media screen and (max-width: 768px) {
             section.main section.container article.project-list div.project-item div.project-filter div.project-year {
-              margin-top: 5px; } }
+              display: inline-block;
+              margin: 20px 0 0 20px; } }
+          @media screen and (max-width: 768px) {
+            section.main section.container article.project-list div.project-item div.project-filter div.project-year {
+              margin: 10px 0 0 20px; } }
           section.main section.container article.project-list div.project-item div.project-filter div.project-year span {
             font-size: 10px;
             color: #ffffff; }
+            @media screen and (max-width: 768px) {
+              section.main section.container article.project-list div.project-item div.project-filter div.project-year span {
+                color: #252525; } }
         section.main section.container article.project-list div.project-item div.project-filter div.project-title, section.main section.container article.project-list div.project-item div.project-filter div.project-author, section.main section.container article.project-list div.project-item div.project-filter div.project-brief {
           display: block;
           margin: 0 15px 5px 15px; }
           section.main section.container article.project-list div.project-item div.project-filter div.project-title span, section.main section.container article.project-list div.project-item div.project-filter div.project-author span, section.main section.container article.project-list div.project-item div.project-filter div.project-brief span {
             font-size: 12px;
             color: #ffffff; }
+            @media screen and (max-width: 768px) {
+              section.main section.container article.project-list div.project-item div.project-filter div.project-title span, section.main section.container article.project-list div.project-item div.project-filter div.project-author span, section.main section.container article.project-list div.project-item div.project-filter div.project-brief span {
+                color: #252525 !important; } }
+        @media screen and (max-width: 768px) {
+          section.main section.container article.project-list div.project-item div.project-filter div.project-author {
+            display: inline-block; } }
         section.main section.container article.project-list div.project-item div.project-filter div.project-author span {
           font-size: 10px; }
+        @media screen and (max-width: 768px) {
+          section.main section.container article.project-list div.project-item div.project-filter div.project-title {
+            display: inline-block; } }
         section.main section.container article.project-list div.project-item div.project-filter div.project-title span {
           font-size: 16px; }
+        @media screen and (max-width: 768px) {
+          section.main section.container article.project-list div.project-item div.project-filter div.project-brief {
+            margin: 0 15px 5px 20px; } }
