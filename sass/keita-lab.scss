@@ -65,7 +65,7 @@ body {
         margin-right: auto;
       }
       header {
-        div.header {
+        section.header {
           width: 88%;
           margin: 0 auto;
         }
@@ -86,7 +86,7 @@ body {
         margin: 0px auto;
       }
       header {
-        div.header {
+        section.header {
           width: 90%;
           margin: 0 auto;
         }
@@ -107,98 +107,100 @@ body {
     height: 100px;
     margin: 0 auto;
     padding: 0;
-    div.header {
-      section {
-        &.logo {
-          display: inline-block;
-          @media screen and (min-width: $large-min) {
-            width: 30%;
-          }
-          @media screen and (max-width: $medium-max) {
-            width: 30%;
-            margin: 0;
-            a {
-              img {
-                width: 175px;
-              }
-            }
-          }
-        }
-        &.menu {
-          @media screen and (min-width: $large-min) {
+    section {
+      &.header {
+        div {
+          &.logo {
             display: inline-block;
-            text-align: right;
-            width: 69%;
-            div.menu-item {
-              display: inline-block;
-              margin: 0 0 0 30px;
-              &.left-edge {
-
-              }
+            @media screen and (min-width: $large-min) {
+              width: 30%;
             }
-          }
-          @media screen and (max-width: $medium-max) {
-            display: none;
-          }
-        }
-        &.hamburger {
-          @media screen and (min-width: $large-min) {
-            display: none;
-          }
-          @media screen and (max-width: $medium-max) {
-            display: inline-block;
-            float: right;
-            width: 40px;
-            height: 40px;
-            margin: 0;
-            div.hamburger-icon {
-              display: inline-block;
-              margin: 12px 0 0 0;
+            @media screen and (max-width: $medium-max) {
+              width: 30%;
+              margin: 0;
               a {
-                display: inline-block;
-                div.hamburger-container {
-                  display: inline-block;
-                  width: 40px;
-                  height: 40px;
-                  span.hamburger-stuff {
-                    display: block;
-                    position: absolute;
-                    background: $keita-lab-lightgray;
-                    width: 40px;
-                    height: 4px;
-                    margin: 0 0 12px 0;
-                    border-radius: 3px;
-                    transition: 0.5s;
-                    &.hamburger-top {
-                      // -webkit-transform: -webkit-translateY(10px);
-                      top: 25px;
-                    }
-                    &.hamburger-middle {
-                      // -webkit-transform: -webkit-translateY(20px);
-                      top: 40px;
-                    }
-                    &.hamburger-bottom {
-                      // -webkit-transform: -webkit-translateY(30px);
-                      top: 55px;
-                    }
-                  }
+                img {
+                  width: 175px;
                 }
               }
-              &.cross {
+            }
+          }
+          &.menu {
+            @media screen and (min-width: $large-min) {
+              display: inline-block;
+              text-align: right;
+              width: 69%;
+              div.menu-item {
+                display: inline-block;
+                margin: 0 0 0 30px;
+                &.left-edge {
+
+                }
+              }
+            }
+            @media screen and (max-width: $medium-max) {
+              display: none;
+            }
+          }
+          &.hamburger {
+            @media screen and (min-width: $large-min) {
+              display: none;
+            }
+            @media screen and (max-width: $medium-max) {
+              display: inline-block;
+              float: right;
+              width: 40px;
+              height: 40px;
+              margin: 0;
+              div.hamburger-icon {
+                display: inline-block;
+                margin: 12px 0 0 0;
                 a {
+                  display: inline-block;
                   div.hamburger-container {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
                     span.hamburger-stuff {
+                      display: block;
                       position: absolute;
-                      top: 27px;
+                      background: $keita-lab-lightgray;
+                      width: 40px;
+                      height: 4px;
+                      margin: 0 0 12px 0;
+                      border-radius: 3px;
+                      transition: 0.5s;
                       &.hamburger-top {
-                        transform: rotate(45deg);
+                        // -webkit-transform: -webkit-translateY(10px);
+                        top: 25px;
                       }
                       &.hamburger-middle {
-                        background: rgba(0, 0, 0, 0);
+                        // -webkit-transform: -webkit-translateY(20px);
+                        top: 40px;
                       }
                       &.hamburger-bottom {
-                        transform: rotate(-45deg);
-                        -webkit-transform: rotate(-45deg);
+                        // -webkit-transform: -webkit-translateY(30px);
+                        top: 55px;
+                      }
+                    }
+                  }
+                }
+                &.cross {
+                  a {
+                    div.hamburger-container {
+                      span.hamburger-stuff {
+                        position: absolute;
+                        top: 27px;
+                        &.hamburger-top {
+                          transform: rotate(45deg);
+                        }
+                        &.hamburger-middle {
+                          background: rgba(0, 0, 0, 0);
+                        }
+                        &.hamburger-bottom {
+                          transform: rotate(-45deg);
+                          -webkit-transform: rotate(-45deg);
+                        }
                       }
                     }
                   }
@@ -207,44 +209,44 @@ body {
             }
           }
         }
-        &.expanded-menu {
-          @media screen and (min-width: $large-min) {
-            display: none;
-          }
-          @media screen and (max-width: $medium-max) {
-            &.inactive {
-              display: block;
-              position: relative;;
-              width: 100%;
-              height: 0;
-              div.expanded-menu-list {
+      }
+      &.expanded-menu {
+        @media screen and (min-width: $large-min) {
+          display: none;
+        }
+        @media screen and (max-width: $medium-max) {
+          &.inactive {
+            display: block;
+            position: relative;;
+            width: 100%;
+            height: 0;
+            div.expanded-menu-list {
+              display: none;
+              div.expanded-menu-item {
                 display: none;
-                div.expanded-menu-item {
-                  display: none;
-                }
               }
             }
-            &.active {
+          }
+          &.active {
+            display: block;
+            position: relative;;
+            z-index: $z-expand-menu;
+            width: 100%;
+            background: $keita-lab-white;
+            div.expanded-menu-list {
               display: block;
-              position: relative;;
-              z-index: $z-expand-menu;
-              width: 100%;
-              background: $keita-lab-white;
-              div.expanded-menu-list {
-                display: block;
-                text-align: center;
-                div.expanded-menu-item {
-                  border-bottom: solid 1px $keita-lab-lightgray;
-                  a {
+              text-align: center;
+              div.expanded-menu-item {
+                border-bottom: solid 1px $keita-lab-lightgray;
+                a {
+                  display: inline-block;
+                  width: 100%;
+                  height: 100%;
+                  span {
                     display: inline-block;
-                    width: 100%;
-                    height: 100%;
-                    span {
-                      display: inline-block;
-                      color: $keita-lab-gray;
-                      font-size: 20px;
-                      line-height: 4em;
-                    }
+                    color: $keita-lab-gray;
+                    font-size: 20px;
+                    line-height: 4em;
                   }
                 }
               }

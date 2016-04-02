@@ -19,7 +19,7 @@ body {
         max-width: 900px;
         margin-left: auto;
         margin-right: auto; }
-      body div.contents header div.header {
+      body div.contents header section.header {
         width: 88%;
         margin: 0 auto; }
       body div.contents section.main > section {
@@ -31,7 +31,7 @@ body {
       body div.contents header, body div.contents section.main, body div.contents footer {
         width: 100%;
         margin: 0px auto; }
-      body div.contents header div.header {
+      body div.contents header section.header {
         width: 90%;
         margin: 0 auto; }
       body div.contents section.main > section {
@@ -43,48 +43,48 @@ body {
     height: 100px;
     margin: 0 auto;
     padding: 0; }
-    body header div.header section.logo {
+    body header section.header div.logo {
       display: inline-block; }
       @media screen and (min-width: 769px) {
-        body header div.header section.logo {
+        body header section.header div.logo {
           width: 30%; } }
       @media screen and (max-width: 768px) {
-        body header div.header section.logo {
+        body header section.header div.logo {
           width: 30%;
           margin: 0; }
-          body header div.header section.logo a img {
+          body header section.header div.logo a img {
             width: 175px; } }
     @media screen and (min-width: 769px) {
-      body header div.header section.menu {
+      body header section.header div.menu {
         display: inline-block;
         text-align: right;
         width: 69%; }
-        body header div.header section.menu div.menu-item {
+        body header section.header div.menu div.menu-item {
           display: inline-block;
           margin: 0 0 0 30px; } }
     @media screen and (max-width: 768px) {
-      body header div.header section.menu {
+      body header section.header div.menu {
         display: none; } }
     @media screen and (min-width: 769px) {
-      body header div.header section.hamburger {
+      body header section.header div.hamburger {
         display: none; } }
     @media screen and (max-width: 768px) {
-      body header div.header section.hamburger {
+      body header section.header div.hamburger {
         display: inline-block;
         float: right;
         width: 40px;
         height: 40px;
         margin: 0; }
-        body header div.header section.hamburger div.hamburger-icon {
+        body header section.header div.hamburger div.hamburger-icon {
           display: inline-block;
           margin: 12px 0 0 0; }
-          body header div.header section.hamburger div.hamburger-icon a {
+          body header section.header div.hamburger div.hamburger-icon a {
             display: inline-block; }
-            body header div.header section.hamburger div.hamburger-icon a div.hamburger-container {
+            body header section.header div.hamburger div.hamburger-icon a div.hamburger-container {
               display: inline-block;
               width: 40px;
               height: 40px; }
-              body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff {
+              body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff {
                 display: block;
                 position: absolute;
                 background: #bababa;
@@ -93,51 +93,51 @@ body {
                 margin: 0 0 12px 0;
                 border-radius: 3px;
                 transition: 0.5s; }
-                body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
+                body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
                   top: 25px; }
-                body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
+                body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
                   top: 40px; }
-                body header div.header section.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+                body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
                   top: 55px; }
-          body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff {
+          body header section.header div.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff {
             position: absolute;
             top: 27px; }
-            body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-top {
+            body header section.header div.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-top {
               transform: rotate(45deg); }
-            body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-middle {
+            body header section.header div.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-middle {
               background: transparent; }
-            body header div.header section.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
+            body header section.header div.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
               transform: rotate(-45deg);
               -webkit-transform: rotate(-45deg); } }
     @media screen and (min-width: 769px) {
-      body header div.header section.expanded-menu {
+      body header section.expanded-menu {
         display: none; } }
     @media screen and (max-width: 768px) {
-      body header div.header section.expanded-menu.inactive {
+      body header section.expanded-menu.inactive {
         display: block;
         position: relative;
         width: 100%;
         height: 0; }
-        body header div.header section.expanded-menu.inactive div.expanded-menu-list {
+        body header section.expanded-menu.inactive div.expanded-menu-list {
           display: none; }
-          body header div.header section.expanded-menu.inactive div.expanded-menu-list div.expanded-menu-item {
+          body header section.expanded-menu.inactive div.expanded-menu-list div.expanded-menu-item {
             display: none; }
-      body header div.header section.expanded-menu.active {
+      body header section.expanded-menu.active {
         display: block;
         position: relative;
         z-index: 998;
         width: 100%;
         background: #ffffff; }
-        body header div.header section.expanded-menu.active div.expanded-menu-list {
+        body header section.expanded-menu.active div.expanded-menu-list {
           display: block;
           text-align: center; }
-          body header div.header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item {
+          body header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item {
             border-bottom: solid 1px #bababa; }
-            body header div.header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a {
+            body header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a {
               display: inline-block;
               width: 100%;
               height: 100%; }
-              body header div.header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a span {
+              body header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a span {
                 display: inline-block;
                 color: #696969;
                 font-size: 20px;
