@@ -659,7 +659,6 @@ section.main {
                 margin: 20px 0 0 20px;
               }
               @media screen and (max-width: $medium-max) {
-                // display: inline-block;
                 margin: 10px 0 0 20px;
               }
               span {
@@ -673,6 +672,9 @@ section.main {
             div.project-title, div.project-author, div.project-brief {
               display: block;
               margin: 0 15px 5px 15px;
+              @media screen and (max-width: $small-max) {
+                margin: 0 0px 5px 5px;
+              }
               span {
                 font-size: 12px;
                 color: $keita-lab-white;
@@ -685,6 +687,9 @@ section.main {
               @media screen and (max-width: $medium-max) {
                 display: inline-block;
               }
+              @media screen and (max-width: $small-max) {
+                margin-left: 10px;
+              }
               span {
                 font-size: 10px;
               }
@@ -695,10 +700,19 @@ section.main {
               }
               span {
                 font-size: 16px;
+                @media screen and (max-width: $medium-max) {
+                  font-size: 14px;
+                }
               }
-            }div.project-brief {
+            }
+            div.project-brief {
               @media screen and (max-width: $medium-max) {
                 margin: 0 15px 5px 20px;
+              }
+              span {
+                @media screen and (max-width: $medium-max) {
+                  font-size: 10px;
+                }
               }
             }
           }

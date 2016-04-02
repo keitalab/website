@@ -462,6 +462,9 @@ section.main section.container {
         section.main section.container article.project-list div.project-item div.project-filter div.project-title, section.main section.container article.project-list div.project-item div.project-filter div.project-author, section.main section.container article.project-list div.project-item div.project-filter div.project-brief {
           display: block;
           margin: 0 15px 5px 15px; }
+          @media screen and (max-width: 380px) {
+            section.main section.container article.project-list div.project-item div.project-filter div.project-title, section.main section.container article.project-list div.project-item div.project-filter div.project-author, section.main section.container article.project-list div.project-item div.project-filter div.project-brief {
+              margin: 0 0px 5px 5px; } }
           section.main section.container article.project-list div.project-item div.project-filter div.project-title span, section.main section.container article.project-list div.project-item div.project-filter div.project-author span, section.main section.container article.project-list div.project-item div.project-filter div.project-brief span {
             font-size: 12px;
             color: #ffffff; }
@@ -471,6 +474,9 @@ section.main section.container {
         @media screen and (max-width: 768px) {
           section.main section.container article.project-list div.project-item div.project-filter div.project-author {
             display: inline-block; } }
+        @media screen and (max-width: 380px) {
+          section.main section.container article.project-list div.project-item div.project-filter div.project-author {
+            margin-left: 10px; } }
         section.main section.container article.project-list div.project-item div.project-filter div.project-author span {
           font-size: 10px; }
         @media screen and (max-width: 768px) {
@@ -478,6 +484,12 @@ section.main section.container {
             display: inline-block; } }
         section.main section.container article.project-list div.project-item div.project-filter div.project-title span {
           font-size: 16px; }
+          @media screen and (max-width: 768px) {
+            section.main section.container article.project-list div.project-item div.project-filter div.project-title span {
+              font-size: 14px; } }
         @media screen and (max-width: 768px) {
           section.main section.container article.project-list div.project-item div.project-filter div.project-brief {
             margin: 0 15px 5px 20px; } }
+        @media screen and (max-width: 768px) {
+          section.main section.container article.project-list div.project-item div.project-filter div.project-brief span {
+            font-size: 10px; } }
