@@ -1,7 +1,7 @@
 // Definitions
 var common = {
-  fadeInDuration: 800,
-  fadeOutDuration: 1000,
+  fadeInDuration: 300,
+  fadeOutDuration: 500,
   breakpoint: 768
 }
 var slideshow = {

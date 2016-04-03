@@ -11,7 +11,7 @@ body {
       font-size: 16px; } }
   @media screen and (max-width: 768px) {
     body {
-      font-size: 14px; } }
+      font-size: 12px; } }
   body div.contents {
     margin: 20px 0 0 0; }
     @media screen and (min-width: 769px) {
@@ -24,7 +24,7 @@ body {
         margin: 0 auto; }
       body div.contents section.main > section {
         width: 88%;
-        margin: 0 auto; }
+        margin: 0 auto 30px auto; }
         body div.contents section.main > section.top-image {
           width: 90%; } }
     @media screen and (max-width: 768px) {
@@ -92,7 +92,7 @@ body {
                 height: 4px;
                 margin: 0 0 12px 0;
                 border-radius: 3px;
-                transition: 0.5s; }
+                transition: 0.3s; }
                 body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
                   top: 25px; }
                 body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
@@ -270,11 +270,17 @@ section.main section.container div.headline {
   text-align: left; }
 
 section.main section.container article.member-list {
-  width: auto;
+  width: 300px;
   margin: 0 auto;
   font-size: 0;
   text-align: left; }
-  @media screen and (min-width: 769px) {
+  @media screen and (max-width: 380px) {
+    section.main section.container article.member-list {
+      width: 280px; } }
+  @media screen and (min-width: 500px) {
+    section.main section.container article.member-list {
+      width: 450px; } }
+  @media screen and (min-width: 667px) {
     section.main section.container article.member-list {
       width: 600px; } }
   @media screen and (min-width: 938px) {

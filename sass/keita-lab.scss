@@ -4,6 +4,8 @@ $medium-max: 768px;
 $small-max: 380px;
 $profile-col-6-min: 1125px;
 $profile-col-5-min: 938px;
+$profile-col-4-min: 667px;
+$profile-col-3-min: 500px;
 $project-col-2-min: 720px;
 
 // Size set
@@ -54,7 +56,7 @@ body {
     font-size: 16px;
   }
   @media screen and (max-width: $medium-max) {
-    font-size: 14px;
+    font-size: 12px;
   }
   div.contents {
     margin: 20px 0 0 0;
@@ -73,7 +75,7 @@ body {
       section.main {
         >section {
           width: 88%;
-          margin: 0 auto;
+          margin: 0 auto 30px auto;
           &.top-image {
             width: 90%;
           }
@@ -169,7 +171,7 @@ body {
                       height: 4px;
                       margin: 0 0 12px 0;
                       border-radius: 3px;
-                      transition: 0.5s;
+                      transition: 0.3s;
                       &.hamburger-top {
                         // -webkit-transform: -webkit-translateY(10px);
                         top: 25px;
@@ -454,21 +456,23 @@ section.main {
       div.headline {
         text-align: left;
       }
-      // text-align: center;
       article.member-list {
-        width: auto;
+        width: $profile-large-width * 2;
         margin: 0 auto;
         font-size: 0;
         text-align: left;
-        @media screen and (min-width: $large-min) {
-          width: 600px;
+        @media screen and (max-width: $small-max) {
+          width: $profile-small-width * 2;
+        }
+        @media screen and (min-width: $profile-col-3-min) {
+          width: $profile-large-width * 3;
+        }
+        @media screen and (min-width: $profile-col-4-min) {
+          width: $profile-large-width * 4;
         }
         @media screen and (min-width: $profile-col-5-min) {
-          width: 750px;
+          width: $profile-large-width * 5;
         }
-        // @media screen and (min-width: $profile-col-6-min) {
-        //   width: 900px;
-        // }
         div.profile-item {
           display: inline-block;
           position: relative;
@@ -489,8 +493,8 @@ section.main {
             margin: 0;
             padding: 0;
             @media screen and (max-width: $small-max) {
-              width: 140px;
-              height: 140px;
+              width: $profile-small-width;
+              height: $profile-small-height;
             }
             img {
               width: $profile-large-width;
