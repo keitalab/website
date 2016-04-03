@@ -5,11 +5,11 @@ var common = {
   breakpoint: 768
 }
 var slideshow = {
-  fadeDuration: 800,
+  fadeDuration: 900,
   interval: 3000
 }
 var hover = {
-  FadeDuration: 500
+  FadeDuration: 170
 }
 
 // Loading
