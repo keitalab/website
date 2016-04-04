@@ -38,7 +38,7 @@
       {"firstname_ja": "佳純", "lastname_ja": "吉村", "firstname_en": "Kazumi", "lastname_en": "Yoshimura", "image": "ysmr-150sq.jpg"}
     ],
     "m1": [
-      {"firstname_ja": "朋美", "lastname_ja": "幸野", "firstname_en": "Tomomi", "lastname_en": "Kono", "image": "john_smith-150sq.jpg"}
+      {"firstname_ja": "朋美", "lastname_ja": "幸野", "firstname_en": "Tomomi", "lastname_en": "Kono", "image": "kono-300sq.jpg"}
     ],
     "other": [
       {"firstname_ja": "恵太", "lastname_ja": "渡邊", "firstname_en": "Keita", "lastname_en": "Watanabe", "image": "100kw-150sq.jpg"}
@@ -49,27 +49,27 @@
       { "author_en": "Shoma Kaneko", "author_ja": "金子翔麻", "title_en": "Geoterior", "title_ja": "Geoterior",
         "brief_en": "周辺地理情報を日常的に眺めるインタフェース",
         "brief_ja": "周辺地理情報を日常的に眺めるインタフェース",
-        "image": "geoterior.jpg",
+        "image": "geoterior-1000.jpg",
         "link": "" },
       { "author_en": "Shohei Katakura", "author_ja": "片倉翔平", "title_en": "presendBox", "title_ja": "presendBox",
         "brief_en": "無機質なメッセージの価値を高める箱",
         "brief_ja": "無機質なメッセージの価値を高める箱",
-        "image": "presendbox.jpg",
+        "image": "presendbox-1000.jpg",
         "link": "" },
       { "author_en": "Kazumi Yoshimura", "author_ja": "吉村佳純", "title_en": "TactileRecord", "title_ja": "TactileRecord",
         "brief_en": "テクスチャによる音楽の触覚提示",
         "brief_ja": "テクスチャによる音楽の触覚提示",
-        "image": "tactilerecord.jpg",
+        "image": "tactilerecord-1000.jpg",
         "link": "" },
       { "author_en": "Keita Hara", "author_ja": "原健太", "title_en": "Webmo", "title_ja": "Webmo",
         "brief_en": "A motor which devices control via Web API on Wi-Fi network.",
         "brief_ja": "Wi-Fiを経由して制御するWeb APIを持ったステッピングモーター",
-        "image": "webmo.jpg",
+        "image": "webmo-1000.jpg",
         "link": "" },
       { "author_en": "Daichi Ito", "author_ja": "伊藤大智", "title_en": "DigestScene", "title_ja": "DigestScene",
         "brief_ja": "見どころのみを撮影するカメラシステム",
         "brief_en": "見どころのみを撮影するカメラシステム",
-        "image": "digestscene.jpg",
+        "image": "digestscene-1000.jpg",
         "link": ""
       }
     ],
@@ -77,14 +77,14 @@
       { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊", "title_en": "LiveTexture", "title_ja": "LiveTexture",
         "brief_en": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
         "brief_ja": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
-        "image": "livetexture.jpg",
+        "image": "livetexture-444.jpg",
         "link": "" }
     ],
     "2013": [
       { "author_en": "Yota Odaka", "author_ja": "尾髙陽太", "title_en": "Integlass", "title_ja": "Integlass",
         "brief_en": "A measuring cup which combines information with tool.",
         "brief_ja": "情報と道具を一体化する計量カップ",
-        "image": "integlass.jpg",
+        "image": "integlass-1000.jpg",
         "link": "" }
     ]
   }

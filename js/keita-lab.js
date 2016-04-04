@@ -1,14 +1,15 @@
 // Definitions
 var common = {
-  fadeInDuration: 800,
-  fadeOutDuration: 1000
+  fadeInDuration: 300,
+  fadeOutDuration: 500,
+  breakpoint: 768
 }
 var slideshow = {
-  fadeDuration: 800,
+  fadeDuration: 900,
   interval: 3000
 }
 var hover = {
-  FadeDuration: 500
+  FadeDuration: 170
 }
 
 // Loading
@@ -127,10 +128,16 @@ $('div.profile-item').hover(function() {
 });
 
 $('div.project-item').hover(function() {
+  if ($(window).width() <= common.breakpoint) {
+    return;
+  }
   $(this)
     .find('div.project-filter')
     .fadeIn(hover.FadeDuration);
 }, function() {
+  if ($(window).width() <= common.breakpoint) {
+    return;
+  }
   $(this)
     .find('div.project-filter')
     .fadeOut(hover.FadeDuration);

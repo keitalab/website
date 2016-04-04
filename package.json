@@ -9,6 +9,7 @@
     "nunjucks": "gulp nunjucks",
     "build": "gulp build",
     "watch": "gulp watch",
+    "start": "gulp dev",
     "publish": "git subtree push --prefix dist/ origin gh-pages && git push origin master"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/keitalab/web#readme",
   "devDependencies": {
+    "browser-sync": "^2.11.2",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-data": "^1.2.1",
