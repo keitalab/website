@@ -1,0 +1,99 @@
+@import "common/_variables";
+// About
+section.top-image {
+  section {
+    &.slideshow {
+      margin: 0 0 50px 0;
+      div.slideshow-item {
+        img {
+          position: relative;
+          width: 100%;
+        }
+        &.fading {
+          position: relative;
+          img {
+            position: absolute;
+            width: 100%;
+            z-index: $z-slideshow;
+          }
+        }
+      }
+    }
+  }
+}
+section.main {
+  section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &.description {
+
+    }
+    &.headline {
+
+    }
+    &.lab-theme {
+      article {
+        div.theme-description {
+          margin: 0 0 15px 0;
+        }
+        div.theme-item {
+          margin: 0 0 15px 0;
+          div.theme-item-label {
+            @media screen and (min-width: $large-min) {
+              font-size: 1.1em;
+            }
+            @media screen and (max-width: $medium-max) {
+              font-size: 1em;
+              span.theme-item-label-after {
+                display: block;
+              }
+            }
+          }
+          div.theme-item-description {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+    &.contact {
+      article {
+        &.caption {
+          div.caption-item {
+            display: inline-block;
+            @media screen and (min-width: $large-min) {
+              width: 49.5%;
+              &.caption-item-access {
+                margin: 0;
+              }
+              &.caption-item-email {
+              }
+              div.contact-label {
+                margin: 0 0 5px 0;
+                font-size: 1.1em;
+              }
+              div.contact-content {
+                font-size: 0.9em;
+              }
+            }
+            @media screen and (max-width: $medium-max) {
+              width: 100%;
+              margin: 0 0 10px 0;
+              &.caption-item-access {
+              }
+            }
+
+          }
+        }
+        &.map {
+          div.map-wrapper {
+            position: relative;
+            width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

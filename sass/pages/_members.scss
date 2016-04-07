@@ -1,0 +1,96 @@
+@import "common/_variables";
+// Members
+section.main {
+  section {
+    &.container {
+      div.headline {
+        text-align: left;
+      }
+      article.member-list {
+        width: $profile-large-width * 2;
+        margin: 0 auto;
+        font-size: 0;
+        text-align: left;
+        @media screen and (max-width: $small-max) {
+          width: $profile-small-width * 2;
+        }
+        @media screen and (min-width: $profile-col-3-min) {
+          width: $profile-large-width * 3;
+        }
+        @media screen and (min-width: $profile-col-4-min) {
+          width: $profile-large-width * 4;
+        }
+        @media screen and (min-width: $profile-col-5-min) {
+          width: $profile-large-width * 5;
+        }
+        div.profile-item {
+          display: inline-block;
+          position: relative;
+          width: $profile-large-width;
+          height: $profile-large-height;
+          margin: 0;
+          padding: 0;
+          @media screen and (max-width: $small-max) {
+            width: $profile-small-width;
+            height: $profile-small-height;
+          }
+          div.profile-thumbnail {
+            position: absolute;
+            top: auto;
+            left: auto;
+            width: $profile-large-width;
+            height: $profile-large-height;
+            margin: 0;
+            padding: 0;
+            @media screen and (max-width: $small-max) {
+              width: $profile-small-width;
+              height: $profile-small-height;
+            }
+            img {
+              width: $profile-large-width;
+              height: $profile-large-height;
+              @media screen and (max-width: $small-max) {
+                width: $profile-small-width;
+                height: $profile-small-height;
+              }
+            }
+          }
+          div.profile-filter {
+            text-align: left;
+            position: absolute;;
+            top: auto;
+            left: auto;
+            z-index: $z-project-filter;
+            width: $profile-large-width;
+            height: $profile-large-height;
+            margin: 0 0 0 0;
+            padding: 0;
+            vertical-align: auto;
+            background: $keita-lab-black;
+            opacity: .8;
+            @media screen and (max-width: $small-max) {
+              width: $profile-small-width;
+              height: $profile-small-height;
+            }
+            div.profile-position {
+              display: block;
+              margin: 50px 0 0 10px;
+              span {
+                font-size: 10px;
+                color: $keita-lab-white;
+              }
+            }
+            div.profile-name {
+              display: block;
+              margin: 0 0 0 10px;
+              span {
+                font-size: 12px;
+                color: $keita-lab-white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -46,46 +46,137 @@
   },
   "projects": {
     "2015": [
-      { "author_en": "Shoma Kaneko", "author_ja": "金子翔麻", "title_en": "Geoterior", "title_ja": "Geoterior",
+      { "author_en": "Shoma Kaneko", "author_ja": "金子翔麻",
+        "title_en": "Geoterior", "title_ja": "Geoterior",
         "brief_en": "周辺地理情報を日常的に眺めるインタフェース",
         "brief_ja": "周辺地理情報を日常的に眺めるインタフェース",
         "image": "geoterior-1000.jpg",
-        "link": "" },
-      { "author_en": "Shohei Katakura", "author_ja": "片倉翔平", "title_en": "presendBox", "title_ja": "presendBox",
+        "each_page": "",
+        "period": "",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          "インタフェース",
+          "情報の具体化"
+        ]
+      },
+      { "author_en": "Shohei Katakura", "author_ja": "片倉翔平",
+        "title_en": "presendBox", "title_ja": "presendBox",
         "brief_en": "無機質なメッセージの価値を高める箱",
         "brief_ja": "無機質なメッセージの価値を高める箱",
         "image": "presendbox-1000.jpg",
-        "link": "" },
-      { "author_en": "Kazumi Yoshimura", "author_ja": "吉村佳純", "title_en": "TactileRecord", "title_ja": "TactileRecord",
+        "each_page": "",
+        "period": "2015~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      },
+      { "author_en": "Kazumi Yoshimura", "author_ja": "吉村佳純",
+        "title_en": "TactileRecord", "title_ja": "TactileRecord",
         "brief_en": "テクスチャによる音楽の触覚提示",
         "brief_ja": "テクスチャによる音楽の触覚提示",
         "image": "tactilerecord-1000.jpg",
-        "link": "" },
-      { "author_en": "Keita Hara", "author_ja": "原健太", "title_en": "Webmo", "title_ja": "Webmo",
+        "each_page": "" },
+      { "author_en": "Keita Hara", "author_ja": "原健太",
+        "title_en": "Webmo", "title_ja": "Webmo",
         "brief_en": "A motor which devices control via Web API on Wi-Fi network.",
         "brief_ja": "Wi-Fiを経由して制御するWeb APIを持ったステッピングモーター",
         "image": "webmo-1000.jpg",
-        "link": "" },
+        "each_page": "" },
       { "author_en": "Daichi Ito", "author_ja": "伊藤大智", "title_en": "DigestScene", "title_ja": "DigestScene",
         "brief_ja": "見どころのみを撮影するカメラシステム",
         "brief_en": "見どころのみを撮影するカメラシステム",
         "image": "digestscene-1000.jpg",
-        "link": ""
+        "each_page": "",
+        "period": "2015~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
       }
     ],
     "2014": [
-      { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊", "title_en": "LiveTexture", "title_ja": "LiveTexture",
+      { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊",
+        "title_en": "LiveTexture", "title_ja": "LiveTexture",
         "brief_en": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
         "brief_ja": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
         "image": "livetexture-444.jpg",
-        "link": "" }
+        "each_page": "",
+        "period": "2014~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      }
     ],
     "2013": [
-      { "author_en": "Yota Odaka", "author_ja": "尾髙陽太", "title_en": "Integlass", "title_ja": "Integlass",
+      { "author_en": "Yota Odaka", "author_ja": "尾髙陽太",
+        "title_en": "Integlass", "title_ja": "Integlass",
         "brief_en": "A measuring cup which combines information with tool.",
         "brief_ja": "情報と道具を一体化する計量カップ",
         "image": "integlass-1000.jpg",
-        "link": "" }
+        "each_page": "integlass",
+        "period": "2013~2015",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":"/image/projects/integlass/integlass-1000x750.jpg n"
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      }
     ]
   }
 }
