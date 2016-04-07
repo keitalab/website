@@ -1,0 +1,183 @@
+@import "common/_variables"
+// Projects
+section.main {
+  section {
+    &.container {
+      div.headline {
+        text-align: left;
+      }
+      text-align: center;
+      article.project-list {
+        width: auto;
+        margin: 0 auto;
+        font-size: 0;
+        text-align: left;
+        @media screen and (max-width: $max-width) {
+          width: $project-large-width * 2;
+        }
+        @media screen and (min-width: $large-min) {
+
+        }
+        @media screen and (max-width: $medium-max) {
+          width: $project-large-width;
+        }
+        @media screen and (max-width: $small-max) {
+          width: $project-medium-width;
+        }
+        div.project-item {
+          text-align: left;
+          display: inline-block;
+          position: relative;
+          width: $project-small-width;
+          height: $project-small-height;
+          margin: 0;
+          padding: 0;
+          @media screen and (max-width: $max-width) {
+            width: $project-large-width;
+            height: $project-large-height;
+          }
+          @media screen and (max-width: $medium-max) {
+            width: $project-large-width;
+            height: $project-large-height;
+            margin-bottom: 100px;
+          }
+          @media screen and (max-width: $small-max) {
+            width: $project-medium-width;
+            height: $project-medium-height;
+          }
+          div.project-thumbnail {
+            position: absolute;
+            top: auto;
+            left: auto;
+            width: $project-small-width;
+            height: $project-small-height;
+            margin: 0;
+            padding: 0;
+            @media screen and (max-width: $max-width) {
+              width: $project-large-width;
+              height: $project-large-height;
+            }
+            @media screen and (max-width: $medium-max) {
+              width: $project-large-width;
+              height: $project-large-height;
+            }
+            @media screen and (max-width: $small-max) {
+              width: $project-medium-width;
+              height: $project-medium-height;
+            }
+            img {
+              width: $project-small-width;
+              height: $project-small-height;
+              @media screen and (max-width: $max-width) {
+                width: $project-large-width;
+                height: $project-large-height;
+              }
+              @media screen and (max-width: $medium-max) {
+                width: $project-large-width;
+                height: $project-large-height;
+              }
+              @media screen and (max-width: $small-max) {
+                width: $project-medium-width;
+                height: $project-medium-height;
+              }
+            }
+          }
+          div.project-filter {
+            text-align: left;
+            position: absolute;;
+            top: auto;
+            left: auto;
+            z-index: $z-project-filter;
+            width: $project-small-width;
+            height: $project-small-height;
+            margin: 0 0 0 0;
+            padding: 0;
+            vertical-align: auto;
+            background: $keita-lab-black;
+            opacity: .8;
+            @media screen and (max-width: $max-width) {
+              width: $project-large-width;
+              height: $project-large-height;
+            }
+            @media screen and (max-width: $medium-max) {
+              display: inline-block !important;
+              height: 100px;
+              margin-top: $project-large-height;
+              margin-bottom: 10px;
+              background: rgba(0, 0, 0, 0);
+            }
+            @media screen and (max-width: $small-max) {
+              width: $project-medium-width;
+              height: $project-medium-height;
+              margin-top: $project-medium-height;
+            }
+            div.project-year {
+              display: block;
+              margin: 50px 0 0 15px;
+              @media screen and (max-width: $medium-max) {
+                display: inline-block;
+                margin: 20px 0 0 20px;
+              }
+              @media screen and (max-width: $medium-max) {
+                margin: 10px 0 0 20px;
+              }
+              span {
+                font-size: 10px;
+                color: $keita-lab-white;
+                @media screen and (max-width: $medium-max) {
+                  color: $keita-lab-black;
+                }
+              }
+            }
+            div.project-title, div.project-author, div.project-brief {
+              display: block;
+              margin: 0 15px 5px 15px;
+              @media screen and (max-width: $small-max) {
+                margin: 0 0px 5px 5px;
+              }
+              span {
+                font-size: 12px;
+                color: $keita-lab-white;
+                @media screen and (max-width: $medium-max) {
+                  color: $keita-lab-black !important;
+                }
+              }
+            }
+            div.project-author {
+              @media screen and (max-width: $medium-max) {
+                display: inline-block;
+              }
+              @media screen and (max-width: $small-max) {
+                margin-left: 10px;
+              }
+              span {
+                font-size: 10px;
+              }
+            }
+            div.project-title {
+              @media screen and (max-width: $medium-max) {
+                display: inline-block;
+              }
+              span {
+                font-size: 16px;
+                @media screen and (max-width: $medium-max) {
+                  font-size: 14px;
+                }
+              }
+            }
+            div.project-brief {
+              @media screen and (max-width: $medium-max) {
+                margin: 0 15px 5px 20px;
+              }
+              span {
+                @media screen and (max-width: $medium-max) {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

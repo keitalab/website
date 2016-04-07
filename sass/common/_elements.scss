@@ -1,0 +1,63 @@
+a {
+  color: $keita-lab-gray;
+  &:hover {
+    text-decoration: none;
+  }
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+span {
+  &::selection {
+    background-color: $keita-lab-lightgray;
+    color: $keita-lab-white;
+  }
+  &.single-byte {
+    letter-spacing: 0.09em;
+    font-size: 1.01em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+
+  }
+  &.double-byte {
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 1em;
+    font-family: Noto Sans Japanese, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.light {
+    font-weight: 300;
+  }
+  &.underline {
+    text-decoration: underline;
+  }
+}
+div{
+  &.headline {
+    @media screen and (min-width: $large-min) {
+      margin: 0 0 20px 0;
+      font-size: 1.5em;
+      font-weight: 100;
+    }
+    @media screen and (max-width: $medium-max) {
+      margin: 0 0 12px 0;
+      font-size: 1.3em;
+      font-weight: 200;
+    }
+  }
+}

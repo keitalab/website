@@ -28,7 +28,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/css'))
 
   // compile sass
-  gulp.src('./sass/**/*.scss')
+  gulp.src(['./sass/**/*.scss', './sass/**/_*.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'))
 })

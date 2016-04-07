@@ -1,0 +1,46 @@
+// Responsive
+$large-min: 769px;
+$medium-max: 768px;
+$small-max: 380px;
+$profile-col-6-min: 1125px;
+$profile-col-5-min: 938px;
+$profile-col-4-min: 667px;
+$profile-col-3-min: 500px;
+$project-col-2-min: 720px;
+
+// Size set
+$max-width: 900px;
+$whole-margin-left-sp: 4%;
+$whole-margin-right-sp: 4%;
+$whole-width-sp: 92%;
+
+// image size
+$profile-large-width: 150px;
+$profile-large-height: 150px;
+$profile-small-width: 140px;
+$profile-small-height: 140px;
+$project-large-width: 340px;
+$project-large-height: 255px;
+$project-medium-width: 280px;
+$project-medium-height: 210px;
+$project-small-width: 264px;
+$project-small-height: 198px;
+
+
+/* Color set */
+$keita-lab-white: #ffffff;
+$keita-lab-darkwhite: #f0f0f0;
+$keita-lab-black: #252525;
+$keita-lab-gray: #696969;
+$keita-lab-lightgray: #bababa;
+$keita-lab-blue: #6490D3;
+$keita-lab-yellow: #EACA2A;
+$keita-lab-red: #CA3842;
+$keita-lab-orange: #D75C36;
+$keita-lab-brown: #5C3926;
+
+/* z index */
+$z-loader: 999;
+$z-expand-menu: $z-loader - 1;
+$z-project-filter: $z-expand-menu - 1;
+$z-slideshow: $z-project-filter;

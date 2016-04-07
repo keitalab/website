@@ -1,0 +1,61 @@
+@import "_variables";
+// Major wrappers
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $keita-lab-white;
+  font-weight: 200;
+  @media screen and (min-width: $large-min) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $medium-max) {
+    font-size: 12px;
+  }
+  div.contents {
+    margin: 20px 0 0 0;
+    @media screen and (min-width: $large-min) {
+      header, section.main, footer {
+        max-width: $max-width;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      header {
+        section.header {
+          width: 88%;
+          margin: 0 auto;
+        }
+      }
+      section.main {
+        >section {
+          width: 88%;
+          margin: 0 auto 30px auto;
+          &.top-image {
+            width: 90%;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $medium-max) {
+      header, section.main, footer {
+        width: 100%;
+        margin: 0px auto;
+      }
+      header {
+        section.header {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+      section.main {
+        >section {
+          width: 90%;
+          margin: 0 auto;
+          &.top-image {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
