@@ -47,7 +47,7 @@ span {
     text-decoration: underline;
   }
 }
-div{
+div {
   &.headline {
     @media screen and (min-width: $large-min) {
       margin: 0 0 20px 0;

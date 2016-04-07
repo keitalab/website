@@ -23,7 +23,8 @@ body {
       header {
         section.header {
           width: 88%;
-          margin: 0 auto;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
       section.main {
@@ -35,16 +36,27 @@ body {
           }
         }
       }
+      footer {
+        section {
+          &.credit {
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
     }
     @media screen and (max-width: $medium-max) {
       header, section.main, footer {
         width: 100%;
-        margin: 0px auto;
+        margin-left: auto;
+        margin-right: auto;
       }
       header {
         section.header {
           width: 90%;
-          margin: 0 auto;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
       section.main {
@@ -54,6 +66,15 @@ body {
           margin-right: auto;
           &.top-image {
             width: 100%;
+          }
+        }
+      }
+      footer {
+        section {
+          &.credit {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
           }
         }
       }
