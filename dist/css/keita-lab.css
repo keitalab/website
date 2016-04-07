@@ -71,7 +71,7 @@ span.double-byte {
     font-family: serif; }
 
 span.bold {
-  font-weight: bold; }
+  font-weight: 500; }
 
 span.light {
   font-weight: 300; }
@@ -272,6 +272,88 @@ section.main section {
     width: 100%; }
     section.main section.contact article.map div.map-wrapper img {
       width: 100%; }
+
+/* Color set */
+/* z index */
+section.main section.container div.headline {
+  text-align: left; }
+
+section.main section.container article.member-list {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: left; }
+  @media screen and (max-width: 380px) {
+    section.main section.container article.member-list {
+      width: 280px; } }
+  @media screen and (min-width: 500px) {
+    section.main section.container article.member-list {
+      width: 450px; } }
+  @media screen and (min-width: 667px) {
+    section.main section.container article.member-list {
+      width: 600px; } }
+  @media screen and (min-width: 938px) {
+    section.main section.container article.member-list {
+      width: 750px; } }
+  section.main section.container article.member-list div.profile-item {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0; }
+    @media screen and (max-width: 380px) {
+      section.main section.container article.member-list div.profile-item {
+        width: 140px;
+        height: 140px; } }
+    section.main section.container article.member-list div.profile-item div.profile-thumbnail {
+      position: absolute;
+      top: auto;
+      left: auto;
+      width: 150px;
+      height: 150px;
+      margin: 0;
+      padding: 0; }
+      @media screen and (max-width: 380px) {
+        section.main section.container article.member-list div.profile-item div.profile-thumbnail {
+          width: 140px;
+          height: 140px; } }
+      section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
+        width: 150px;
+        height: 150px; }
+        @media screen and (max-width: 380px) {
+          section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
+            width: 140px;
+            height: 140px; } }
+    section.main section.container article.member-list div.profile-item div.profile-filter {
+      text-align: left;
+      position: absolute;
+      top: auto;
+      left: auto;
+      z-index: 997;
+      width: 150px;
+      height: 150px;
+      margin: 0 0 0 0;
+      padding: 0;
+      vertical-align: auto;
+      background: #252525;
+      opacity: .8; }
+      @media screen and (max-width: 380px) {
+        section.main section.container article.member-list div.profile-item div.profile-filter {
+          width: 140px;
+          height: 140px; } }
+      section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position {
+        display: block;
+        margin: 50px 0 0 10px; }
+        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position span {
+          font-size: 10px;
+          color: #ffffff; }
+      section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name {
+        display: block;
+        margin: 0 0 0 10px; }
+        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name span {
+          font-size: 12px;
+          color: #ffffff; }
 
 .main section.container {
   text-align: center; }
