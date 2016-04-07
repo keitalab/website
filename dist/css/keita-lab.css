@@ -36,7 +36,8 @@ body {
         margin: 0 auto; }
       body div.contents section.main > section {
         width: 90%;
-        margin: 0 auto; }
+        margin-left: auto;
+        margin-right: auto; }
         body div.contents section.main > section.top-image {
           width: 100%; } }
 
