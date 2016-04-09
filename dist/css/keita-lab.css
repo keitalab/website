@@ -1,5 +1,7 @@
 /* Color set */
 /* z index */
+/* Color set */
+/* z index */
 @import "common/_variables" section;
 body {
   margin: 0;
@@ -126,6 +128,23 @@ div.heading {
       font-size: 21px; }
     div.heading span.single-byte {
       font-size: 22px; } }
+
+div.paragraph {
+  text-align: left; }
+  @media screen and (min-width: 769px) {
+    div.paragraph {
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      font-weight: 100; }
+      div.paragraph span.double-byte {
+        font-size: 14px; }
+      div.paragraph span.single-byte {
+        font-size: 14px; } }
+  @media screen and (max-width: 768px) {
+    div.paragraph span.double-byte {
+      font-size: 14px; }
+    div.paragraph span.single-byte {
+      font-size: 14px; } }
 
 /* Color set */
 /* z index */
@@ -545,3 +564,49 @@ section.main section.container article.member-list {
         @media screen and (max-width: 768px) {
           .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
             font-size: 10px; } }
+
+/* Color set */
+/* z index */
+section.main section.container div.project-header {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 0 0 20px 0;
+  text-align: justify; }
+  section.main section.container div.project-header div.project-keyword {
+    display: inline-block;
+    float: left; }
+    section.main section.container div.project-header div.project-keyword div {
+      display: inline-block; }
+      section.main section.container div.project-header div.project-keyword div.project-keyword-label span {
+        font-size: 14px;
+        color: #6490D3; }
+      section.main section.container div.project-header div.project-keyword div.project-keyword-items span {
+        font-size: 14px;
+        color: #bababa; }
+  section.main section.container div.project-header div.project-author-period {
+    display: inline-block;
+    float: right; }
+    section.main section.container div.project-header div.project-author-period span.double-byte {
+      font-size: 14px; }
+    section.main section.container div.project-header div.project-author-period span.single-byte {
+      font-size: 14px; }
+
+section.main section.container div.project-title span {
+  display: block;
+  margin: 0 auto 20px 0;
+  font-size: 26px; }
+
+section.main section.container div.project-main-image {
+  margin: 0 auto 30px auto; }
+  section.main section.container div.project-main-image img {
+    width: 100%; }
+
+section.main section.container div.project-explanation {
+  margin: 0 auto 20px auto; }
+
+section.main section.container div.project-sub-images div.project-sub-image {
+  display: inline;
+  margin: 0 auto 15px auto; }
+  section.main section.container div.project-sub-images div.project-sub-image img {
+    width: 40%; }

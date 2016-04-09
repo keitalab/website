@@ -4,35 +4,30 @@
 
 {% block project_keyword %}
 {% for keyword in myProject.keywords %}
-<span class="double-byte">{{ keyword }}&nbsp;</span>
+<span class="double-byte">{{ keyword }}</span>
 {% endfor %}
 {% endblock %}
-
 {% block project_author_period %}
 <span class="double-byte">{{ myProject.author_ja }}</span><!--
 --><span class="single-byte">({{ myProject.period }})</span>
 {% endblock %}
-
 {% block project_title %}
-<span class="double-byte">{{ myProject.title_ja }}</span>
+<span class="single-byte">{{ myProject.title_ja }}</span>
 {% endblock %}
-
 {% block project_main_image %}
-<img src="{{ myProject.image }}" alt="" />
+<img src="{{ myProject.image }}" alt="" width="100%"/>
 {% endblock %}
-
 {% block project_heading %}
 <span class="double-byte">{{ myProject.brief_ja }}</span>
 {% endblock %}
-
 {% block project_explanation %}
 {% for paragraph in myProject.explanation %}
 <div class="paragraph">
   <span class="double-byte">{{ paragraph }}</span>
+
 </div>
 {% endfor %}
 {% endblock %}
-
 {% block project_sub_images %}
 {% for image in myProject.sub_images %}
 <div class="project-sub-image">
@@ -40,7 +35,6 @@
 </div>
 {% endfor %}
 {% endblock %}
-
 {% block project_publications %}
 {% if myProject.publications|length > 0 %}
 <div class="heading">
@@ -54,7 +48,6 @@
 </div>
 {% endfor %}
 {% endblock %}
-
 {% block project_awards %}
 {% if myProject.awards|length > 0 %}
 <div class="heading">
@@ -68,7 +61,6 @@
 </div>
 {% endfor %}
 {% endblock %}
-
 {% block project_exhibitions %}
 {% if myProject.exhibitions|length > 0 %}
 <div class="heading">

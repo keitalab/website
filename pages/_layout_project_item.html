@@ -42,52 +42,49 @@
       {% include "_header.html" %}
     </header>
     <section class="main">
-
-<section class="container">
-  <div class="project-keyword">
-    <div class="project-keyword-label">
-      <span class="single-byte">Keyword:&nbsp;</span>
-    </div>
-    {% block project_keyword %}
-    {% endblock %}
-  </div>
-  <div class="project-author-period">
-    {% block project_author_period %}
-    {% endblock %}
-  </div>
-  <div class="project-title">
-    {% block project_title %}
-    {% endblock %}
-  </div>
-  <div class="project-main-image">
-    {% block project_main_image %}
-    {% endblock %}
-  </div>
-  <div class="heading">
-    {% block project_heading %}
-    {% endblock %}
-  </div>
-  <div class="project-explanation">
-    {% block project_explanation %}
-    {% endblock %}
-  </div>
-  <div class="project-sub-images">
-    {% block project_sub_images %}
-    {% endblock %}
-  </div>
-
-  {% block project_publications %}
-  {% endblock %}
-
-  {% block projecrt_awards %}
-  {% endblock %}
-
-  {% block project_exhibitions %}
-  {% endblock %}
-</section>
-
-
-
+      <section class="container">
+        <div class="project-header">
+          <div class="project-keyword">
+            <div class="project-keyword-label">
+              <span class="single-byte">Keyword:</span>
+            </div>
+            <div class="project-keyword-items">
+              {% block project_keyword %}
+              {% endblock %}
+            </div>
+          </div>
+          <div class="project-author-period">
+            {% block project_author_period %}
+            {% endblock %}
+          </div>
+        </div>
+        <div class="project-title">
+          {% block project_title %}
+          {% endblock %}
+        </div>
+        <div class="project-main-image">
+          {% block project_main_image %}
+          {% endblock %}
+        </div>
+        <div class="heading">
+          {% block project_heading %}
+          {% endblock %}
+        </div>
+        <div class="project-explanation">
+          {% block project_explanation %}
+          {% endblock %}
+        </div>
+        <div class="project-sub-images">
+          {% block project_sub_images %}
+          {% endblock %}
+        </div>
+        {% block project_publications %}
+        {% endblock %}
+        {% block projecrt_awards %}
+        {% endblock %}
+        {% block project_exhibitions %}
+        {% endblock %}
+      </section>
     </section>
     <!-- footer -->
     <footer>

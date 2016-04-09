@@ -87,10 +87,10 @@ div {
       font-weight: 100;
       span {
         &.double-byte {
-          font-size: $medium-double-byte-sp;
+          font-size: $medium-double-byte-pc;
         }
         &.single-byte {
-          font-size: $medium-single-byte-sp;
+          font-size: $medium-single-byte-pc;
         }
       }
     }
@@ -101,6 +101,32 @@ div {
         }
         &.single-byte {
           font-size: $medium-single-byte-sp;
+        }
+      }
+    }
+  }
+  &.paragraph {
+    text-align: left;
+    @media screen and (min-width: $large-min) {
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      font-weight: 100;
+      span {
+        &.double-byte {
+          font-size: $small-double-byte-pc;
+        }
+        &.single-byte {
+          font-size: $small-single-byte-pc;
+        }
+      }
+    }
+    @media screen and (max-width: $medium-max) {
+      span {
+        &.double-byte {
+          font-size: $small-double-byte-sp;
+        }
+        &.single-byte {
+          font-size: $small-single-byte-sp;
         }
       }
     }
