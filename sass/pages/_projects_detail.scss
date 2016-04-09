@@ -57,8 +57,11 @@ section.main {
       }
       &.project-explanation {
         margin: 0 auto 20px auto;
+        font-weight: 300px;
+
       }
       &.project-sub-images {
+        margin-bottom: 30px;
         div.project-sub-image {
           display: inline;;
           margin: 0 auto 15px auto;
@@ -66,6 +69,25 @@ section.main {
             width: 40%;
           }
         }
+      }
+      &.heading {
+        margin-bottom: 10px;
+      }
+      &.project-achievement {
+        margin-bottom: 20px;
+        text-align: left;
+        span {
+          font-size: $small-double-byte-pc;
+        }
+      }
+      &.project-publications {
+
+      }
+      &.project-awards {
+
+      }
+      &.project-exhibition {
+
       }
     }
   }

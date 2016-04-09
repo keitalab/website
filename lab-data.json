@@ -98,7 +98,7 @@
         "brief_en": "A measuring cup which combines information with tool.",
         "brief_ja": "情報と道具を一体化する計量カップ",
         "image": "/images/projects/integlass/integlass-main.jpg",
-        "detail_page": "integlass",
+        "detail_page": "/projects/integlass",
         "period": "2013~2015",
         "explanation": [
           "料理をするときに用いる「レシピ」。今やレシピはインターネット上に大量に存在し、誰でも簡単に探し出すことができるようになりました。私たちは、この電子化したレシピが「知る」目的を超えて、実際の調理を支援する調理器具となりうる可能性を提案します。",
@@ -115,10 +115,13 @@
         "publications": [
 
         ],
-        "award": [
-
+        "awards": [
+          {
+            "text": "情報処理学会シンポジウム インタラクション2014 インタラクティブ発表賞",
+            "url": "http://www.interaction-ipsj.org/2014/program.html"
+          }
         ],
-        "exhibition": [
+        "exhibitions": [
 
         ],
         "tags": [

@@ -135,7 +135,7 @@ div.paragraph {
     div.paragraph {
       line-height: 1.2em;
       margin-bottom: 10px;
-      font-weight: 100; }
+      font-weight: 300; }
       div.paragraph span.double-byte {
         font-size: 14px; }
       div.paragraph span.single-byte {
@@ -603,10 +603,22 @@ section.main section.container div.project-main-image {
     width: 100%; }
 
 section.main section.container div.project-explanation {
-  margin: 0 auto 20px auto; }
+  margin: 0 auto 20px auto;
+  font-weight: 300px; }
 
-section.main section.container div.project-sub-images div.project-sub-image {
-  display: inline;
-  margin: 0 auto 15px auto; }
-  section.main section.container div.project-sub-images div.project-sub-image img {
-    width: 40%; }
+section.main section.container div.project-sub-images {
+  margin-bottom: 30px; }
+  section.main section.container div.project-sub-images div.project-sub-image {
+    display: inline;
+    margin: 0 auto 15px auto; }
+    section.main section.container div.project-sub-images div.project-sub-image img {
+      width: 40%; }
+
+section.main section.container div.heading {
+  margin-bottom: 10px; }
+
+section.main section.container div.project-achievement {
+  margin-bottom: 20px;
+  text-align: left; }
+  section.main section.container div.project-achievement span {
+    font-size: 14px; }

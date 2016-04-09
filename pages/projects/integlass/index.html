@@ -15,7 +15,7 @@
 <span class="single-byte">{{ myProject.title_ja }}</span>
 {% endblock %}
 {% block project_main_image %}
-<img src="{{ myProject.image }}" alt="" width="100%"/>
+<img src="{{ myProject.image }}" alt=""/>
 {% endblock %}
 {% block project_heading %}
 <span class="double-byte">{{ myProject.brief_ja }}</span>
@@ -35,6 +35,7 @@
 </div>
 {% endfor %}
 {% endblock %}
+<span>sajfiodsjafoi</span>
 {% block project_publications %}
 {% if myProject.publications|length > 0 %}
 <div class="heading">
@@ -42,7 +43,7 @@
 </div>
 {% endif %}
 {% for publication in myProject.publications %}
-<div class="project-publications">
+<div class="project-publications project-achievement">
   <span class="double-byte">{{ publication.text }}</span>
   <a class="double-byte" href="{{ publication.url }}">→</a>
 </div>
@@ -55,9 +56,9 @@
 </div>
 {% endif %}
 {% for award in myProject.awards %}
-<div class="project-awards">
+<div class="project-awards project-achievement">
   <span class="double-byte">{{ award.text }}</span>
-  <a class="double-byte" href="{{ award.url }}">→</a>
+  <a class="double-byte" target="_blank" href="{{ award.url }}">→</a>
 </div>
 {% endfor %}
 {% endblock %}
@@ -68,7 +69,7 @@
 </div>
 {% endif %}
 {% for exhibition in myProject.exhibitions %}
-<div class="project-exhibitions">
+<div class="project-exhibitions project-achievement">
   <span class="double-byte">{{ exhibition.text }}</span>
   <a class="double-byte" href="{{ exhibition.url }}">→</a>
 </div>
