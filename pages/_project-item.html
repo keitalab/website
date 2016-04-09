@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,94 +29,94 @@
 
   <link rel="stylesheet" type="text/css" href="/css/keita-lab.css">
 
-  
-  
+  {% block head %}
+  {% endblock %}
 </head>
 <body>
   <section class="loader">
-    <div class="loading-spinner"></div>
-
+    {% include "_loading.html" %}
   </section>
   <div class="contents" style="display:none;">
     <!-- Menu bar -->
     <header>
-      <section class="header">
-  <div class="logo">
-    <a href="/">
-      <img src="/image/keita_lab_icon.png" align="bottom" />
-    </a>
-  </div>
-  <div class="menu">
-    <div class="menu-item left-edge">
-      <a href="/">
-        <span class="single-byte">About</span>
-      </a>
-    </div>
-    <div class="menu-item">
-      <a href="/member/">
-        <span class="single-byte">Member</span>
-      </a>
-    </div>
-    <div class="menu-item right-edge">
-      <a href="/project/">
-        <span class="single-byte">Project</span>
-      </a>
-    </div>
-  </div>
-  <div class="hamburger">
-    <div class="hamburger-icon">
-      <a class="" href="javascript:void(0)">
-        <div class="hamburger-container">
-          <span class="hamburger-stuff hamburger-top"></span><!--
-          --><span class="hamburger-stuff hamburger-middle"></span><!--
-          --><span class="hamburger-stuff hamburger-bottom"></span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-<section class="expanded-menu inactive">
-  <div class="expanded-menu-return">
-    <a href="javascript:void(0)">
-      <div class=return-button-cross />
-      <div class=return-button-back />
-    </a>
-  </div>
-  <div class="expanded-menu-list">
-    <div class="expanded-menu-item">
-      <a href="/">
-        <span class="single-byte">About</span>
-      </a>
-    </div>
-    <div class="expanded-menu-item">
-      <a href="/member/">
-        <span class="single-byte">Member</span>
-      </a>
-    </div>
-    <div class="expanded-menu-item">
-      <a href="/project/">
-        <span class="single-byte">Project</span>
-      </a>
-    </div>
-  </div>
-</section>
-
+      {% include "_header.html" %}
     </header>
     <section class="main">
-      <section class="top-image">
-        
-        
-      </section>
-      
-<h1>other page</h1>
+      {% extends "_layout.html" %}
+{{ hasPublications }}
+{% set hasPublications = false %}
+{{ hasExhibitions }}
+{% set hasExhibitions = false %}
+{{ hasAwards }}
+{% set hasAwards = false %}
+
+<section class="container">
+  <div class="project-keyword">
+    <div class="project-keyword-label">
+      <span class="single-byte">Keyword:&nbsp;</span>
+    </div>
+    {% block project_keyword %}
+    {% endblock %}
+  </div>
+  <div class="project-author-period">
+    {% block project_author_period %}
+    {% endblock %}
+  </div>
+  <div class="project-title">
+    {% block project_title %}
+    {% endblock %}
+  </div>
+  <div class="project-main-image">
+    {% block project_main_image %}
+    {% endblock %}
+  </div>
+  <div class="heading">
+    {% block project_heading %}
+    {% endblock %}
+  </div>
+  <div class="project-description">
+    {% block project_description %}
+    {% endblock %}
+  </div>
+  <div class="project-sub-images">
+    {% block project_sub_images %}
+    {% endblock %}
+  </div>
+  {% if hasPublications %}
+  <div class="heading">
+    <span class="single-byte">Publications</span>
+  </div>
+  <div class="project-publications">
+    {% block project_publications %}
+    {% endblock %}
+  </div>
+  {% endif %}
+  {% if hasAwards %}
+  <div class="heading">
+    <span class="single-byte">Awards</span>
+  </div>
+  <div class="project-awards">
+    {% block projecrt_awards %}
+    {% endblock %}
+  </div>
+  {% endif %}
+  {% if hasExhibitions %}
+  <div class="heading">
+    <span class="single-byte">Exhibitions</span>
+  </div>
+  <div class="project-exhibitions">
+    {% block project_exhibitions %}
+    {% endblock %}
+  </div>
+  {% endif %}
+</section>
+
+
 
     </section>
     <!-- footer -->
     <footer>
-      <section class="credit">
-  <span class="single-byte">&copy;2013&nbsp;keita-lab&nbsp;-&nbsp;All&nbsp;rights&nbsp;reserved.</span>
-</section>
-
+      {% include "_footer.html" %}
     </footer>
   </div>
   <script src="/js/jquery.min.js"></script>

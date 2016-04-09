@@ -3,13 +3,10 @@
 section.main {
   section {
     &.container {
-      div.headline {
-        text-align: left;
-      }
       text-align: center;
       article.project-list {
         width: auto;
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
         font-size: 0;
         text-align: left;
         @media screen and (max-width: $max-width) {

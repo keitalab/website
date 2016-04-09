@@ -52,6 +52,34 @@ body {
         margin-left: auto;
         margin-right: auto; } }
 
+span::selection, a::selection {
+  background-color: #bababa;
+  color: #ffffff; }
+
+span.single-byte, a.single-byte {
+  letter-spacing: 0.09em;
+  font-size: 1.01em;
+  font-family: Noto Sans Japanese, sans-serif; }
+  span.single-byte.serif, a.single-byte.serif {
+    font-family: serif; }
+
+span.double-byte, a.double-byte {
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  font-size: 1em;
+  font-family: Noto Sans Japanese, sans-serif; }
+  span.double-byte.serif, a.double-byte.serif {
+    font-family: serif; }
+
+span.bold, a.bold {
+  font-weight: 500; }
+
+span.light, a.light {
+  font-weight: 300; }
+
+span.underline, a.underline {
+  text-decoration: underline; }
+
 a {
   color: #696969; }
   a:hover {
@@ -63,45 +91,41 @@ a {
   a:active {
     text-decoration: none; }
 
-span::selection {
-  background-color: #bababa;
-  color: #ffffff; }
+div.headline {
+  text-align: left; }
+  @media screen and (min-width: 769px) {
+    div.headline {
+      margin: 0 0 20px 0;
+      font-weight: 200; }
+      div.headline span.double-byte {
+        font-size: 24px; }
+      div.headline span.single-byte {
+        font-size: 26px; } }
+  @media screen and (max-width: 768px) {
+    div.headline {
+      margin: 0 0 12px 0;
+      font-weight: 200; }
+      div.headline span.double-byte {
+        font-size: 24px; }
+      div.headline span.single-byte {
+        font-size: 26px; } }
 
-span.single-byte {
-  letter-spacing: 0.09em;
-  font-size: 1.01em;
-  font-family: Noto Sans Japanese, sans-serif; }
-  span.single-byte.serif {
-    font-family: serif; }
-
-span.double-byte {
-  letter-spacing: 0.1em;
-  line-height: 2em;
-  font-size: 1em;
-  font-family: Noto Sans Japanese, sans-serif; }
-  span.double-byte.serif {
-    font-family: serif; }
-
-span.bold {
-  font-weight: 500; }
-
-span.light {
-  font-weight: 300; }
-
-span.underline {
-  text-decoration: underline; }
-
-@media screen and (min-width: 769px) {
-  div.headline {
-    margin: 0 0 20px 0;
-    font-size: 1.5em;
-    font-weight: 100; } }
-
-@media screen and (max-width: 768px) {
-  div.headline {
-    margin: 0 0 12px 0;
-    font-size: 1.3em;
-    font-weight: 200; } }
+div.heading {
+  text-align: left; }
+  @media screen and (min-width: 769px) {
+    div.heading {
+      line-height: 1.2em;
+      margin-bottom: 30px;
+      font-weight: 100; }
+      div.heading span.double-byte {
+        font-size: 21px; }
+      div.heading span.single-byte {
+        font-size: 22px; } }
+  @media screen and (max-width: 768px) {
+    div.heading span.double-byte {
+      font-size: 21px; }
+    div.heading span.single-byte {
+      font-size: 22px; } }
 
 /* Color set */
 /* z index */
@@ -293,9 +317,6 @@ section.main section {
 
 /* Color set */
 /* z index */
-section.main section.container div.headline {
-  text-align: left; }
-
 section.main section.container article.member-list {
   width: 300px;
   margin: 0 auto;
@@ -375,11 +396,9 @@ section.main section.container article.member-list {
 
 .main section.container {
   text-align: center; }
-  .main section.container div.headline {
-    text-align: left; }
   .main section.container article.project-list {
     width: auto;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     font-size: 0;
     text-align: left; }
     @media screen and (max-width: 900px) {

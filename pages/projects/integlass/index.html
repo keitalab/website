@@ -1,0 +1,40 @@
+{% extends "_layout_project_item.html" %}
+
+{% set myProject = projects.next_internet[0] %}
+
+{% block project_keyword %}
+{% for keyword in myProject.keywords %}
+<span class="double-byte">{{ keyword }}&nbsp;</span>
+{% endfor %}
+{% endblock %}
+
+{% block project_author_period %}
+<span class="double-byte">{{ myProject.author_ja }}</span><!--
+--><span class="single-byte">({{ myProject.period }})</span>
+{% endblock %}
+
+{% block project_title %}
+<span class="double-byte">{{ myProject.title_ja }}</span>
+{% endblock %}
+
+{% block project_main_image %}
+<img src="{{ myProject.image }}" alt="" />
+{% endblock %}
+
+{% block project_heading %}
+{% endblock %}
+
+{% block project_description %}
+{% endblock %}
+
+{% block project_sub_images %}
+{% endblock %}
+
+{% block project_publications %}
+{% endblock %}
+
+{% block project_awards %}
+{% endblock %}
+
+{% block project_exhibitions %}
+{% endblock %}

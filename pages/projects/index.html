@@ -1,0 +1,97 @@
+{% extends "_layout.html" %}
+
+{% block main %}
+<section class="container">
+  <div class="headline">
+    <span class="single-byte">Projects</span>
+  </div>
+  <!-- Theme 1 -->
+  <div class="heading">
+    <span class="single-byte">Theme&nbsp;1.</span><!--
+    --><span class="double-byte">自己帰属感の高い道具/身体・知覚拡張研究</span>
+  </div>
+  <article class="project-list">
+
+    {% for project in projects['sense_of_belonging'] %}
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="{{ project.image }}" alt="" />
+      </div>
+      <div class="project-filter" style="display:none;">
+        <div class="project-year">
+          <span class="single-byte">2015</span>
+        </div>
+        <div class="project-title">
+          <span class="double-byte">{{ project.title_ja }}</span>
+        </div>
+        <div class="project-author">
+          <span class="double-byte">{{ project.author_ja }}</span>
+        </div>
+        <div class="project-brief">
+          <span class="double-byte">{{ project.brief_ja }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </article>
+  <!-- Theme 2 -->
+  <div class="heading">
+    <span class="single-byte">Theme&nbsp;2.</span><!--
+    --><span class="double-byte">次のインターネット体験をつくる</span>
+  </div>
+  <article class="project-list">
+
+    {% for project in projects['next_internet'] %}
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="{{ project.image }}" alt="" />
+      </div>
+      <div class="project-filter" style="display:none;">
+        <div class="project-year">
+          <span class="single-byte">2015</span>
+        </div>
+        <div class="project-title">
+          <span class="double-byte">{{ project.title_ja }}</span>
+        </div>
+        <div class="project-author">
+          <span class="double-byte">{{ project.author_ja }}</span>
+        </div>
+        <div class="project-brief">
+          <span class="double-byte">{{ project.brief_ja }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </article>
+  <!-- Theme 3 -->
+  <div class="heading">
+    <span class="single-byte">Theme&nbsp;3.</span><!--
+    --><span class="double-byte">「今ここですぐ作れる」即応創造環境の研究</span>
+  </div>
+  <article class="project-list">
+
+    {% for project in projects['creation_support'] %}
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="{{ project.image }}" alt="" />
+      </div>
+      <div class="project-filter" style="display:none;">
+        <div class="project-year">
+          <span class="single-byte">2015</span>
+        </div>
+        <div class="project-title">
+          <span class="double-byte">{{ project.title_ja }}</span>
+        </div>
+        <div class="project-author">
+          <span class="double-byte">{{ project.author_ja }}</span>
+        </div>
+        <div class="project-brief">
+          <span class="double-byte">{{ project.brief_ja }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </article>
+</section>
+
+{% endblock %}

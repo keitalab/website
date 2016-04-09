@@ -53,6 +53,9 @@ gulp.task('assets', function () {
   gulp.src('./image/**/*')
     .pipe(gulp.dest('./dist/image'))
 
+  gulp.src('./images/**/*')
+    .pipe(gulp.dest('./dist/images'))
+
   gulp.src('./CNAME')
     .pipe(gulp.dest('./dist'))
 })
