@@ -22,12 +22,23 @@
 {% endblock %}
 
 {% block project_heading %}
+<span class="double-byte">{{ myProject.brief_ja }}</span>
 {% endblock %}
 
-{% block project_description %}
+{% block project_explanation %}
+{% for paragraph in myProject.explanation %}
+<div class="paragraph">
+  <span class="double-byte">{{ paragraph }}</span>
+</div>
+{% endfor %}
 {% endblock %}
 
 {% block project_sub_images %}
+{% for image in myProject.sub_images %}
+<div class="project-sub-image">
+  <img src="{{ image }}" alt="" />
+</div>
+{% endfor %}
 {% endblock %}
 
 {% block project_publications %}

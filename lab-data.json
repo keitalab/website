@@ -80,6 +80,8 @@
         "title_en": "LiveTexture", "title_ja": "LiveTexture",
         "brief_en": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
         "brief_ja": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
+        "explanation": [
+        ],
         "image": "/images/projects/live-texture/live-texture-main.jpg",
         "detail_page": "",
         "period": "2014~",
@@ -98,6 +100,11 @@
         "image": "/images/projects/integlass/integlass-main.jpg",
         "detail_page": "integlass",
         "period": "2013~2015",
+        "explanation": [
+          "料理をするときに用いる「レシピ」。今やレシピはインターネット上に大量に存在し、誰でも簡単に探し出すことができるようになりました。私たちは、この電子化したレシピが「知る」目的を超えて、実際の調理を支援する調理器具となりうる可能性を提案します。",
+          "「Integlass」は、目盛りの代わりに携帯端末を取り付けて計量する計量カップです。携帯端末に表示されたレシピの材料に触れると、目盛りの役割を持つ画面に移り、容器のどこまで材料を注げば目的の分量が計り取れるかを示します。容器の傾きに合わせて、この表示も変化し、容器が水平でなくても計量することができます。",
+          "電子化された情報を「人間が見て解釈するもの」から、「人間の行動を支援するもの」に変えるような道具の設計があると考えています。"
+        ],
         "sub_images": [
           "/images/projects/integlass/integlass-sub1.jpg",
           "/images/projects/integlass/integlass-sub2.jpg"

@@ -67,8 +67,8 @@
     {% block project_heading %}
     {% endblock %}
   </div>
-  <div class="project-description">
-    {% block project_description %}
+  <div class="project-explanation">
+    {% block project_explanation %}
     {% endblock %}
   </div>
   <div class="project-sub-images">
@@ -76,26 +76,28 @@
     {% endblock %}
   </div>
 
+
+  {% block project_publications %}
+  {% endblock %}
+  {% block projecrt_awards %}
+  {% endblock %}
+  {% block project_exhibitions %}
+  {% endblock %}
   <div class="heading">
     <span class="single-byte">Publications</span>
   </div>
   <div class="project-publications">
-    {% block project_publications %}
-    {% endblock %}
   </div>
   <div class="heading">
     <span class="single-byte">Awards</span>
   </div>
   <div class="project-awards">
-    {% block projecrt_awards %}
-    {% endblock %}
+
   </div>
   <div class="heading">
     <span class="single-byte">Exhibitions</span>
   </div>
   <div class="project-exhibitions">
-    {% block project_exhibitions %}
-    {% endblock %}
   </div>
 </section>
 
