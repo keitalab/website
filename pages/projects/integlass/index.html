@@ -42,10 +42,43 @@
 {% endblock %}
 
 {% block project_publications %}
+{% if myProject.publications|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Publications</span>
+</div>
+{% endif %}
+{% for publication in myProject.publications %}
+<div class="project-publications">
+  <span class="double-byte">{{ publication.text }}</span>
+  <a class="double-byte" href="{{ publication.url }}">→</a>
+</div>
+{% endfor %}
 {% endblock %}
 
 {% block project_awards %}
+{% if myProject.awards|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Awards</span>
+</div>
+{% endif %}
+{% for award in myProject.awards %}
+<div class="project-awards">
+  <span class="double-byte">{{ award.text }}</span>
+  <a class="double-byte" href="{{ award.url }}">→</a>
+</div>
+{% endfor %}
 {% endblock %}
 
 {% block project_exhibitions %}
+{% if myProject.exhibitions|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Exhibitions</span>
+</div>
+{% endif %}
+{% for exhibition in myProject.exhibitions %}
+<div class="project-exhibitions">
+  <span class="double-byte">{{ exhibition.text }}</span>
+  <a class="double-byte" href="{{ exhibition.url }}">→</a>
+</div>
+{% endfor %}
 {% endblock %}
