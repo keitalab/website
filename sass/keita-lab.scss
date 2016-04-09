@@ -1,4 +1,5 @@
 // Common
+@import "common/_variables";
 @import "common/_wrapper";
 @import "common/_elements";
 @import "common/_header";
@@ -11,3 +12,5 @@
 @import "pages/_members";
 // Projects page
 @import "pages/_projects";
+// Project detail page
+@import "pages/_projects_detail";

@@ -1,20 +1,4 @@
-a {
-  color: $keita-lab-gray;
-  &:hover {
-    text-decoration: none;
-  }
-  &:link {
-    text-decoration: none;
-  }
-  &:visited {
-    text-decoration: none;
-  }
-  &:active {
-    text-decoration: none;
-  }
-}
-
-span {
+span, a {
   &::selection {
     background-color: $keita-lab-lightgray;
     color: $keita-lab-white;
@@ -26,7 +10,6 @@ span {
     &.serif {
       font-family: serif;
     }
-
   }
   &.double-byte {
     letter-spacing: 0.1em;
@@ -47,17 +30,105 @@ span {
     text-decoration: underline;
   }
 }
+
+a {
+  color: $keita-lab-gray;
+  &:hover {
+    text-decoration: none;
+  }
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+section {
+  &.container {
+    // text-align: left;
+  }
+}
 div {
   &.headline {
+    text-align: left;
     @media screen and (min-width: $large-min) {
       margin: 0 0 20px 0;
-      font-size: 1.5em;
-      font-weight: 100;
+      font-weight: 200;
+      span {
+        &.double-byte {
+          font-size: $large-double-byte-pc;
+        }
+        &.single-byte {
+          font-size: $large-single-byte-pc;
+        }
+      }
     }
     @media screen and (max-width: $medium-max) {
       margin: 0 0 12px 0;
-      font-size: 1.3em;
       font-weight: 200;
+      span {
+        &.double-byte {
+          font-size: $large-double-byte-sp;
+        }
+        &.single-byte {
+          font-size: $large-single-byte-sp;
+        }
+      }
+    }
+  }
+  &.heading {
+    text-align: left;
+    @media screen and (min-width: $large-min) {
+      line-height: 1.2em;
+      margin-bottom: 30px;
+      font-weight: 100;
+      span {
+        &.double-byte {
+          font-size: $medium-double-byte-pc;
+        }
+        &.single-byte {
+          font-size: $medium-single-byte-pc;
+        }
+      }
+    }
+    @media screen and (max-width: $medium-max) {
+      span {
+        &.double-byte {
+          font-size: $medium-double-byte-sp;
+        }
+        &.single-byte {
+          font-size: $medium-single-byte-sp;
+        }
+      }
+    }
+  }
+  &.paragraph {
+    text-align: left;
+    @media screen and (min-width: $large-min) {
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      font-weight: 300;
+      span {
+        &.double-byte {
+          font-size: $small-double-byte-pc;
+        }
+        &.single-byte {
+          font-size: $small-single-byte-pc;
+        }
+      }
+    }
+    @media screen and (max-width: $medium-max) {
+      span {
+        &.double-byte {
+          font-size: $small-double-byte-sp;
+        }
+        &.single-byte {
+          font-size: $small-single-byte-sp;
+        }
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-// Responsive
+// Breakpoints
 $large-min: 769px;
 $medium-max: 768px;
 $small-max: 380px;
@@ -13,6 +13,22 @@ $max-width: 900px;
 $whole-margin-left-sp: 4%;
 $whole-margin-right-sp: 4%;
 $whole-width-sp: 92%;
+
+// Font size
+// Double byte character
+$large-double-byte-pc: 24px;
+$large-double-byte-sp: 24px;
+$medium-double-byte-pc: 21px;
+$medium-double-byte-sp: 21px;
+$small-double-byte-pc:14px;
+$small-double-byte-sp:14px;
+// Single byte character
+$large-single-byte-pc: 26px;
+$large-single-byte-sp: 26px;
+$medium-single-byte-pc: 22px;
+$medium-single-byte-sp: 22px;
+$small-single-byte-pc:14px;
+$small-single-byte-sp:14px;
 
 // image size
 $profile-large-width: 150px;

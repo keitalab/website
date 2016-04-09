@@ -1,0 +1,94 @@
+@import "common/_variables";
+section.main {
+  section.container {
+    div {
+      &.project-header {
+        display: block;
+        width: 100%;
+        height: 28px;
+        margin: 0 0 20px 0;
+        text-align: justify;
+        div {
+          &.project-keyword {
+            display: inline-block;
+            float: left;
+            div {
+              display: inline-block;
+              &.project-keyword-label {
+                span {
+                  font-size: $small-single-byte-pc;
+                  color: $keita-lab-blue;
+                }
+              }
+              &.project-keyword-items {
+                span {
+                  font-size: $small-double-byte-pc;
+                  color: $keita-lab-lightgray;
+                }
+              }
+            }
+          }
+          &.project-author-period {
+            display: inline-block;
+            float: right;
+            span {
+              &.double-byte {
+                font-size: $small-double-byte-pc;
+              }
+              &.single-byte {
+                font-size: $small-single-byte-pc;
+              }
+            }
+          }
+        }
+      }
+      &.project-title {
+        span {
+          display: block;
+          margin: 0 auto 20px 0;
+          font-size: $large-single-byte-pc;
+        }
+      }
+      &.project-main-image {
+        margin: 0 auto 30px auto;
+        img {
+          width: 100%;
+        }
+      }
+      &.project-explanation {
+        margin: 0 auto 20px auto;
+        font-weight: 300px;
+
+      }
+      &.project-sub-images {
+        margin-bottom: 30px;
+        div.project-sub-image {
+          display: inline;;
+          margin: 0 auto 15px auto;
+          img {
+            width: 40%;
+          }
+        }
+      }
+      &.heading {
+        margin-bottom: 10px;
+      }
+      &.project-achievement {
+        margin-bottom: 20px;
+        text-align: left;
+        span {
+          font-size: $small-double-byte-pc;
+        }
+      }
+      &.project-publications {
+
+      }
+      &.project-awards {
+
+      }
+      &.project-exhibition {
+
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 /* Color set */
 /* z index */
+/* Color set */
+/* z index */
 @import "common/_variables" section;
 body {
   margin: 0;
@@ -52,6 +54,34 @@ body {
         margin-left: auto;
         margin-right: auto; } }
 
+span::selection, a::selection {
+  background-color: #bababa;
+  color: #ffffff; }
+
+span.single-byte, a.single-byte {
+  letter-spacing: 0.09em;
+  font-size: 1.01em;
+  font-family: Noto Sans Japanese, sans-serif; }
+  span.single-byte.serif, a.single-byte.serif {
+    font-family: serif; }
+
+span.double-byte, a.double-byte {
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  font-size: 1em;
+  font-family: Noto Sans Japanese, sans-serif; }
+  span.double-byte.serif, a.double-byte.serif {
+    font-family: serif; }
+
+span.bold, a.bold {
+  font-weight: 500; }
+
+span.light, a.light {
+  font-weight: 300; }
+
+span.underline, a.underline {
+  text-decoration: underline; }
+
 a {
   color: #696969; }
   a:hover {
@@ -63,45 +93,58 @@ a {
   a:active {
     text-decoration: none; }
 
-span::selection {
-  background-color: #bababa;
-  color: #ffffff; }
+div.headline {
+  text-align: left; }
+  @media screen and (min-width: 769px) {
+    div.headline {
+      margin: 0 0 20px 0;
+      font-weight: 200; }
+      div.headline span.double-byte {
+        font-size: 24px; }
+      div.headline span.single-byte {
+        font-size: 26px; } }
+  @media screen and (max-width: 768px) {
+    div.headline {
+      margin: 0 0 12px 0;
+      font-weight: 200; }
+      div.headline span.double-byte {
+        font-size: 24px; }
+      div.headline span.single-byte {
+        font-size: 26px; } }
 
-span.single-byte {
-  letter-spacing: 0.09em;
-  font-size: 1.01em;
-  font-family: Noto Sans Japanese, sans-serif; }
-  span.single-byte.serif {
-    font-family: serif; }
+div.heading {
+  text-align: left; }
+  @media screen and (min-width: 769px) {
+    div.heading {
+      line-height: 1.2em;
+      margin-bottom: 30px;
+      font-weight: 100; }
+      div.heading span.double-byte {
+        font-size: 21px; }
+      div.heading span.single-byte {
+        font-size: 22px; } }
+  @media screen and (max-width: 768px) {
+    div.heading span.double-byte {
+      font-size: 21px; }
+    div.heading span.single-byte {
+      font-size: 22px; } }
 
-span.double-byte {
-  letter-spacing: 0.1em;
-  line-height: 2em;
-  font-size: 1em;
-  font-family: Noto Sans Japanese, sans-serif; }
-  span.double-byte.serif {
-    font-family: serif; }
-
-span.bold {
-  font-weight: 500; }
-
-span.light {
-  font-weight: 300; }
-
-span.underline {
-  text-decoration: underline; }
-
-@media screen and (min-width: 769px) {
-  div.headline {
-    margin: 0 0 20px 0;
-    font-size: 1.5em;
-    font-weight: 100; } }
-
-@media screen and (max-width: 768px) {
-  div.headline {
-    margin: 0 0 12px 0;
-    font-size: 1.3em;
-    font-weight: 200; } }
+div.paragraph {
+  text-align: left; }
+  @media screen and (min-width: 769px) {
+    div.paragraph {
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      font-weight: 300; }
+      div.paragraph span.double-byte {
+        font-size: 14px; }
+      div.paragraph span.single-byte {
+        font-size: 14px; } }
+  @media screen and (max-width: 768px) {
+    div.paragraph span.double-byte {
+      font-size: 14px; }
+    div.paragraph span.single-byte {
+      font-size: 14px; } }
 
 /* Color set */
 /* z index */
@@ -293,9 +336,6 @@ section.main section {
 
 /* Color set */
 /* z index */
-section.main section.container div.headline {
-  text-align: left; }
-
 section.main section.container article.member-list {
   width: 300px;
   margin: 0 auto;
@@ -375,11 +415,9 @@ section.main section.container article.member-list {
 
 .main section.container {
   text-align: center; }
-  .main section.container div.headline {
-    text-align: left; }
   .main section.container article.project-list {
     width: auto;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     font-size: 0;
     text-align: left; }
     @media screen and (max-width: 900px) {
@@ -526,3 +564,61 @@ section.main section.container article.member-list {
         @media screen and (max-width: 768px) {
           .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
             font-size: 10px; } }
+
+/* Color set */
+/* z index */
+section.main section.container div.project-header {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 0 0 20px 0;
+  text-align: justify; }
+  section.main section.container div.project-header div.project-keyword {
+    display: inline-block;
+    float: left; }
+    section.main section.container div.project-header div.project-keyword div {
+      display: inline-block; }
+      section.main section.container div.project-header div.project-keyword div.project-keyword-label span {
+        font-size: 14px;
+        color: #6490D3; }
+      section.main section.container div.project-header div.project-keyword div.project-keyword-items span {
+        font-size: 14px;
+        color: #bababa; }
+  section.main section.container div.project-header div.project-author-period {
+    display: inline-block;
+    float: right; }
+    section.main section.container div.project-header div.project-author-period span.double-byte {
+      font-size: 14px; }
+    section.main section.container div.project-header div.project-author-period span.single-byte {
+      font-size: 14px; }
+
+section.main section.container div.project-title span {
+  display: block;
+  margin: 0 auto 20px 0;
+  font-size: 26px; }
+
+section.main section.container div.project-main-image {
+  margin: 0 auto 30px auto; }
+  section.main section.container div.project-main-image img {
+    width: 100%; }
+
+section.main section.container div.project-explanation {
+  margin: 0 auto 20px auto;
+  font-weight: 300px; }
+
+section.main section.container div.project-sub-images {
+  margin-bottom: 30px; }
+  section.main section.container div.project-sub-images div.project-sub-image {
+    display: inline;
+    margin: 0 auto 15px auto; }
+    section.main section.container div.project-sub-images div.project-sub-image img {
+      width: 40%; }
+
+section.main section.container div.heading {
+  margin-bottom: 10px; }
+
+section.main section.container div.project-achievement {
+  margin-bottom: 20px;
+  text-align: left; }
+  section.main section.container div.project-achievement span {
+    font-size: 14px; }
