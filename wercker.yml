@@ -14,6 +14,7 @@ deploy:
       gh_pages: true
       basedir: dist
       repo: $REPO
+      gh_pages_domain: $DOMAIN
   after-steps:
     - slack-notifier:
       url: $SLACK_WEBHOOK_URL
