@@ -1,6 +1,6 @@
 {% extends "_layout_project_item.html" %}
 
-{% set myProject = projects.next_internet[2] %}
+{% set myProject = projects.sense_of_belonging[1] %}
 
 {% block project_keyword %}
 {% for keyword in myProject.keywords %}
@@ -97,7 +97,6 @@
 {% endfor %}
 {% endblock %}
 {% block project_links %}
-{{ myProject.links }}
 {% if myProject.links|length > 0 %}
 <div class="heading">
   <span class="single-byte">Links</span>
