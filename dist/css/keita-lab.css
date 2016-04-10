@@ -622,3 +622,10 @@ section.main section.container div.project-achievement {
   text-align: left; }
   section.main section.container div.project-achievement span {
     font-size: 14px; }
+
+/* Color set */
+/* z index */
+section.main section.container article.publication-list {
+  text-align: left; }
+  section.main section.container article.publication-list div.project-title {
+    margin-top: 20px; }
