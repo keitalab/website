@@ -5,7 +5,9 @@ var del = require('del')
 var sass = require('gulp-sass')
 var data = require('gulp-data')
 var nunjucksRender = require('gulp-nunjucks-render')
-var browserSync = require('browser-sync');
+var imagemin = require('gulp-imagemin')
+var jpegtran = require('imagemin-jpegtran')
+var browserSync = require('browser-sync')
 var dataset = require('./lab-data.json')
 
 gulp.task('clean', function () {
@@ -51,9 +53,17 @@ gulp.task('assets', function () {
     .pipe(gulp.dest('./dist/font'))
 
   gulp.src('./image/**/*')
+    .pipe(imagemin({
+      progressive: true,
+      use: [jpegtran()]
+    }))
     .pipe(gulp.dest('./dist/image'))
 
   gulp.src('./images/**/*')
+    .pipe(imagemin({
+      progressive: true,
+      use: [jpegtran()]
+    }))
     .pipe(gulp.dest('./dist/images'))
 
   gulp.src('./CNAME')
@@ -80,7 +90,7 @@ gulp.task('assets:watch', function () {
 
 gulp.task('browserSync', function () {
   browserSync({
-    files: "dist/**/*",
+    files: 'dist/**/*',
     server: {
       baseDir: 'dist'
     }
