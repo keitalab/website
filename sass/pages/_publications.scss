@@ -1,0 +1,12 @@
+@import "common/_variables";
+// Publications
+section.main {
+  section.container {
+    article.publication-list {
+      text-align: left;
+      div.project-title {
+        margin-top: 20px;
+      }
+    }
+  }
+}
