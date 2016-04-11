@@ -3,6 +3,7 @@
 var gulp = require('gulp')
 var del = require('del')
 var sass = require('gulp-sass')
+var cleanCSS = require('gulp-clean-css')
 var data = require('gulp-data')
 var nunjucksRender = require('gulp-nunjucks-render')
 var browserSync = require('browser-sync');
@@ -30,6 +31,7 @@ gulp.task('sass', function () {
   // compile sass
   gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('./dist/css'))
 })
 
