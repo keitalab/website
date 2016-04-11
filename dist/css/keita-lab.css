@@ -170,7 +170,9 @@ body header {
       width: 69%; }
       body header section.header div.menu div.menu-item {
         display: inline-block;
-        margin: 0 0 0 30px; } }
+        margin: 0 0 0 13px; }
+        body header section.header div.menu div.menu-item a {
+          font-size: 14px; } }
   @media screen and (max-width: 768px) {
     body header section.header div.menu {
       display: none; } }
@@ -245,12 +247,10 @@ body header {
           body header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a {
             display: inline-block;
             width: 100%;
-            height: 100%; }
-            body header section.expanded-menu.active div.expanded-menu-list div.expanded-menu-item a span {
-              display: inline-block;
-              color: #696969;
-              font-size: 20px;
-              line-height: 4em; } }
+            height: 100%;
+            color: #696969;
+            font-size: 20px;
+            line-height: 4em; } }
 
 /* Color set */
 /* z index */
