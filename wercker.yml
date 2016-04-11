@@ -9,10 +9,12 @@ build:
 
 deploy:
   steps:
-    - lukevivier/gh-pages:
-      token: $GITHUB_TOKEN
-      domain: keita-lab.jp
+    - ysqi/git-push:
+      gh_oauth: $GITHUB_TOKEN
+      gh_pages: true
       basedir: dist
+      repo: $REPO
+      gh_pages_domain: $DOMAIN
   after-steps:
     - slack-notifier:
       url: $SLACK_WEBHOOK_URL
