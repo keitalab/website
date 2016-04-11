@@ -31,9 +31,12 @@ body {
               width: 69%;
               div.menu-item {
                 display: inline-block;
-                margin: 0 0 0 30px;
+                margin: 0 0 0 13px;
                 &.left-edge {
 
+                }
+                a {
+                  font-size: $small-single-byte-pc;
                 }
               }
             }
@@ -142,12 +145,9 @@ body {
                   display: inline-block;
                   width: 100%;
                   height: 100%;
-                  span {
-                    display: inline-block;
-                    color: $keita-lab-gray;
-                    font-size: 20px;
-                    line-height: 4em;
-                  }
+                  color: $keita-lab-gray;
+                  font-size: 20px;
+                  line-height: 4em;
                 }
               }
             }
