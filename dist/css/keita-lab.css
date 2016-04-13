@@ -152,9 +152,14 @@ div.paragraph {
 /* Color set */
 /* z index */
 body header {
-  height: 100px;
   margin: 0 auto;
   padding: 0; }
+  @media screen and (min-width: 769px) {
+    body header {
+      height: 50px; } }
+  @media screen and (max-width: 768px) {
+    body header {
+      height: 20px; } }
   body header section.header div.logo {
     display: inline-block; }
     @media screen and (min-width: 769px) {
@@ -186,36 +191,36 @@ body header {
     body header section.header div.hamburger {
       display: inline-block;
       float: right;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       margin: 0; }
       body header section.header div.hamburger div.hamburger-icon {
         display: inline-block;
-        margin: 12px 0 0 0; }
+        margin: 0 0 0 0; }
         body header section.header div.hamburger div.hamburger-icon a {
           display: inline-block; }
           body header section.header div.hamburger div.hamburger-icon a div.hamburger-container {
             display: inline-block;
-            width: 40px;
-            height: 40px; }
+            width: 30px;
+            height: 30px; }
             body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff {
               display: block;
               position: absolute;
               background: #bababa;
-              width: 40px;
-              height: 4px;
-              margin: 0 0 12px 0;
-              border-radius: 3px;
+              width: 30px;
+              height: 2px;
+              margin: 0 0 8px 0;
+              border-radius: 2px;
               transition: 0.3s; }
               body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-top {
                 top: 25px; }
               body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-middle {
-                top: 40px; }
+                top: 35px; }
               body header section.header div.hamburger div.hamburger-icon a div.hamburger-container span.hamburger-stuff.hamburger-bottom {
-                top: 55px; }
+                top: 45px; }
         body header section.header div.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff {
           position: absolute;
-          top: 27px; }
+          top: 35px; }
           body header section.header div.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-top {
             transform: rotate(45deg); }
           body header section.header div.hamburger div.hamburger-icon.cross a div.hamburger-container span.hamburger-stuff.hamburger-middle {
@@ -284,10 +289,33 @@ section.loader {
   100% {
     transform: rotate(360deg); } }
 
-/* Color set */
-/* z index */
+section.container article.pinned-news {
+  text-align: left; }
+  section.container article.pinned-news div.pinned-news-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; }
+    section.container article.pinned-news div.pinned-news-image a img {
+      width: 100%; }
+  section.container article.pinned-news div.pinned-news-title {
+    float: left; }
+  section.container article.pinned-news div.pinned-news-date {
+    float: right; }
+    section.container article.pinned-news div.pinned-news-date span {
+      color: #696969; }
+      @media screen and (min-width: 769px) {
+        section.container article.pinned-news div.pinned-news-date span {
+          line-height: 45px;
+          font-size: 14px; } }
+      @media screen and (max-width: 768px) {
+        section.container article.pinned-news div.pinned-news-date span {
+          line-height: 45px;
+          font-size: 14px; } }
+  section.container article.pinned-news div.pinned-news-text {
+    display: inline-block; }
+
 section.top-image section.slideshow {
-  margin: 0 0 50px 0; }
+  margin: 50px 0 50px 0; }
   section.top-image section.slideshow div.slideshow-item img {
     position: relative;
     width: 100%; }

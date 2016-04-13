@@ -1,5 +1,25 @@
 {
   "news": [
+    {
+      "date": "2016.4.1",
+      "title": "2016年度、始動！",
+      "text": "新年度を迎え、明治大学FMSも４年目に突入しました。渡邊研究室は8人の1年生、7人の2年生、7人の3年生、そして修士1年1人を新たな正式なメンバーとして迎えました。そして12人の新4年生を加え、35人の学生と准教授に昇格した渡邊恵太で、この一年を乗り切っていきたいと思います。",
+      "images": [
+        "/images/news/group_picture_20160406.jpg"
+      ],
+      "detail_page": "/news/2016/04/kickoff",
+      "external_link": ""
+    },
+    {
+      "date": "",
+      "title": "",
+      "text": "",
+      "images": [
+
+      ],
+      "detail_page": "",
+      "external_link": ""
+    },
     { "date": "2016.1.1", "text_en": "Happy New Year!", "text_ja": "あけましておめでとうございます。今年もよろしくお願いいたします。", "link": "" },
     { "date": "2015.12.21", "text_en": "Year end party was held.", "text_ja": "研究室忘年会が開かれました。", "link": "" },
     { "date": "2015.4.1", "text_en": "New keita lab has been started!", "text_ja": "新生渡邊研究室が発足しました!", "link": "" }
