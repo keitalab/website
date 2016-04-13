@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Color set */
 /* z index */
 /* Color set */
@@ -61,7 +62,7 @@ span::selection, a::selection {
 span.single-byte, a.single-byte {
   letter-spacing: 0.09em;
   font-size: 1.01em;
-  font-family: Noto Sans Japanese, sans-serif; }
+  font-family: Noto Sans Japanese, Helvetica Neue, Helvetica, sans-serif; }
   span.single-byte.serif, a.single-byte.serif {
     font-family: serif; }
 
@@ -69,7 +70,7 @@ span.double-byte, a.double-byte {
   letter-spacing: 0.1em;
   line-height: 2em;
   font-size: 1em;
-  font-family: Noto Sans Japanese, sans-serif; }
+  font-family: Noto Sans Japanese, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ", "メイリオ", sans-serif; }
   span.double-byte.serif, a.double-byte.serif {
     font-family: serif; }
 
@@ -83,9 +84,11 @@ span.underline, a.underline {
   text-decoration: underline; }
 
 a {
-  color: #696969; }
+  color: #bababa; }
   a:hover {
-    text-decoration: none; }
+    transition: 0.5s;
+    text-decoration: none;
+    color: #252525; }
   a:link {
     text-decoration: none; }
   a:visited {
