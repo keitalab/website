@@ -6,7 +6,7 @@ span, a {
   &.single-byte {
     letter-spacing: 0.09em;
     font-size: 1.01em;
-    font-family: Noto Sans Japanese, sans-serif;
+    font-family: Noto Sans Japanese, Helvetica Neue, Helvetica, sans-serif;
     &.serif {
       font-family: serif;
     }
@@ -15,7 +15,7 @@ span, a {
     letter-spacing: 0.1em;
     line-height: 2em;
     font-size: 1em;
-    font-family: Noto Sans Japanese, sans-serif;
+    font-family: Noto Sans Japanese, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ", "メイリオ", sans-serif;
     &.serif {
       font-family: serif;
     }
@@ -32,9 +32,11 @@ span, a {
 }
 
 a {
-  color: $keita-lab-gray;
+  color: $keita-lab-lightgray;
   &:hover {
+    transition: 0.5s;
     text-decoration: none;
+    color: $keita-lab-black;
   }
   &:link {
     text-decoration: none;
