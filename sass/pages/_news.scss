@@ -37,5 +37,45 @@ section.container {
         }
       }
     }
+    &.news {
+      margin-top: 30px;
+      text-align: left;
+      div {
+        display: inline-block;
+        &.news-thumbnail {
+          a {
+            img {
+              width: $news-thumbnail-width;
+              height: $news-thumbnail-height;
+            }
+          }
+        }
+        &.news-description {
+          width: auto;
+          margin-top: 30px;
+          margin-left: 10px;
+          vertical-align: top;
+        }
+        &.news-date {
+          display: block;
+          line-height: 0px;
+          color: $keita-lab-lightgray;
+          span {
+            font-size: $small-single-byte-pc;
+          }
+        }
+        &.news-title {
+          display: block;
+          span {
+          }
+        }
+        &.news-detail {
+          vertical-align: top;
+          a {
+            line-height: $news-thumbnail-height;
+          }
+        }
+      }
+    }
   }
 }

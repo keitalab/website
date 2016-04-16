@@ -314,6 +314,32 @@ section.container article.pinned-news {
   section.container article.pinned-news div.pinned-news-text {
     display: inline-block; }
 
+section.container article.news {
+  margin-top: 30px;
+  text-align: left; }
+  section.container article.news div {
+    display: inline-block; }
+    section.container article.news div.news-thumbnail a img {
+      width: 100px;
+      height: 100px; }
+    section.container article.news div.news-description {
+      width: auto;
+      margin-top: 30px;
+      margin-left: 10px;
+      vertical-align: top; }
+    section.container article.news div.news-date {
+      display: block;
+      line-height: 0px;
+      color: #bababa; }
+      section.container article.news div.news-date span {
+        font-size: 14px; }
+    section.container article.news div.news-title {
+      display: block; }
+    section.container article.news div.news-detail {
+      vertical-align: top; }
+      section.container article.news div.news-detail a {
+        line-height: 100px; }
+
 section.top-image section.slideshow {
   margin: 50px 0 50px 0; }
   section.top-image section.slideshow div.slideshow-item img {

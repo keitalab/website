@@ -30,14 +30,17 @@
         <img src="{{ news[i].thumbnail }}" alt="" />
       </a>
     </div>
-    <div class="news-title">
-      <span class="double-byte">{{ news[i].title }}</span>
-    </div>
-    <div class="news-date">
-      <span class="single-byte">{{ news[i].date }}</span>
-    </div>
-    <div class="news-detail">
-      <a href="{{ news[i].detail_page }}">→</a>
+    <div class="news-description">
+      <div class="news-date">
+        <span class="single-byte">{{ news[i].date }}</span>
+      </div>
+      <div class="news-title">
+        <span class="double-byte">{{ news[i].title }}</span>
+        <a  class="double-byte" href="{{ news[i].detail_page }}">→</a>
+      </div>
+      <div class="news-detail">
+
+      </div>
     </div>
   </article>
   {% endif %}
