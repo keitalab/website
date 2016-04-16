@@ -18,9 +18,29 @@
       <span class="single-byte">{{ news[0].date }}</span>
     </div>
     <div class="pinned-news-text paragraph">
-      <span class="double-byte">{{ news[0].text|truncate(100, True) }}</span>
+      <span class="double-byte">{{ news[0].text[0]|truncate(100, True) }}</span>
       <a href="{{ news[0].detail_page }}">→</a>
     </div>
   </article>
+  {% for i in range(1, 11) %}
+  {% if news[i] %}
+  <article class="news">
+    <div class="news-thumbnail">
+      <a href="{{ news[i].detail_page }}">
+        <img src="{{ news[i].thumbnail }}" alt="" />
+      </a>
+    </div>
+    <div class="news-title">
+      <span class="double-byte">{{ news[i].title }}</span>
+    </div>
+    <div class="news-date">
+      <span class="single-byte">{{ news[i].date }}</span>
+    </div>
+    <div class="news-detail">
+      <a href="{{ news[i].detail_page }}">→</a>
+    </div>
+  </article>
+  {% endif %}
+  {% endfor %}
 </section>
 {% endblock %}
