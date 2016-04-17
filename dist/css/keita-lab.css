@@ -702,7 +702,8 @@ section.main section.container div.project-explanation {
   font-weight: 300px; }
 
 section.main section.container div.project-sub-images {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
   section.main section.container div.project-sub-images div.project-sub-image {
     display: inline;
     margin: 0 auto 15px auto; }
