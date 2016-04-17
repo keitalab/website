@@ -1,43 +1,45 @@
  {
-  "news": [
-    {
-      "date": "2016.4.1",
-      "title": "2016年度、始動始動しました！",
-      "text": [
-        "新年度を迎え、明治大学FMSも４年目に突入しました。渡邊研究室は8人の1年生、7人の2年生、7人の3年生、そして修士1年1人を新たな正式なメンバーとして迎えました。そして12人の新4年生を加え、35人の学生と准教授に昇格した渡邊恵太、総勢36人の大所帯となりましたが、このメンバーで、この一年を乗り切っていきたいと思います！"
-      ],
-      "images": [
-        "/images/news/group_picture_20160406.jpg"
-      ],
-      "detail_page": "/news/2016/04/kickoff"
-    },
-    {
-      "date": "2016.4.21",
-      "title": "SKY CIRCUSに「ものとーく」が使われています！",
-      "text": [
-        "池袋の代表的なランドマークであるサンシャイン60の展望台「SKY CIRCUS」のショップコーナーに、渡邊恵太（明治大学、CIDRE INTERACTION DESIGN代表）の研究/製品「ものとーく」が使われています。SKY CIRCUSのお土産「SKY CIRCUSクッキー」が動きと音声でプロモーションしながらの陳列されています。",
-        "また、渡邊研究室のメンバーはSKY CIRCUSに遊びに行き、様々なアトラクションや東京都を一望できるパノラマ展望台を楽しみました。皆様も是非、足を運んでみてください！"
-      ],
-      "thumbnail": "/images/news/skycircus-thumbnail.jpg",
-      "images": [
-        "/images/news/skycircus-01.jpg",
-        "/images/news/skycircus-02.jpg",
-        "/images/news/skycircus-03.jpg",
-        "/images/news/skycircus-04.jpg"
-      ],
-      "detail_page": "/news/2016/04/skycircus",
-      "external_link": [
-        {
-          "url": "http://www.skycircus.jp/",
-          "text": "サンシャイン60展望台 SKY CIRCUS"
-        },
-        {
-          "url": "http://cidre.tokyo/monotalk/",
-          "text": "CIDRE INTERACTION DESIGN「ものとーく」"
-        }
-      ]
+  "news": {
+    "2016_04": {
+      "kickoff":{
+        "date": "2016.4.1",
+        "title": "2016年度、始動始動しました！",
+        "text": [
+          "新年度を迎え、明治大学FMSも４年目に突入しました。渡邊研究室は8人の1年生、7人の2年生、7人の3年生、そして修士1年1人を新たな正式なメンバーとして迎えました。そして12人の新4年生を加え、35人の学生と准教授に昇格した渡邊恵太、総勢36人の大所帯となりましたが、このメンバーで、この一年を乗り切っていきたいと思います！"
+        ],
+        "images": [
+          "/images/news/group_picture_20160406.jpg"
+        ],
+        "detail_page": "/news/2016/04/kickoff"
+      },
+      "skycircus": {
+        "date": "2016.4.21",
+        "title": "SKY CIRCUSに「ものとーく」が使われています！",
+        "text": [
+          "池袋の代表的なランドマークであるサンシャイン60の展望台「SKY CIRCUS」のショップコーナーに、渡邊恵太（明治大学、CIDRE INTERACTION DESIGN代表）の研究/製品「ものとーく」が使われています。SKY CIRCUSのお土産「SKY CIRCUSクッキー」が動きと音声でプロモーションしながらの陳列されています。",
+          "また、渡邊研究室のメンバーはSKY CIRCUSに遊びに行き、様々なアトラクションや東京都を一望できるパノラマ展望台を楽しみました。皆様も是非、足を運んでみてください！"
+        ],
+        "thumbnail": "/images/news/skycircus-thumbnail.jpg",
+        "images": [
+          "/images/news/skycircus-01.jpg",
+          "/images/news/skycircus-02.jpg",
+          "/images/news/skycircus-03.jpg",
+          "/images/news/skycircus-04.jpg"
+        ],
+        "detail_page": "/news/2016/04/skycircus",
+        "external_link": [
+          {
+            "url": "http://www.skycircus.jp/",
+            "text": "サンシャイン60展望台 SKY CIRCUS"
+          },
+          {
+            "url": "http://cidre.tokyo/monotalk/",
+            "text": "CIDRE INTERACTION DESIGN「ものとーく」"
+          }
+        ]
+      }
     }
-  ],
+  },
   "members": {
     "b2": [
       {"firstname_ja": "祥一", "lastname_ja": "國松", "firstname_en": "Shoichi", "lastname_en": "Kunimatsu", "image": "/images/members/john_smith-150sq.jpg"},

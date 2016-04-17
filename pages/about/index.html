@@ -4,12 +4,15 @@
 <!-- Slideshow -->
 {{ images }}
 {% set images = ['03.jpg', '02.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg'] %}
-<section class="slideshow">
-  {% for image in images %}
-  <div class="slideshow-item">
-    <img src="/images/top/top-{{ image }}" alt="" />
-  </div>
-  {% endfor %}
+
+<section class="top-image">
+  <section class="slideshow">
+    {% for image in images %}
+    <div class="slideshow-item">
+      <img src="/images/top/top-{{ image }}" alt="" />
+    </div>
+    {% endfor %}
+  </section>
 </section>
 {% endblock %}
 

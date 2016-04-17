@@ -43,51 +43,36 @@
     </header>
     <section class="main">
       <section class="container">
-        <div class="project-header">
-          <div class="project-keyword">
-            <div class="project-keyword-label">
-              <span class="single-byte">Keyword:</span>
-            </div>
-            <div class="project-keyword-items">
-              {% block project_keyword %}
-              {% endblock %}
-            </div>
+        <div class="news-detail-header">
+          <div class="news-detail-title">
+            {% block title %}
+            {% endblock %}
           </div>
-          <div class="project-author-period">
-            {% block project_author_period %}
+          <div class="news-detail-title heading">
+            {% block date %}
             {% endblock %}
           </div>
         </div>
-        <div class="project-title">
-          {% block project_title %}
+        <div class="news-detail-main-image">
+          {% block main_image %}
           {% endblock %}
         </div>
-        <div class="project-main-image">
-          {% block project_main_image %}
+        <div class="news-detail-text">
+          {% block text %}
           {% endblock %}
         </div>
-        <div class="heading">
-          {% block project_heading %}
+        <div class="news-detail-sub-images">
+          {% block sub_images %}
           {% endblock %}
         </div>
-        <div class="project-explanation">
-          {% block project_explanation %}
+        <div class="news-detail-links">
+          {% block links %}
           {% endblock %}
         </div>
-        <div class="project-sub-images">
-          {% block project_sub_images %}
+        <div class="news-detail-guide">
+          {% block guide %}
           {% endblock %}
         </div>
-        {% block project_publications %}
-        {% endblock %}
-        {% block project_awards %}
-        {% endblock %}
-        {% block project_exhibitions %}
-        {% endblock %}
-        {% block project_media %}
-        {% endblock %}
-        {% block project_links %}
-        {% endblock %}
       </section>
     </section>
     <!-- footer -->
