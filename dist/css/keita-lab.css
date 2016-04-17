@@ -155,7 +155,7 @@ div.paragraph {
 /* Color set */
 /* z index */
 body header {
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   padding: 0; }
   @media screen and (min-width: 769px) {
     body header {
