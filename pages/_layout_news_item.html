@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -41,10 +42,38 @@
       {% include "_header.html" %}
     </header>
     <section class="main">
-      {% block topimage %}
-      {% endblock %}
-      {% block main %}
-      {% endblock %}
+      <section class="container">
+        <div class="news-detail-header">
+          <div class="news-detail-title heading">
+            {% block title %}
+            {% endblock %}
+          </div>
+          <div class="news-detail-date">
+            {% block date %}
+            {% endblock %}
+          </div>
+        </div>
+        <div class="news-detail-main-image">
+          {% block main_image %}
+          {% endblock %}
+        </div>
+        <div class="news-detail-text">
+          {% block text %}
+          {% endblock %}
+        </div>
+        <div class="news-detail-sub-images">
+          {% block sub_images %}
+          {% endblock %}
+        </div>
+        <div class="news-detail-links">
+          {% block links %}
+          {% endblock %}
+        </div>
+        <div class="news-detail-guide">
+          {% block guide %}
+          {% endblock %}
+        </div>
+      </section>
     </section>
     <!-- footer -->
     <footer>

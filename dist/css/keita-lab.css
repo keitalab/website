@@ -1,6 +1,8 @@
 @charset "UTF-8";
+/* Margin */
 /* Color set */
 /* z index */
+/* Margin */
 /* Color set */
 /* z index */
 @import "common/_variables" section;
@@ -149,10 +151,11 @@ div.paragraph {
     div.paragraph span.single-byte {
       font-size: 14px; } }
 
+/* Margin */
 /* Color set */
 /* z index */
 body header {
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
   padding: 0; }
   @media screen and (min-width: 769px) {
     body header {
@@ -260,12 +263,14 @@ body header {
             font-size: 20px;
             line-height: 4em; } }
 
+/* Margin */
 /* Color set */
 /* z index */
 footer section.credit {
   margin-top: 5em;
   margin-bottom: 5em; }
 
+/* Margin */
 /* Color set */
 /* z index */
 section.loader {
@@ -313,6 +318,65 @@ section.container article.pinned-news {
           font-size: 14px; } }
   section.container article.pinned-news div.pinned-news-text {
     display: inline-block; }
+
+section.container article.news {
+  margin-top: 30px;
+  text-align: left; }
+  section.container article.news div {
+    display: inline-block; }
+    section.container article.news div.news-thumbnail a img {
+      width: 100px;
+      height: 100px; }
+    section.container article.news div.news-description {
+      width: auto;
+      margin-top: 30px;
+      margin-left: 10px;
+      vertical-align: top; }
+    section.container article.news div.news-date {
+      display: block;
+      line-height: 0px;
+      color: #bababa; }
+      section.container article.news div.news-date span {
+        font-size: 14px; }
+    section.container article.news div.news-title {
+      display: block; }
+    section.container article.news div.news-detail {
+      vertical-align: top; }
+      section.container article.news div.news-detail a {
+        line-height: 100px; }
+
+section.container > div {
+  text-align: left; }
+  section.container > div.news-detail-header .news-detail-title {
+    float: left; }
+  section.container > div.news-detail-header .news-detail-date {
+    line-height: 42px;
+    float: right; }
+  section.container > div.news-detail-main-image {
+    margin-bottom: 30px; }
+    section.container > div.news-detail-main-image img {
+      width: 100%; }
+  section.container > div.news-detail-text {
+    margin-bottom: 30px; }
+  section.container > div.news-detail-sub-images {
+    margin-bottom: 30px; }
+    section.container > div.news-detail-sub-images .news-detail-sub-image-item {
+      margin-bottom: 15px;
+      text-align: center; }
+      section.container > div.news-detail-sub-images .news-detail-sub-image-item img {
+        width: 70%; }
+      section.container > div.news-detail-sub-images .news-detail-sub-image-item:last-child {
+        margin-bottom: 0px; }
+  section.container > div.news-detail-links {
+    margin-bottom: 30px; }
+    section.container > div.news-detail-links .news-datail-link-item {
+      margin-bottom: 15px; }
+      section.container > div.news-detail-links .news-datail-link-item:last-child {
+        margin-bottom: 0; }
+  section.container > div.news-detail-guide .news-detail-guide-newer {
+    float: right; }
+  section.container > div.news-detail-guide .news-detail-guide-older {
+    float: left; }
 
 section.top-image section.slideshow {
   margin: 50px 0 50px 0; }
@@ -365,6 +429,7 @@ section.main section {
     section.main section.contact article.map div.map-wrapper img {
       width: 100%; }
 
+/* Margin */
 /* Color set */
 /* z index */
 section.main section.container article.member-list {
@@ -596,6 +661,7 @@ section.main section.container article.member-list {
           .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
             font-size: 10px; } }
 
+/* Margin */
 /* Color set */
 /* z index */
 section.main section.container div.project-header {
@@ -654,6 +720,7 @@ section.main section.container div.project-achievement {
   section.main section.container div.project-achievement span {
     font-size: 14px; }
 
+/* Margin */
 /* Color set */
 /* z index */
 section.main section.container article.publication-list {

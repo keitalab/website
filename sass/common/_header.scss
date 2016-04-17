@@ -3,7 +3,7 @@
 // header
 body {
   header {
-    margin: 0 auto;
+    margin: 0 auto $block-margin-bottom auto;
     padding: 0;
     @media screen and (min-width: $large-min) {
       height: 50px;

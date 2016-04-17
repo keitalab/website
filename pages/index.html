@@ -1,5 +1,5 @@
 {% extends "_layout.html" %}
-
+{% set pinned = news["2016_04"].kickoff %}
 {% block main %}
 <section class="container">
   <div class="headline">
@@ -7,20 +7,46 @@
   </div>
   <article class="pinned-news">
     <div class="pinned-news-image">
-      <a href="{{ news[0].detail_page }}">
-        <img src="{{ news[0].images[0] }}" alt="" />
+      <a href="{{ pinned.detail_page }}">
+        <img src="{{ pinned.images[0] }}" alt="" />
       </a>
     </div>
     <div class="pinned-news-title heading">
-      <span class="double-byte">{{ news[0].title }}</span>
+      <span class="double-byte">{{ pinned.title }}</span>
     </div>
     <div class="pinned-news-date">
-      <span class="single-byte">{{ news[0].date }}</span>
+      <span class="single-byte">{{ pinned.date }}</span>
     </div>
     <div class="pinned-news-text paragraph">
-      <span class="double-byte">{{ news[0].text|truncate(100, True) }}</span>
-      <a href="{{ news[0].detail_page }}">→</a>
+      <span class="double-byte">{{ pinned.text[0]|truncate(100, True) }}</span>
+      <a href="{{ pinned.detail_page }}">→</a>
     </div>
   </article>
+  {% set dates = ["2016_04"] %}
+  {% set titles = {
+    "2016_04": ["skycircus"]
+  }
+  %}
+
+  {% for date in dates %}
+  {% for title in titles[date] %}
+  <article class="news">
+    <div class="news-thumbnail">
+      <a href="{{ news[date][title].detail_page }}">
+        <img src="{{ news[date][title].thumbnail }}" alt="" />
+      </a>
+    </div>
+    <div class="news-description">
+      <div class="news-date">
+        <span class="single-byte">{{ news[date][title].date }}</span>
+      </div>
+      <div class="news-title">
+        <span class="double-byte">{{ news[date][title].title }}</span>
+        <a  class="double-byte" href="{{ news[date][title].detail_page }}">→</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+  {% endfor %}
 </section>
 {% endblock %}
