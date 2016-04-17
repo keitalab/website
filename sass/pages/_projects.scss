@@ -133,7 +133,7 @@ section.main {
                 margin: 0 0px 5px 5px;
               }
               span {
-                font-size: 12px;
+                font-size: $small-single-byte-sp;
                 color: $keita-lab-white;
                 @media screen and (max-width: $medium-max) {
                   color: $keita-lab-black !important;
@@ -148,7 +148,7 @@ section.main {
                 margin-left: 10px;
               }
               span {
-                font-size: 10px;
+                font-size: $small-single-byte-sp;
               }
             }
             div.project-title {
@@ -158,7 +158,7 @@ section.main {
               span {
                 font-size: 16px;
                 @media screen and (max-width: $medium-max) {
-                  font-size: 14px;
+                  // font-size: 14px;
                 }
               }
             }
@@ -168,7 +168,7 @@ section.main {
               }
               span {
                 @media screen and (max-width: $medium-max) {
-                  font-size: 10px;
+                  font-size: $small-double-byte-sp;
                 }
               }
             }
