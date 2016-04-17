@@ -8,7 +8,7 @@ build:
       code: npm run build
 
 deploy:
-  gh-pages:
+  steps:
     - ysqi/git-push:
       gh_oauth: $GITHUB_TOKEN
       gh_pages: true
