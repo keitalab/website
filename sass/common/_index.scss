@@ -1,0 +1,11 @@
+@import "./_variables";
+@import "./_wrapper";
+@import "./_elements";
+@import "./_header";
+@import "./_footer";
+
+section.slideshow {
+  div.slideshow-item {
+    display: none;
+  }
+}

@@ -12,17 +12,12 @@ var hover = {
   FadeDuration: 170
 }
 
-// Loading
-var startLoadingSpinner = function() {
-	$('section.loader').css('display', 'block').height($(window).height());
-}
-
 // Slideshow functions
 var SlideShow = {
   init: function() {
     this.resize();
-
     var $slides = $('section.slideshow div.slideshow-item')
+    console.log($slides);
     $slides.each(function (i) {
       if (i === 0) {
         $(this).css('display', 'block')
@@ -65,23 +60,10 @@ var SlideShow = {
 }
 
 // Main stream
-// Loading
-startLoadingSpinner();
-
 // Loaded
+SlideShow.init()
 $(window).load(function() {
-  $('div.contents').css('display', 'block');
-  $.when(SlideShow.init())
-    .done(function() {
-      $('div.contents').css('display', 'none')
-      $('section.loader')
-        .fadeOut(common.fadeOutDuration, function() {
-          $('div.contents, header, section.top-image, section.main, footer')
-            .fadeIn(common.fadeInDuration, function() {
-              SlideShow.update();
-            });
-        });
-    });
+  SlideShow.update();
 });
 
 // Header
