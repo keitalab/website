@@ -31,8 +31,9 @@ span, a {
   }
 }
 
-a {
+a{
   color: $keita-lab-lightgray;
+  transition: 0.2s;
   &:hover {
     transition: 0.5s;
     text-decoration: none;
@@ -48,9 +49,9 @@ a {
     text-decoration: none;
   }
 }
+
 section {
   &.container {
-    // text-align: left;
   }
 }
 div {

@@ -30,22 +30,19 @@
 {% block links %}
 {% for link in myNews.external_link %}
 <div class="news-detail-link-item">
-  <span class="double-byte">{{ link.text }}</span>
-  <a class="double-byte" href="{{ link.url }}">→</a>
+  <a class="double-byte" target="_blank" href="{{ link.url }}">{{ link.text }}&nbsp;→</a>
 </div>
 {% endfor %}
 {% endblock %}
 {% block guide %}
 {% if myNews.newer_news %}
 <div class="news-detail-guide-newer">
-  <span class="single-byte">Newer</span>
-  <a class="double-byte" href="{{ myNews.newer_news }}">→</a>
+  <a class="double-byte" href="{{ myNews.newer_news }}">Newer&nbsp;→</a>
 </div>
 {% endif %}
 {% if myNews.older_news %}
 <div class="news-detail-guide-older">
-  <a class="double-byte" href="{{ myNews.older_news }}">←</a>
-  <span class="single-byte">Older</span>
+  <a class="double-byte" href="{{ myNews.older_news }}">←&nbsp;Older</a>
 </div>
 {% endif %}
 {% endblock %}

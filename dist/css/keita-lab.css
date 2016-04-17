@@ -16,7 +16,7 @@ body {
       font-size: 16px; } }
   @media screen and (max-width: 768px) {
     body {
-      font-size: 12px; } }
+      font-size: 14px; } }
   body div.contents {
     margin: 20px 0 0 0; }
     @media screen and (min-width: 769px) {
@@ -86,7 +86,8 @@ span.underline, a.underline {
   text-decoration: underline; }
 
 a {
-  color: #bababa; }
+  color: #bababa;
+  transition: 0.2s; }
   a:hover {
     transition: 0.5s;
     text-decoration: none;
@@ -633,7 +634,7 @@ section.main section.container article.member-list {
             .main section.container article.project-list div.project-item div.project-filter div.project-title, .main section.container article.project-list div.project-item div.project-filter div.project-author, .main section.container article.project-list div.project-item div.project-filter div.project-brief {
               margin: 0 0px 5px 5px; } }
           .main section.container article.project-list div.project-item div.project-filter div.project-title span, .main section.container article.project-list div.project-item div.project-filter div.project-author span, .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
-            font-size: 12px;
+            font-size: 14px;
             color: #ffffff; }
             @media screen and (max-width: 768px) {
               .main section.container article.project-list div.project-item div.project-filter div.project-title span, .main section.container article.project-list div.project-item div.project-filter div.project-author span, .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
@@ -645,21 +646,18 @@ section.main section.container article.member-list {
           .main section.container article.project-list div.project-item div.project-filter div.project-author {
             margin-left: 10px; } }
         .main section.container article.project-list div.project-item div.project-filter div.project-author span {
-          font-size: 10px; }
+          font-size: 14px; }
         @media screen and (max-width: 768px) {
           .main section.container article.project-list div.project-item div.project-filter div.project-title {
             display: inline-block; } }
         .main section.container article.project-list div.project-item div.project-filter div.project-title span {
           font-size: 16px; }
-          @media screen and (max-width: 768px) {
-            .main section.container article.project-list div.project-item div.project-filter div.project-title span {
-              font-size: 14px; } }
         @media screen and (max-width: 768px) {
           .main section.container article.project-list div.project-item div.project-filter div.project-brief {
             margin: 0 15px 5px 20px; } }
         @media screen and (max-width: 768px) {
           .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
-            font-size: 10px; } }
+            font-size: 14px; } }
 
 /* Margin */
 /* Color set */
@@ -704,7 +702,8 @@ section.main section.container div.project-explanation {
   font-weight: 300px; }
 
 section.main section.container div.project-sub-images {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
   section.main section.container div.project-sub-images div.project-sub-image {
     display: inline;
     margin: 0 auto 15px auto; }
