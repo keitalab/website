@@ -36,4 +36,16 @@
 {% endfor %}
 {% endblock %}
 {% block guide %}
+{% if myNews.newer_news %}
+<div class="news-detail-guide-newer">
+  <span class="single-byte">Newer</span>
+  <a class="double-byte" href="{{ myNews.newer_news }}">→</a>
+</div>
+{% endif %}
+{% if myNews.older_news %}
+<div class="news-detail-guide-older">
+  <a class="double-byte" href="{{ myNews.older_news }}">←</a>
+  <span class="single-byte">Older</span>
+</div>
+{% endif %}
 {% endblock %}

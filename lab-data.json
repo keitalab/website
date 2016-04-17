@@ -10,7 +10,8 @@
         "images": [
           "/images/news/group_picture_20160406.jpg"
         ],
-        "detail_page": "/news/2016/04/kickoff"
+        "detail_page": "/news/2016/04/kickoff",
+        "newer_news": "/news/2016/04/skycircus"
       },
       "skycircus": {
         "date": "2016.4.21",
@@ -36,7 +37,8 @@
             "url": "http://cidre.tokyo/monotalk/",
             "text": "CIDRE INTERACTION DESIGN「ものとーく」"
           }
-        ]
+        ],
+        "older_news": "/news/2016/04/kickoff"
       }
     }
   },
