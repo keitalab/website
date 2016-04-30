@@ -124,9 +124,9 @@ div.headline {
       margin: 0 0 12px 0;
       font-weight: 200; }
       div.headline span.double-byte {
-        font-size: 24px; }
+        font-size: 23px; }
       div.headline span.single-byte {
-        font-size: 26px; } }
+        font-size: 25px; } }
 
 div.heading {
   text-align: left; }
@@ -141,9 +141,9 @@ div.heading {
         font-size: 22px; } }
   @media screen and (max-width: 768px) {
     div.heading span.double-byte {
-      font-size: 21px; }
+      font-size: 20px; }
     div.heading span.single-byte {
-      font-size: 22px; } }
+      font-size: 21px; } }
 
 div.paragraph {
   text-align: left; }
@@ -158,9 +158,9 @@ div.paragraph {
         font-size: 14px; } }
   @media screen and (max-width: 768px) {
     div.paragraph span.double-byte {
-      font-size: 14px; }
+      font-size: 13px; }
     div.paragraph span.single-byte {
-      font-size: 14px; } }
+      font-size: 13px; } }
 
 body header {
   margin: 0 auto 30px auto;
@@ -317,7 +317,7 @@ section.news article.pinned-news {
       @media screen and (max-width: 768px) {
         section.news article.pinned-news div.pinned-news-date span {
           line-height: 45px;
-          font-size: 14px; } }
+          font-size: 13px; } }
   section.news article.pinned-news div.pinned-news-text {
     display: inline-block; }
 
@@ -341,7 +341,7 @@ section.news article.news {
       section.news article.news div.news-date span {
         font-size: 14px; }
     section.news article.news div.news-title {
-      display: block; }
+      display: inline; }
     section.news article.news div.news-detail {
       vertical-align: top; }
       section.news article.news div.news-detail a {
@@ -519,8 +519,14 @@ section.projects div.projects-category div.project-list div.project-item {
   display: inline-flex;
   margin: 0 auto;
   margin-bottom: 60px; }
+  @media screen and (max-width: 768px) {
+    section.projects div.projects-category div.project-list div.project-item {
+      display: block; } }
   section.projects div.projects-category div.project-list div.project-item div.project-thumbnail {
     display: inline-block; }
+    @media screen and (max-width: 768px) {
+      section.projects div.projects-category div.project-list div.project-item div.project-thumbnail {
+        display: block; } }
     @media screen and (min-width: 912px) {
       section.projects div.projects-category div.project-list div.project-item div.project-thumbnail img {
         width: 392px; } }
@@ -531,7 +537,8 @@ section.projects div.projects-category div.project-list div.project-item {
     position: absolute;
     left: auto;
     background: #252525;
-    opacity: 0.9; }
+    opacity: 0.9;
+    z-index: 997; }
     @media screen and (min-width: 912px) {
       section.projects div.projects-category div.project-list div.project-item a div.project-filter {
         width: 392px;
@@ -541,15 +548,30 @@ section.projects div.projects-category div.project-list div.project-item {
       section.projects div.projects-category div.project-list div.project-item a div.project-filter {
         width: 88%;
         transform: translate(-100%, 0); } }
+    @media screen and (max-width: 768px) {
+      section.projects div.projects-category div.project-list div.project-item a div.project-filter {
+        position: relative;
+        display: block !important;
+        width: 100%;
+        transform: translate(0, 0);
+        background: none; } }
     section.projects div.projects-category div.project-list div.project-item a div.project-filter div {
-      margin: 0 20px;
-      color: #bababa; }
+      margin: 0 20px; }
+      @media screen and (min-width: 769px) {
+        section.projects div.projects-category div.project-list div.project-item a div.project-filter div {
+          color: #bababa; } }
+      @media screen and (max-width: 768px) {
+        section.projects div.projects-category div.project-list div.project-item a div.project-filter div {
+          color: #252525; } }
     @media screen and (min-width: 912px) {
       section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-year {
         margin-top: 80px; } }
     @media screen and (max-width: 911px) {
       section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-year {
         margin-top: 215px; } }
+    @media screen and (max-width: 768px) {
+      section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-year {
+        margin-top: 0; } }
     section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-title {
       font-size: 22px; }
     section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-author {
