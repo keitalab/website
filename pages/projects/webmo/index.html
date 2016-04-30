@@ -35,7 +35,6 @@
 </div>
 {% endfor %}
 {% endblock %}
-<span>sajfiodsjafoi</span>
 {% block project_publications %}
 {% if myProject.publications|length > 0 %}
 <div class="heading">
@@ -43,7 +42,7 @@
 </div>
 {% endif %}
 {% for publication in myProject.publications %}
-<div class="project-publications project-achievement">
+<div class="project-publications project-achievement bothsides-margin">
   <span class="double-byte">{{ publication.text }}</span>
 {% if publication.url %}
 <a class="double-byte" target="_blank" href="{{ publication.url }}">→</a>
@@ -58,7 +57,7 @@
 </div>
 {% endif %}
 {% for award in myProject.awards %}
-<div class="project-awards project-achievement">
+<div class="project-awards project-achievement bothsides-margin">
   <span class="double-byte">{{ award.text }}</span>
   {% if award.url %}
   <a class="double-byte" target="_blank" href="{{ award.url }}">→</a>
@@ -73,7 +72,7 @@
 </div>
 {% endif %}
 {% for exhibition in myProject.exhibitions %}
-<div class="project-exhibitions project-achievement">
+<div class="project-exhibitions project-achievement bothsides-margin">
   <span class="double-byte">{{ exhibition.text }}</span>
   {% if exhibition.url %}
   <a class="double-byte" target="_blank" href="{{ exhibition.url }}">→</a>
@@ -88,7 +87,7 @@
 </div>
 {% endif %}
 {% for media in myProject.media %}
-<div class="project-media project-achievement">
+<div class="project-media project-achievement bothsides-margin">
   <span class="double-byte">{{ media.text }}</span>
   {% if media.url %}
   <a class="double-byte" target="_blank" href="{{ media.url }}">→</a>
@@ -103,7 +102,7 @@
 </div>
 {% endif %}
 {% for link in myProject.links %}
-<div class="project-links project-achievement">
+<div class="project-links project-achievement bothsides-margin">
   <span class="double-byte">{{ link.text }}</span>
   {% if link.url %}
   <a class="double-byte" target="_blank" href="{{ link.url }}">→</a>

@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #fafafa;
   font-weight: 200; }
   @media screen and (min-width: 769px) {
     body {
@@ -51,14 +51,25 @@ body {
         margin-right: 0; }
         body div.contents section.main > section.top-image {
           width: 100%; }
+        body div.contents section.main > section .bothsides-margin, body div.contents section.main > section .headline, body div.contents section.main > section .heading {
+          width: 92%;
+          margin-left: 4%;
+          margin-right: 4%; }
+        body div.contents section.main > section .leftside-margin {
+          margin-left: 4%; }
+        body div.contents section.main > section .rightside-margin {
+          margin-right: 4%; }
       body div.contents footer section.credit {
         width: 90%;
         margin-left: auto;
         margin-right: auto; } }
 
+body {
+  color: #252525; }
+
 span::selection, a::selection {
   background-color: #bababa;
-  color: #ffffff; }
+  color: #fafafa; }
 
 span.single-byte, a.single-byte {
   letter-spacing: 0.09em;
@@ -246,7 +257,7 @@ body header {
       position: relative;
       z-index: 998;
       width: 100%;
-      background: #ffffff; }
+      background: #fafafa; }
       body header section.expanded-menu.active div.expanded-menu-list {
         display: block;
         text-align: center; }
@@ -265,7 +276,7 @@ footer section.credit {
   margin-bottom: 5em; }
 
 section.loader {
-  background: #ffffff;
+  background: #fafafa;
   z-index: 999; }
   section.loader .loading-spinner {
     position: absolute;
@@ -492,13 +503,13 @@ section.main section.members article.member-list {
         margin: 50px 0 0 10px; }
         section.main section.members article.member-list div.profile-item div.profile-filter div.profile-position span {
           font-size: 10px;
-          color: #ffffff; }
+          color: #fafafa; }
       section.main section.members article.member-list div.profile-item div.profile-filter div.profile-name {
         display: block;
         margin: 0 0 0 10px; }
         section.main section.members article.member-list div.profile-item div.profile-filter div.profile-name span {
           font-size: 12px;
-          color: #ffffff; }
+          color: #fafafa; }
 
 section.projects div.projects-category div.heading {
   display: block;

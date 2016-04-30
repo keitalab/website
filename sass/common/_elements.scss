@@ -6,6 +6,9 @@ section.container {
 
   }
 }
+body {
+  color: $keita-lab-black;
+}
 span, a {
   &::selection {
     background-color: $keita-lab-lightgray;

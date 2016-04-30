@@ -67,6 +67,17 @@ body {
           &.top-image {
             width: 100%;
           }
+          .bothsides-margin, .headline, .heading {
+            width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+          }
+          .leftside-margin {
+            margin-left: 4%;
+          }
+          .rightside-margin {
+            margin-right: 4%;
+          }
         }
       }
       footer {
