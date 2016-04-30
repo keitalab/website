@@ -6,7 +6,8 @@ $profile-col-6-min: 1125px;
 $profile-col-5-min: 938px;
 $profile-col-4-min: 667px;
 $profile-col-3-min: 500px;
-$project-col-2-min: 720px;
+$project-col-2-min: 912px;
+$project-col-1-max: 911px;
 
 // Size set
 $max-width: 900px;
@@ -17,18 +18,18 @@ $whole-width-sp: 92%;
 // Font size
 // Double byte character
 $large-double-byte-pc: 24px;
-$large-double-byte-sp: 24px;
+$large-double-byte-sp: 23px;
 $medium-double-byte-pc: 21px;
-$medium-double-byte-sp: 21px;
+$medium-double-byte-sp: 20px;
 $small-double-byte-pc:14px;
-$small-double-byte-sp:14px;
+$small-double-byte-sp:13px;
 // Single byte character
 $large-single-byte-pc: 26px;
-$large-single-byte-sp: 26px;
+$large-single-byte-sp: 25px;
 $medium-single-byte-pc: 22px;
-$medium-single-byte-sp: 22px;
+$medium-single-byte-sp: 21px;
 $small-single-byte-pc:14px;
-$small-single-byte-sp:14px;
+$small-single-byte-sp:13px;
 
 // image size
 // Members
@@ -37,12 +38,14 @@ $profile-large-height: 150px;
 $profile-small-width: 140px;
 $profile-small-height: 140px;
 // Projects
-$project-large-width: 340px;
-$project-large-height: 255px;
+$project-width: 392px;
+$project-height: 294px;
+$project-large-width: 100%;
 $project-medium-width: 280px;
 $project-medium-height: 210px;
 $project-small-width: 264px;
 $project-small-height: 198px;
+$project-filter-offset-x: -372px;
 // News
 $news-thumbnail-width: 100px;
 $news-thumbnail-height: 100px;
@@ -52,7 +55,7 @@ $block-margin-bottom: 30px;
 $list-item-margin-bottom: 15px;
 
 /* Color set */
-$keita-lab-white: #ffffff;
+$keita-lab-white: #fafafa;
 $keita-lab-darkwhite: #f0f0f0;
 $keita-lab-black: #252525;
 $keita-lab-gray: #696969;

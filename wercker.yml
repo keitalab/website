@@ -1,22 +1,39 @@
 box: node
 
 build:
-  steps:
-    - npm-install
-    - script:
-      name: build
-      code: npm run build
+    steps:
+        - npm-install
+        - script:
+            name: build
+            code: npm run build
 
 deploy:
-  steps:
-    - ysqi/git-push:
-      gh_oauth: $GITHUB_TOKEN
-      gh_pages: true
-      basedir: dist
-      repo: $REPO
-      gh_pages_domain: $DOMAIN
-  after-steps:
-    - slack-notifier:
-      url: $SLACK_WEBHOOK_URL
-      channel: website
-      username: bot
+    steps:
+        - ysqi/git-push:
+            gh_oauth: $GITHUB_TOKEN
+            gh_pages: true
+            basedir: dist
+            repo: $REPO
+            gh_pages_domain: $DOMAIN
+    staging:
+        - script:
+            name: install dependencies
+            code: |
+                sudo apt-get update
+                sudo apt-get install -y curl zip unzip
+        - script:
+            name: ready to publish
+            code: |
+                curl https://codeload.github.com/nulltask/heroku-static-provider/zip/master -o heroku-static-provider-master.zip
+                unzip -o heroku-static-provider-master.zip
+                cp -r dist/* heroku-static-provider-master/public/
+        - heroku-deploy:
+            key: $HEROKU_KEY
+            user: $HEROKU_USER
+            app-name: $HEROKU_APP_NAME
+            source_dir: heroku-static-provider-master
+    after-steps:
+        - slack-notifier:
+            url: $SLACK_WEBHOOK_URL
+            channel: website
+            username: bot
