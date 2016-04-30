@@ -42,8 +42,8 @@
       {% include "_header.html" %}
     </header>
     <section class="main">
-      <section class="container">
-        <div class="project-header">
+      <section class="container project-detail">
+        <div class="project-header bothsides-margin">
           <div class="project-keyword">
             <div class="project-keyword-label">
               <span class="single-byte">Keyword:</span>
@@ -58,7 +58,7 @@
             {% endblock %}
           </div>
         </div>
-        <div class="project-title">
+        <div class="project-title bothsides-margin">
           {% block project_title %}
           {% endblock %}
         </div>
@@ -66,11 +66,11 @@
           {% block project_main_image %}
           {% endblock %}
         </div>
-        <div class="heading">
+        <div class="heading bothsides-margin">
           {% block project_heading %}
           {% endblock %}
         </div>
-        <div class="project-explanation">
+        <div class="project-explanation bothsides-margin">
           {% block project_explanation %}
           {% endblock %}
         </div>

@@ -1,0 +1,48 @@
+{% extends "_layout_news_item.html" %}
+
+{% set myNews = news["2016_04"].icc_release %}
+
+{% block title %}
+<span class="double-byte">{{ myNews.title }}</span>
+{% endblock %}
+{% block date %}
+<span class="single-byte">{{ myNews.date }}</span>
+{% endblock %}
+{% block main_image %}
+<img src="{{ myNews.images[0] }}" alt="" />
+{% endblock %}
+{% block text %}
+{% for paragraph in myNews.text %}
+<div class="paragraph">
+  <span class="double-byte">{{ paragraph }}</span>
+</div>
+{% endfor %}
+{% endblock %}
+{% block sub_images %}
+{% for image in myNews.images %}
+{% if loop.index0 != 0 %}
+<div class="news-detail-sub-image-item">
+  <img src="{{ image }}" alt="" />
+</div>
+{% endif %}
+{% endfor %}
+{% endblock %}
+{% block links %}
+{% for link in myNews.external_link %}
+<div class="news-detail-link-item">
+  <a class="double-byte" target="_blank" href="{{ link.url }}">{{ link.text }}&nbsp;→</a>
+</div>
+{% endfor %}
+{% endblock %}
+{% block guide %}
+{% if myNews.newer_news %}
+<div class="news-detail-guide-newer">
+  <a class="double-byte" href="{{ myNews.newer_news }}">Newer&nbsp;→</a>
+</div>
+{% endif %}
+{% if myNews.older_news %}
+<div class="news-detail-guide-older">
+  <a class="double-byte" href="{{ myNews.older_news }}">←&nbsp;Older</a>
+</div>
+{% endif %}
+{% endblock %}

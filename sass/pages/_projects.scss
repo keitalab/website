@@ -1,175 +1,88 @@
-@import "common/_variables"
 // Projects
-section.main {
-  section {
-    &.container {
-      text-align: center;
-      article.project-list {
-        width: auto;
-        margin: 0 auto 40px auto;
-        font-size: 0;
-        text-align: left;
-        @media screen and (max-width: $max-width) {
-          width: $project-large-width * 2;
-        }
-        @media screen and (min-width: $large-min) {
 
-        }
-        @media screen and (max-width: $medium-max) {
-          width: $project-large-width;
-        }
-        @media screen and (max-width: $small-max) {
-          width: $project-medium-width;
-        }
+
+section.projects {
+  div.projects-category {
+    div {
+      &.heading {
+        display: block;
+        width: 100%;
+      }
+      &.project-list {
         div.project-item {
-          text-align: left;
-          display: inline-block;
-          position: relative;
-          width: $project-small-width;
-          height: $project-small-height;
-          margin: 0;
-          padding: 0;
-          @media screen and (max-width: $max-width) {
-            width: $project-large-width;
-            height: $project-large-height;
-          }
+          display: inline-flex;
+          margin: 0 auto;
+          margin-bottom: 60px;
           @media screen and (max-width: $medium-max) {
-            width: $project-large-width;
-            height: $project-large-height;
-            margin-bottom: 100px;
+            display: block;
           }
-          @media screen and (max-width: $small-max) {
-            width: $project-medium-width;
-            height: $project-medium-height;
-          }
-          div.project-thumbnail {
-            position: absolute;
-            top: auto;
-            left: auto;
-            width: $project-small-width;
-            height: $project-small-height;
-            margin: 0;
-            padding: 0;
-            @media screen and (max-width: $max-width) {
-              width: $project-large-width;
-              height: $project-large-height;
-            }
-            @media screen and (max-width: $medium-max) {
-              width: $project-large-width;
-              height: $project-large-height;
-            }
-            @media screen and (max-width: $small-max) {
-              width: $project-medium-width;
-              height: $project-medium-height;
-            }
-            img {
-              width: $project-small-width;
-              height: $project-small-height;
-              @media screen and (max-width: $max-width) {
-                width: $project-large-width;
-                height: $project-large-height;
-              }
+          div {
+            &.project-thumbnail {
+              display: inline-block;
               @media screen and (max-width: $medium-max) {
-                width: $project-large-width;
-                height: $project-large-height;
+                display: block;
               }
-              @media screen and (max-width: $small-max) {
-                width: $project-medium-width;
-                height: $project-medium-height;
+              img {
+                @media screen and (min-width: $project-col-2-min) {
+                  width: $project-width;
+                }
+                @media screen and (max-width: $project-col-1-max) {
+                  width: $project-large-width;
+                }
               }
             }
           }
-          div.project-filter {
-            text-align: left;
-            position: absolute;;
-            top: auto;
-            left: auto;
-            z-index: $z-project-filter;
-            width: $project-small-width;
-            height: $project-small-height;
-            margin: 0 0 0 0;
-            padding: 0;
-            vertical-align: auto;
-            background: $keita-lab-black;
-            opacity: .8;
-            @media screen and (max-width: $max-width) {
-              width: $project-large-width;
-              height: $project-large-height;
-            }
-            @media screen and (max-width: $medium-max) {
-              display: inline-block !important;
-              height: 100px;
-              margin-top: $project-large-height;
-              margin-bottom: 10px;
-              background: rgba(0, 0, 0, 0);
-            }
-            @media screen and (max-width: $small-max) {
-              width: $project-medium-width;
-              height: $project-medium-height;
-              margin-top: $project-medium-height;
-            }
-            div.project-year {
-              display: block;
-              margin: 50px 0 0 15px;
-              @media screen and (max-width: $medium-max) {
-                display: inline-block;
-                margin: 20px 0 0 20px;
+          a {
+            div.project-filter {
+              position: absolute;
+              left: auto;
+              background: $keita-lab-black;
+              opacity: 0.9;
+              z-index: $z-project-filter;
+              @media screen and (min-width: $project-col-2-min) {
+                width: $project-width;
+                height: $project-height;
+                transform: translate(-$project-width, 0);
+              }
+              @media screen and (max-width: $project-col-1-max) {
+                width: 88%;
+                transform: translate(-$project-large-width, 0);
               }
               @media screen and (max-width: $medium-max) {
-                margin: 10px 0 0 20px;
+                position: relative;
+                display: block !important ;
+                width: 100%;
+                transform: translate(0, 0);
+                background: none;
               }
-              span {
-                font-size: 10px;
-                color: $keita-lab-white;
+              div {
+                margin: 0 20px;
+                @media screen and (min-width: $large-min) {
+                  color: $keita-lab-lightgray;
+                }
                 @media screen and (max-width: $medium-max) {
                   color: $keita-lab-black;
                 }
               }
-            }
-            div.project-title, div.project-author, div.project-brief {
-              display: block;
-              margin: 0 15px 5px 15px;
-              @media screen and (max-width: $small-max) {
-                margin: 0 0px 5px 5px;
-              }
-              span {
-                font-size: $small-single-byte-sp;
-                color: $keita-lab-white;
+              .project-year {
+                @media screen and (min-width: $project-col-2-min) {
+                  margin-top: 80px;
+                }
+                @media screen and (max-width: $project-col-1-max) {
+                  margin-top: 215px;
+                }
                 @media screen and (max-width: $medium-max) {
-                  color: $keita-lab-black !important;
+                  margin-top: 0;
                 }
               }
-            }
-            div.project-author {
-              @media screen and (max-width: $medium-max) {
-                display: inline-block;
+              .project-title {
+                font-size: $medium-single-byte-pc;
               }
-              @media screen and (max-width: $small-max) {
-                margin-left: 10px;
+              .project-author {
+                font-size: $small-double-byte-pc;
               }
-              span {
-                font-size: $small-single-byte-sp;
-              }
-            }
-            div.project-title {
-              @media screen and (max-width: $medium-max) {
-                display: inline-block;
-              }
-              span {
-                font-size: 16px;
-                @media screen and (max-width: $medium-max) {
-                  // font-size: 14px;
-                }
-              }
-            }
-            div.project-brief {
-              @media screen and (max-width: $medium-max) {
-                margin: 0 15px 5px 20px;
-              }
-              span {
-                @media screen and (max-width: $medium-max) {
-                  font-size: $small-double-byte-sp;
-                }
+              .project-brief {
+                margin-bottom: 20px;
               }
             }
           }

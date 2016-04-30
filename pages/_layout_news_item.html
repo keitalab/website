@@ -42,7 +42,7 @@
       {% include "_header.html" %}
     </header>
     <section class="main">
-      <section class="container">
+      <section class="container news">
         <div class="news-detail-header">
           <div class="news-detail-title heading">
             {% block title %}
@@ -57,7 +57,7 @@
           {% block main_image %}
           {% endblock %}
         </div>
-        <div class="news-detail-text">
+        <div class="news-detail-text bothsides-margin">
           {% block text %}
           {% endblock %}
         </div>
@@ -65,11 +65,11 @@
           {% block sub_images %}
           {% endblock %}
         </div>
-        <div class="news-detail-links">
+        <div class="news-detail-links bothsides-margin">
           {% block links %}
           {% endblock %}
         </div>
-        <div class="news-detail-guide">
+        <div class="news-detail-guide bothsides-margin">
           {% block guide %}
           {% endblock %}
         </div>

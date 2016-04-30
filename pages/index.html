@@ -1,7 +1,7 @@
 {% extends "_layout.html" %}
-{% set pinned = news["2016_04"].kickoff %}
+{% set pinned = news["2016_04"].icc_release %}
 {% block main %}
-<section class="container">
+<section class="container news">
   <div class="headline">
     <span class="single-byte">News</span>
   </div>
@@ -11,26 +11,26 @@
         <img src="{{ pinned.images[0] }}" alt="" />
       </a>
     </div>
-    <div class="pinned-news-title heading">
+    <div class="pinned-news-title heading leftside-margin">
       <span class="double-byte">{{ pinned.title }}</span>
     </div>
-    <div class="pinned-news-date">
+    <div class="pinned-news-date rightside-margin">
       <span class="single-byte">{{ pinned.date }}</span>
     </div>
-    <div class="pinned-news-text paragraph">
+    <div class="pinned-news-text paragraph bothsides-margin">
       <span class="double-byte">{{ pinned.text[0]|truncate(100, True) }}</span>
       <a href="{{ pinned.detail_page }}">→</a>
     </div>
   </article>
   {% set dates = ["2016_04"] %}
   {% set titles = {
-    "2016_04": ["skycircus"]
+    "2016_04": ["skycircus", "kickoff"]
   }
   %}
 
   {% for date in dates %}
   {% for title in titles[date] %}
-  <article class="news">
+  <article class="news bothsides-margin">
     <div class="news-thumbnail">
       <a href="{{ news[date][title].detail_page }}">
         <img src="{{ news[date][title].thumbnail }}" alt="" />
