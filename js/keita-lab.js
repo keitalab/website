@@ -2,7 +2,7 @@
 var common = {
   fadeInDuration: 300,
   fadeOutDuration: 500,
-  breakpoint: 768
+  breakpoint: 753
 }
 var slideshow = {
   fadeDuration: 900,
@@ -131,8 +131,10 @@ $('div.project-item').hover(function() {
   if ($(window).width() <= common.breakpoint) {
     return;
   }
+  $imageHeight = $(this).find('img').height();
   $(this)
     .find('div.project-filter')
+    .height($imageHeight)
     .fadeIn(hover.FadeDuration);
 }, function() {
   if ($(window).width() <= common.breakpoint) {

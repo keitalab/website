@@ -1,6 +1,5 @@
-@import "common/_variables";
 section.main {
-  section.container {
+  section.project-detail {
     div {
       &.project-header {
         display: block;
@@ -58,12 +57,12 @@ section.main {
       &.project-explanation {
         margin: 0 auto 20px auto;
         font-weight: 300px;
-
       }
       &.project-sub-images {
         margin-bottom: 30px;
+        text-align: center;
         div.project-sub-image {
-          display: inline;;
+          display: inline;
           margin: 0 auto 15px auto;
           img {
             width: 40%;
