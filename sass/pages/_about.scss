@@ -1,9 +1,8 @@
-@import "common/_variables";
 // About
 section.top-image {
   section {
     &.slideshow {
-      margin: 0 0 50px 0;
+      margin: 50px 0 50px 0;
       div.slideshow-item {
         img {
           position: relative;

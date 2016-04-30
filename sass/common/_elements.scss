@@ -1,3 +1,14 @@
+section.container {
+  @media screen and (min-width: $large-min) {
+
+  }
+  @media screen and (max-width: $medium-max) {
+
+  }
+}
+body {
+  color: $keita-lab-black;
+}
 span, a {
   &::selection {
     background-color: $keita-lab-lightgray;
@@ -6,7 +17,7 @@ span, a {
   &.single-byte {
     letter-spacing: 0.09em;
     font-size: 1.01em;
-    font-family: Noto Sans Japanese, sans-serif;
+    font-family: Noto Sans Japanese, Helvetica Neue, Helvetica, sans-serif;
     &.serif {
       font-family: serif;
     }
@@ -15,7 +26,7 @@ span, a {
     letter-spacing: 0.1em;
     line-height: 2em;
     font-size: 1em;
-    font-family: Noto Sans Japanese, sans-serif;
+    font-family: Noto Sans Japanese, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ", "メイリオ", sans-serif;
     &.serif {
       font-family: serif;
     }
@@ -31,10 +42,13 @@ span, a {
   }
 }
 
-a {
-  color: $keita-lab-gray;
+a{
+  color: $keita-lab-lightgray;
+  transition: 0.2s;
   &:hover {
+    transition: 0.5s;
     text-decoration: none;
+    color: $keita-lab-black;
   }
   &:link {
     text-decoration: none;
@@ -46,9 +60,9 @@ a {
     text-decoration: none;
   }
 }
+
 section {
   &.container {
-    // text-align: left;
   }
 }
 div {

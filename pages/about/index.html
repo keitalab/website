@@ -4,12 +4,15 @@
 <!-- Slideshow -->
 {{ images }}
 {% set images = ['03.jpg', '02.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg', '08.jpg'] %}
-<section class="slideshow">
-  {% for image in images %}
-  <div class="slideshow-item">
-    <img src="/image/top/top-{{ image }}" alt="" />
-  </div>
-  {% endfor %}
+
+<section class="top-image">
+  <section class="slideshow">
+    {% for image in images %}
+    <div class="slideshow-item">
+      <img src="/images/top/top-{{ image }}" alt="" />
+    </div>
+    {% endfor %}
+  </section>
 </section>
 {% endblock %}
 
@@ -19,7 +22,7 @@
   <div class="headline">
     <span class="double-byte">こんにちは&nbsp;渡邊研究室です。</span>
   </div>
-  <article class="">
+  <article class="bothsides-margin">
     <div class="">
       <span class="single-byte">2013</span><!--
       --><span class="double-byte">年</span><!--
@@ -38,7 +41,7 @@
   <div class="headline">
     <span class="double-byte">研究内容</span>
   </div>
-  <article class="">
+  <article class="bothsides-margin">
     <div class="theme-description">
       <span class="double-byte">渡邊研究室では、主に以下のような</span><!--
       --><span class="single-byte">3</span><!--
@@ -46,18 +49,8 @@
     </div>
     <div class="theme-item">
       <div class="theme-item-label">
-        <span class="single-byte bold">1</span><!--
-        --><span class="single-byte bold">.&nbsp;Sense&nbsp;of&nbsp;Self-Ownership&nbsp;:&nbsp;</span><!--
-        --><span class="double-byte theme-item-label-after">自己帰属感の高い道具/身体・知覚拡張研究</span>
-      </div>
-      <div class="theme-item-description">
-        <span class="double-byte">情報と身体を結びつける自己帰属感とそのインタラクション手法についての研究。</span>
-      </div>
-    </div>
-    <div class="theme-item">
-      <div class="theme-item-label">
-        <span class="single-byte bold">2</span><!--
-        --><span class="single-byte bold">.&nbsp;Human&nbsp;Internet&nbsp;Interaction&nbsp;:&nbsp;</span><!--
+        <span class="single-byte">1</span><!--
+        --><span class="single-byte">.&nbsp;Human&nbsp;Internet&nbsp;Interaction&nbsp;:&nbsp;</span><!--
         --><span class="double-byte theme-item-label-after">次のインターネット体験をつくる</span>
       </div>
       <div class="theme-item-description">
@@ -66,8 +59,18 @@
     </div>
     <div class="theme-item">
       <div class="theme-item-label">
-        <span class="single-byte bold">3</span><!--
-        --><span class="single-byte bold">.&nbsp;Inprovised&nbsp;Creation&nbsp;:&nbsp;</span><!--
+        <span class="single-byte">2</span><!--
+        --><span class="single-byte">.&nbsp;Sense&nbsp;of&nbsp;Self-Ownership&nbsp;:&nbsp;</span><!--
+        --><span class="double-byte theme-item-label-after">自己帰属感の高い道具/身体・知覚拡張研究</span>
+      </div>
+      <div class="theme-item-description">
+        <span class="double-byte">情報と身体を結びつける自己帰属感とそのインタラクション手法についての研究。</span>
+      </div>
+    </div>
+    <div class="theme-item">
+      <div class="theme-item-label">
+        <span class="single-byte">3</span><!--
+        --><span class="single-byte">.&nbsp;Improvised&nbsp;Creation&nbsp;:&nbsp;</span><!--
         --><span class="double-byte theme-item-label-after">「今ここで作れる」即応創造環境の研究</span>
       </div>
       <div class="theme-item-description">
@@ -80,7 +83,7 @@
   <div class="headline">
     <span class="double-byte">コンタクト</span>
   </div>
-  <article class="caption">
+  <article class="caption bothsides-margin">
     <div class="caption-item caption-item-access">
       <div class="contact-label">
         <span class="double-byte">アクセス</span>
@@ -101,7 +104,7 @@
   </article>
   <article class="map">
       <div class="map-wrapper">
-        <img src="/image/top/map.png" alt="" />
+        <img src="/images/top/map.png" alt="" />
       </div>
   </article>
 </section>
