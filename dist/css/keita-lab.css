@@ -5,7 +5,6 @@
 /* Margin */
 /* Color set */
 /* z index */
-@import "common/_variables" section;
 body {
   margin: 0;
   padding: 0;
@@ -47,9 +46,9 @@ body {
         margin-left: auto;
         margin-right: auto; }
       body div.contents section.main > section {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto; }
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; }
         body div.contents section.main > section.top-image {
           width: 100%; }
       body div.contents footer section.credit {
@@ -152,9 +151,6 @@ div.paragraph {
     div.paragraph span.single-byte {
       font-size: 14px; } }
 
-/* Margin */
-/* Color set */
-/* z index */
 body header {
   margin: 0 auto 30px auto;
   padding: 0; }
@@ -264,16 +260,10 @@ body header {
             font-size: 20px;
             line-height: 4em; } }
 
-/* Margin */
-/* Color set */
-/* z index */
 footer section.credit {
   margin-top: 5em;
   margin-bottom: 5em; }
 
-/* Margin */
-/* Color set */
-/* z index */
 section.loader {
   background: #ffffff;
   z-index: 999; }
@@ -295,88 +285,88 @@ section.loader {
   100% {
     transform: rotate(360deg); } }
 
-section.container article.pinned-news {
+section.news article.pinned-news {
   text-align: left; }
-  section.container article.pinned-news div.pinned-news-image {
+  section.news article.pinned-news div.pinned-news-image {
     display: block;
     width: 100%;
     margin-bottom: 20px; }
-    section.container article.pinned-news div.pinned-news-image a img {
+    section.news article.pinned-news div.pinned-news-image a img {
       width: 100%; }
-  section.container article.pinned-news div.pinned-news-title {
+  section.news article.pinned-news div.pinned-news-title {
     float: left; }
-  section.container article.pinned-news div.pinned-news-date {
+  section.news article.pinned-news div.pinned-news-date {
     float: right; }
-    section.container article.pinned-news div.pinned-news-date span {
+    section.news article.pinned-news div.pinned-news-date span {
       color: #696969; }
       @media screen and (min-width: 769px) {
-        section.container article.pinned-news div.pinned-news-date span {
+        section.news article.pinned-news div.pinned-news-date span {
           line-height: 45px;
           font-size: 14px; } }
       @media screen and (max-width: 768px) {
-        section.container article.pinned-news div.pinned-news-date span {
+        section.news article.pinned-news div.pinned-news-date span {
           line-height: 45px;
           font-size: 14px; } }
-  section.container article.pinned-news div.pinned-news-text {
+  section.news article.pinned-news div.pinned-news-text {
     display: inline-block; }
 
-section.container article.news {
+section.news article.news {
   margin-top: 30px;
   text-align: left; }
-  section.container article.news div {
+  section.news article.news div {
     display: inline-block; }
-    section.container article.news div.news-thumbnail a img {
+    section.news article.news div.news-thumbnail a img {
       width: 100px;
       height: 100px; }
-    section.container article.news div.news-description {
+    section.news article.news div.news-description {
       width: auto;
       margin-top: 30px;
       margin-left: 10px;
       vertical-align: top; }
-    section.container article.news div.news-date {
+    section.news article.news div.news-date {
       display: block;
       line-height: 0px;
       color: #bababa; }
-      section.container article.news div.news-date span {
+      section.news article.news div.news-date span {
         font-size: 14px; }
-    section.container article.news div.news-title {
+    section.news article.news div.news-title {
       display: block; }
-    section.container article.news div.news-detail {
+    section.news article.news div.news-detail {
       vertical-align: top; }
-      section.container article.news div.news-detail a {
+      section.news article.news div.news-detail a {
         line-height: 100px; }
 
-section.container > div {
+section.news > div {
   text-align: left; }
-  section.container > div.news-detail-header .news-detail-title {
+  section.news > div.news-detail-header .news-detail-title {
     float: left; }
-  section.container > div.news-detail-header .news-detail-date {
+  section.news > div.news-detail-header .news-detail-date {
     line-height: 42px;
     float: right; }
-  section.container > div.news-detail-main-image {
+  section.news > div.news-detail-main-image {
     margin-bottom: 30px; }
-    section.container > div.news-detail-main-image img {
+    section.news > div.news-detail-main-image img {
       width: 100%; }
-  section.container > div.news-detail-text {
+  section.news > div.news-detail-text {
     margin-bottom: 30px; }
-  section.container > div.news-detail-sub-images {
+  section.news > div.news-detail-sub-images {
     margin-bottom: 30px; }
-    section.container > div.news-detail-sub-images .news-detail-sub-image-item {
+    section.news > div.news-detail-sub-images .news-detail-sub-image-item {
       margin-bottom: 15px;
       text-align: center; }
-      section.container > div.news-detail-sub-images .news-detail-sub-image-item img {
+      section.news > div.news-detail-sub-images .news-detail-sub-image-item img {
         width: 70%; }
-      section.container > div.news-detail-sub-images .news-detail-sub-image-item:last-child {
+      section.news > div.news-detail-sub-images .news-detail-sub-image-item:last-child {
         margin-bottom: 0px; }
-  section.container > div.news-detail-links {
+  section.news > div.news-detail-links {
     margin-bottom: 30px; }
-    section.container > div.news-detail-links .news-datail-link-item {
+    section.news > div.news-detail-links .news-datail-link-item {
       margin-bottom: 15px; }
-      section.container > div.news-detail-links .news-datail-link-item:last-child {
+      section.news > div.news-detail-links .news-datail-link-item:last-child {
         margin-bottom: 0; }
-  section.container > div.news-detail-guide .news-detail-guide-newer {
+  section.news > div.news-detail-guide .news-detail-guide-newer {
     float: right; }
-  section.container > div.news-detail-guide .news-detail-guide-older {
+  section.news > div.news-detail-guide .news-detail-guide-older {
     float: left; }
 
 section.top-image section.slideshow {
@@ -433,24 +423,24 @@ section.main section {
 /* Margin */
 /* Color set */
 /* z index */
-section.main section.container article.member-list {
+section.main section.members article.member-list {
   width: 300px;
   margin: 0 auto;
   font-size: 0;
   text-align: left; }
   @media screen and (max-width: 380px) {
-    section.main section.container article.member-list {
+    section.main section.members article.member-list {
       width: 280px; } }
   @media screen and (min-width: 500px) {
-    section.main section.container article.member-list {
+    section.main section.members article.member-list {
       width: 450px; } }
   @media screen and (min-width: 667px) {
-    section.main section.container article.member-list {
+    section.main section.members article.member-list {
       width: 600px; } }
   @media screen and (min-width: 938px) {
-    section.main section.container article.member-list {
+    section.main section.members article.member-list {
       width: 750px; } }
-  section.main section.container article.member-list div.profile-item {
+  section.main section.members article.member-list div.profile-item {
     display: inline-block;
     position: relative;
     width: 150px;
@@ -458,10 +448,10 @@ section.main section.container article.member-list {
     margin: 0;
     padding: 0; }
     @media screen and (max-width: 380px) {
-      section.main section.container article.member-list div.profile-item {
+      section.main section.members article.member-list div.profile-item {
         width: 140px;
         height: 140px; } }
-    section.main section.container article.member-list div.profile-item div.profile-thumbnail {
+    section.main section.members article.member-list div.profile-item div.profile-thumbnail {
       position: absolute;
       top: auto;
       left: auto;
@@ -470,17 +460,17 @@ section.main section.container article.member-list {
       margin: 0;
       padding: 0; }
       @media screen and (max-width: 380px) {
-        section.main section.container article.member-list div.profile-item div.profile-thumbnail {
+        section.main section.members article.member-list div.profile-item div.profile-thumbnail {
           width: 140px;
           height: 140px; } }
-      section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
+      section.main section.members article.member-list div.profile-item div.profile-thumbnail img {
         width: 150px;
         height: 150px; }
         @media screen and (max-width: 380px) {
-          section.main section.container article.member-list div.profile-item div.profile-thumbnail img {
+          section.main section.members article.member-list div.profile-item div.profile-thumbnail img {
             width: 140px;
             height: 140px; } }
-    section.main section.container article.member-list div.profile-item div.profile-filter {
+    section.main section.members article.member-list div.profile-item div.profile-filter {
       text-align: left;
       position: absolute;
       top: auto;
@@ -494,235 +484,129 @@ section.main section.container article.member-list {
       background: #252525;
       opacity: .8; }
       @media screen and (max-width: 380px) {
-        section.main section.container article.member-list div.profile-item div.profile-filter {
+        section.main section.members article.member-list div.profile-item div.profile-filter {
           width: 140px;
           height: 140px; } }
-      section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position {
+      section.main section.members article.member-list div.profile-item div.profile-filter div.profile-position {
         display: block;
         margin: 50px 0 0 10px; }
-        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-position span {
+        section.main section.members article.member-list div.profile-item div.profile-filter div.profile-position span {
           font-size: 10px;
           color: #ffffff; }
-      section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name {
+      section.main section.members article.member-list div.profile-item div.profile-filter div.profile-name {
         display: block;
         margin: 0 0 0 10px; }
-        section.main section.container article.member-list div.profile-item div.profile-filter div.profile-name span {
+        section.main section.members article.member-list div.profile-item div.profile-filter div.profile-name span {
           font-size: 12px;
           color: #ffffff; }
 
-.main section.container {
-  text-align: center; }
-  .main section.container article.project-list {
-    width: auto;
-    margin: 0 auto 40px auto;
-    font-size: 0;
-    text-align: left; }
-    @media screen and (max-width: 900px) {
-      .main section.container article.project-list {
-        width: 680px; } }
-    @media screen and (max-width: 768px) {
-      .main section.container article.project-list {
-        width: 340px; } }
-    @media screen and (max-width: 380px) {
-      .main section.container article.project-list {
-        width: 280px; } }
-    .main section.container article.project-list div.project-item {
-      text-align: left;
-      display: inline-block;
-      position: relative;
-      width: 264px;
-      height: 198px;
-      margin: 0;
-      padding: 0; }
-      @media screen and (max-width: 900px) {
-        .main section.container article.project-list div.project-item {
-          width: 340px;
-          height: 255px; } }
-      @media screen and (max-width: 768px) {
-        .main section.container article.project-list div.project-item {
-          width: 340px;
-          height: 255px;
-          margin-bottom: 100px; } }
-      @media screen and (max-width: 380px) {
-        .main section.container article.project-list div.project-item {
-          width: 280px;
-          height: 210px; } }
-      .main section.container article.project-list div.project-item div.project-thumbnail {
-        position: absolute;
-        top: auto;
-        left: auto;
-        width: 264px;
-        height: 198px;
-        margin: 0;
-        padding: 0; }
-        @media screen and (max-width: 900px) {
-          .main section.container article.project-list div.project-item div.project-thumbnail {
-            width: 340px;
-            height: 255px; } }
-        @media screen and (max-width: 768px) {
-          .main section.container article.project-list div.project-item div.project-thumbnail {
-            width: 340px;
-            height: 255px; } }
-        @media screen and (max-width: 380px) {
-          .main section.container article.project-list div.project-item div.project-thumbnail {
-            width: 280px;
-            height: 210px; } }
-        .main section.container article.project-list div.project-item div.project-thumbnail img {
-          width: 264px;
-          height: 198px; }
-          @media screen and (max-width: 900px) {
-            .main section.container article.project-list div.project-item div.project-thumbnail img {
-              width: 340px;
-              height: 255px; } }
-          @media screen and (max-width: 768px) {
-            .main section.container article.project-list div.project-item div.project-thumbnail img {
-              width: 340px;
-              height: 255px; } }
-          @media screen and (max-width: 380px) {
-            .main section.container article.project-list div.project-item div.project-thumbnail img {
-              width: 280px;
-              height: 210px; } }
-      .main section.container article.project-list div.project-item div.project-filter {
-        text-align: left;
-        position: absolute;
-        top: auto;
-        left: auto;
-        z-index: 997;
-        width: 264px;
-        height: 198px;
-        margin: 0 0 0 0;
-        padding: 0;
-        vertical-align: auto;
-        background: #252525;
-        opacity: .8; }
-        @media screen and (max-width: 900px) {
-          .main section.container article.project-list div.project-item div.project-filter {
-            width: 340px;
-            height: 255px; } }
-        @media screen and (max-width: 768px) {
-          .main section.container article.project-list div.project-item div.project-filter {
-            display: inline-block !important;
-            height: 100px;
-            margin-top: 255px;
-            margin-bottom: 10px;
-            background: transparent; } }
-        @media screen and (max-width: 380px) {
-          .main section.container article.project-list div.project-item div.project-filter {
-            width: 280px;
-            height: 210px;
-            margin-top: 210px; } }
-        .main section.container article.project-list div.project-item div.project-filter div.project-year {
-          display: block;
-          margin: 50px 0 0 15px; }
-          @media screen and (max-width: 768px) {
-            .main section.container article.project-list div.project-item div.project-filter div.project-year {
-              display: inline-block;
-              margin: 20px 0 0 20px; } }
-          @media screen and (max-width: 768px) {
-            .main section.container article.project-list div.project-item div.project-filter div.project-year {
-              margin: 10px 0 0 20px; } }
-          .main section.container article.project-list div.project-item div.project-filter div.project-year span {
-            font-size: 10px;
-            color: #ffffff; }
-            @media screen and (max-width: 768px) {
-              .main section.container article.project-list div.project-item div.project-filter div.project-year span {
-                color: #252525; } }
-        .main section.container article.project-list div.project-item div.project-filter div.project-title, .main section.container article.project-list div.project-item div.project-filter div.project-author, .main section.container article.project-list div.project-item div.project-filter div.project-brief {
-          display: block;
-          margin: 0 15px 5px 15px; }
-          @media screen and (max-width: 380px) {
-            .main section.container article.project-list div.project-item div.project-filter div.project-title, .main section.container article.project-list div.project-item div.project-filter div.project-author, .main section.container article.project-list div.project-item div.project-filter div.project-brief {
-              margin: 0 0px 5px 5px; } }
-          .main section.container article.project-list div.project-item div.project-filter div.project-title span, .main section.container article.project-list div.project-item div.project-filter div.project-author span, .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
-            font-size: 14px;
-            color: #ffffff; }
-            @media screen and (max-width: 768px) {
-              .main section.container article.project-list div.project-item div.project-filter div.project-title span, .main section.container article.project-list div.project-item div.project-filter div.project-author span, .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
-                color: #252525 !important; } }
-        @media screen and (max-width: 768px) {
-          .main section.container article.project-list div.project-item div.project-filter div.project-author {
-            display: inline-block; } }
-        @media screen and (max-width: 380px) {
-          .main section.container article.project-list div.project-item div.project-filter div.project-author {
-            margin-left: 10px; } }
-        .main section.container article.project-list div.project-item div.project-filter div.project-author span {
-          font-size: 14px; }
-        @media screen and (max-width: 768px) {
-          .main section.container article.project-list div.project-item div.project-filter div.project-title {
-            display: inline-block; } }
-        .main section.container article.project-list div.project-item div.project-filter div.project-title span {
-          font-size: 16px; }
-        @media screen and (max-width: 768px) {
-          .main section.container article.project-list div.project-item div.project-filter div.project-brief {
-            margin: 0 15px 5px 20px; } }
-        @media screen and (max-width: 768px) {
-          .main section.container article.project-list div.project-item div.project-filter div.project-brief span {
-            font-size: 14px; } }
+section.projects div.projects-category div.heading {
+  display: block;
+  width: 100%; }
 
-/* Margin */
-/* Color set */
-/* z index */
-section.main section.container div.project-header {
+section.projects div.projects-category div.project-list div.project-item {
+  display: inline-flex;
+  margin: 0 auto;
+  margin-bottom: 60px; }
+  section.projects div.projects-category div.project-list div.project-item div.project-thumbnail {
+    display: inline-block; }
+    @media screen and (min-width: 912px) {
+      section.projects div.projects-category div.project-list div.project-item div.project-thumbnail img {
+        width: 392px; } }
+    @media screen and (max-width: 911px) {
+      section.projects div.projects-category div.project-list div.project-item div.project-thumbnail img {
+        width: 100%; } }
+  section.projects div.projects-category div.project-list div.project-item a div.project-filter {
+    position: absolute;
+    left: auto;
+    background: #252525;
+    opacity: 0.9; }
+    @media screen and (min-width: 912px) {
+      section.projects div.projects-category div.project-list div.project-item a div.project-filter {
+        width: 392px;
+        height: 294px;
+        transform: translate(-392px, 0); } }
+    @media screen and (max-width: 911px) {
+      section.projects div.projects-category div.project-list div.project-item a div.project-filter {
+        width: 88%;
+        transform: translate(-100%, 0); } }
+    section.projects div.projects-category div.project-list div.project-item a div.project-filter div {
+      margin: 0 20px;
+      color: #bababa; }
+    @media screen and (min-width: 912px) {
+      section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-year {
+        margin-top: 80px; } }
+    @media screen and (max-width: 911px) {
+      section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-year {
+        margin-top: 215px; } }
+    section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-title {
+      font-size: 22px; }
+    section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-author {
+      font-size: 14px; }
+    section.projects div.projects-category div.project-list div.project-item a div.project-filter .project-brief {
+      margin-bottom: 20px; }
+
+section.main section.project-detail div.project-header {
   display: block;
   width: 100%;
   height: 28px;
   margin: 0 0 20px 0;
   text-align: justify; }
-  section.main section.container div.project-header div.project-keyword {
+  section.main section.project-detail div.project-header div.project-keyword {
     display: inline-block;
     float: left; }
-    section.main section.container div.project-header div.project-keyword div {
+    section.main section.project-detail div.project-header div.project-keyword div {
       display: inline-block; }
-      section.main section.container div.project-header div.project-keyword div.project-keyword-label span {
+      section.main section.project-detail div.project-header div.project-keyword div.project-keyword-label span {
         font-size: 14px;
         color: #6490D3; }
-      section.main section.container div.project-header div.project-keyword div.project-keyword-items span {
+      section.main section.project-detail div.project-header div.project-keyword div.project-keyword-items span {
         font-size: 14px;
         color: #bababa; }
-  section.main section.container div.project-header div.project-author-period {
+  section.main section.project-detail div.project-header div.project-author-period {
     display: inline-block;
     float: right; }
-    section.main section.container div.project-header div.project-author-period span.double-byte {
+    section.main section.project-detail div.project-header div.project-author-period span.double-byte {
       font-size: 14px; }
-    section.main section.container div.project-header div.project-author-period span.single-byte {
+    section.main section.project-detail div.project-header div.project-author-period span.single-byte {
       font-size: 14px; }
 
-section.main section.container div.project-title span {
+section.main section.project-detail div.project-title span {
   display: block;
   margin: 0 auto 20px 0;
   font-size: 26px; }
 
-section.main section.container div.project-main-image {
+section.main section.project-detail div.project-main-image {
   margin: 0 auto 30px auto; }
-  section.main section.container div.project-main-image img {
+  section.main section.project-detail div.project-main-image img {
     width: 100%; }
 
-section.main section.container div.project-explanation {
+section.main section.project-detail div.project-explanation {
   margin: 0 auto 20px auto;
   font-weight: 300px; }
 
-section.main section.container div.project-sub-images {
+section.main section.project-detail div.project-sub-images {
   margin-bottom: 30px;
   text-align: center; }
-  section.main section.container div.project-sub-images div.project-sub-image {
+  section.main section.project-detail div.project-sub-images div.project-sub-image {
     display: inline;
     margin: 0 auto 15px auto; }
-    section.main section.container div.project-sub-images div.project-sub-image img {
+    section.main section.project-detail div.project-sub-images div.project-sub-image img {
       width: 40%; }
 
-section.main section.container div.heading {
+section.main section.project-detail div.heading {
   margin-bottom: 10px; }
 
-section.main section.container div.project-achievement {
+section.main section.project-detail div.project-achievement {
   margin-bottom: 20px;
   text-align: left; }
-  section.main section.container div.project-achievement span {
+  section.main section.project-detail div.project-achievement span {
     font-size: 14px; }
 
 /* Margin */
 /* Color set */
 /* z index */
-section.main section.container article.publication-list {
+section.main section.publications article.publication-list {
   text-align: left; }
-  section.main section.container article.publication-list div.project-title {
+  section.main section.publications article.publication-list div.project-title {
     margin-top: 20px; }

@@ -61,9 +61,9 @@ body {
       }
       section.main {
         >section {
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
           &.top-image {
             width: 100%;
           }

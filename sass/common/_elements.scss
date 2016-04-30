@@ -1,3 +1,11 @@
+section.container {
+  @media screen and (min-width: $large-min) {
+
+  }
+  @media screen and (max-width: $medium-max) {
+
+  }
+}
 span, a {
   &::selection {
     background-color: $keita-lab-lightgray;

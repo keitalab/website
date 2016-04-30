@@ -123,6 +123,84 @@
           }
         ]
       },
+      { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊",
+        "title_en": "LiveTexture", "title_ja": "LiveTexture",
+        "brief_en": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
+        "brief_ja": "インタラクティブに質感が変化するテクスチャの表現手法",
+        "explanation": [
+        ],
+        "image": "/images/projects/live-texture/live-texture-main.jpg",
+        "detail_page": "/projects/live-texture",
+        "period": "2014~",
+        "sub_images": [
+        ],
+        "explanation": [
+
+        ],
+        "keywords": [
+
+        ],
+        "publications": [
+          {
+            "text": "小渕 豊 渡邊 恵太, LiveSurface: センサ情報を利用したインタラクティブな質感表現手法, 情報処理学会 インタラクション2015",
+            "url": "http://www.interaction-ipsj.org/proceedings/2015/data/20150226/B66.pdf"
+          }
+        ],
+        "awards": [
+          {
+            "text": "情報処理学会シンポジウム インタラクション2014 インタラクティブ発表賞"
+          }
+        ],
+        "exhibitions": [
+        ],
+        "media": [
+        ],
+        "links": [
+          {
+            "text": "デモページ（携帯端末からアクセスください）",
+            "url": "http://fms-cat.github.io/LiveTexture/"
+          }
+        ]
+      },
+      { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊",
+        "title_en": "LiveTexture", "title_ja": "LiveTexture",
+        "brief_en": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
+        "brief_ja": "インタラクティブに質感が変化するテクスチャの表現手法",
+        "explanation": [
+        ],
+        "image": "/images/projects/live-texture/live-texture-main.jpg",
+        "detail_page": "/projects/live-texture",
+        "period": "2014~",
+        "sub_images": [
+        ],
+        "explanation": [
+
+        ],
+        "keywords": [
+
+        ],
+        "publications": [
+          {
+            "text": "小渕 豊 渡邊 恵太, LiveSurface: センサ情報を利用したインタラクティブな質感表現手法, 情報処理学会 インタラクション2015",
+            "url": "http://www.interaction-ipsj.org/proceedings/2015/data/20150226/B66.pdf"
+          }
+        ],
+        "awards": [
+          {
+            "text": "情報処理学会シンポジウム インタラクション2014 インタラクティブ発表賞"
+          }
+        ],
+        "exhibitions": [
+        ],
+        "media": [
+        ],
+        "links": [
+          {
+            "text": "デモページ（携帯端末からアクセスください）",
+            "url": "http://fms-cat.github.io/LiveTexture/"
+          }
+        ]
+      },
       { "author_en": "Kazumi Yoshimura", "author_ja": "吉村佳純",
         "title_en": "TactileRecord", "title_ja": "TactileRecord",
         "brief_en": "テクスチャによる音楽の触覚提示手法の提案",
