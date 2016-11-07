@@ -55,7 +55,8 @@ $ npm i
 
 1. `$ npm run watch`
 2. 適当に編集．
-3. `$ npm run publish`
+3. `$ git push origin master`
+  a. 自動でwerckerがpushします
 
 ## コマンド集
 ### いまのとこ使えるコマンド
@@ -63,7 +64,6 @@ $ npm i
 - `npm run nunjucks`: `pages/`の中身をhtmlとして変換しルートに置く
 - `npm run sass`: `sass/`の中身をhtmlとして変換し`css/`に置く
 - `npm run build`: `dist/`の中身を更新
-- `npm run publish`: `npm run build`したのちにコミットして公開
 
 ### 後で増える予定のコマンド
 - `npm run dev`: 開発用
