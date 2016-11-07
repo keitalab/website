@@ -1,4 +1,4 @@
-box: node
+box: node:6.9.1-slim
 
 build:
     steps:
@@ -6,6 +6,11 @@ build:
         - script:
             name: build
             code: npm run build
+    after-steps:
+        - slack-notifier:
+            url: $SLACK_WEBHOOK_URL
+            channel: website
+            username: bot
 
 deploy:
     steps:
