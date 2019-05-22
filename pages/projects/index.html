@@ -1,0 +1,48 @@
+{% extends "_layout.html" %}
+
+{% block main %}
+<section class="container projects">
+  <div class="headline">
+    <span class="single-byte">Projects</span>
+  </div>
+  {% set themes_code = ['next_internet', 'sense_of_belonging', 'creation_support'] %}
+  {% set themes = ['次のインターネット体験をつくる', '自己帰属感の高い道具/身体・知覚拡張研究', '「今ここですぐ作れる」即応創造環境の研究' ] %}
+  {% for theme in themes %}
+  <div class="projects-category">
+    <div class="heading bothsides-margin">
+      <span class="single-byte">Theme&nbsp;{{ loop.index }}.</span><!--
+      --><span class="double-byte">{{ theme }}</span>
+    </div>
+    <div class="project-list">
+      {% for project in projects[themes_code[loop.index0]] %}
+      <div class="project-item">
+        <div class="project-thumbnail">
+          <a href="{{ project.detail_page }}">
+            <img src="{{ project.image }}" alt="" />
+          </a>
+        </div>
+        <a href="{{ project.detail_page }}">
+          <div class="project-filter" style="display:none;">
+            <div class="project-year">
+              <span class="single-byte">2015</span>
+            </div>
+            <div class="project-title">
+              <span class="double-byte">{{ project.title_ja }}</span>
+            </div>
+            <div class="project-author">
+              <span class="double-byte">{{ project.author_ja }}</span>
+            </div>
+            <div class="project-brief">
+              <span class="double-byte">{{ project.brief_ja }}→</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% endblock %}

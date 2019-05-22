@@ -1,0 +1,20 @@
+// Common
+@import "common/_variables";
+@import "common/_wrapper";
+@import "common/_elements";
+@import "common/_header";
+@import "common/_footer";
+@import "common/_loader";
+
+// Top page (News)
+@import "pages/_news";
+// About page
+@import "pages/_about";
+// Members page
+@import "pages/_members";
+// Projects page
+@import "pages/_projects";
+// Project detail page
+@import "pages/_projects_detail";
+// Publications project
+@import "pages/_publications";

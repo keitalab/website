@@ -1,0 +1,87 @@
+{% extends "_layout.html" %}
+
+{% block main %}
+<section class="container members">
+  <div class="headline">
+    <span class="single-byte">Members</span>
+  </div>
+  <article class="member-list">
+    {% for member in members.other %}
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Administrator</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for member in members.m1 %}
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Master 1st</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for member in members.b4 %}
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Bachelor 4th</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for member in members.b3 %}
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Bachelor 3rd</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% for member in members.b2 %}
+    <div class="profile-item">
+      <div class="profile-thumbnail">
+        <img src="{{ member.image }}" alt="" />
+      </div>
+      <div class="profile-filter" style="display:none;">
+        <div class="profile-position">
+          <span class="single-byte">Bachelor 2nd</span>
+        </div>
+        <div class="profile-name">
+          <span class="single-byte">{{ member.firstname_en }}&nbsp;{{ member.lastname_en }}</span>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </article>
+</section>
+
+{% endblock %}

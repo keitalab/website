@@ -1,0 +1,70 @@
+{% extends "_layout.html" %}
+
+{% block main %}
+<section class="container publications">
+  <div class="headline">
+    <span class="single-byte">Publications</span>
+  </div>
+
+  <article class="publication-list bothsides-margin">
+    {% for project in projects['sense_of_belonging'] %}
+    {% if project.publications|length > 0 %}
+    <div class="project-title">
+      <a class="single-byte" href="{{ project.detail_page }}">{{ project.title_ja }}</a>
+    </div>
+    {% for publication in project.publications %}
+    <div class="publiation-item">
+      <div class="publication-text">
+        <span class="double-byte">{{ publication.text }}</span>
+        <a class="double-byte" target="_blank" href="{{ publication.url }}">→</a>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+
+    {% for project in projects['next_internet'] %}
+    {% if project.publications|length > 0 %}
+    <div class="project-title">
+      <a href="{{ project.detail_page }}">{{ project.title_ja }}</a>
+    </div>
+    {% for publication in project.publications %}
+    <div class="publiation-item">
+      <div class="publication-text">
+        <span class="double-byte">{{ publication.text }}</span>
+        <a class="double-byte" target="_blank" href="{{ publication.url }}">→</a>
+      </div>
+      <a href="{{ project.detail_page }}">
+        <div class="project-filter" style="display:none;">
+          <span></span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+
+    {% for project in projects['creation_support'] %}
+    {% if project.publications|length > 0 %}
+    <div class="project-title">
+      <a href="{{ project.detail_page }}">{{ project.title_ja }}</a>
+    </div>
+    {% for publication in project.publications %}
+    <div class="publiation-item">
+      <div class="publication-text">
+        <span class="double-byte">{{ publication.text }}</span>
+        <a class="double-byte" target="_blank" href="{{ publication.url }}">→</a>
+      </div>
+      <a href="{{ project.detail_page }}">
+        <div class="project-filter" style="display:none;">
+          <span></span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  </article>
+</section>
+
+{% endblock %}

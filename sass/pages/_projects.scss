@@ -1,0 +1,93 @@
+// Projects
+
+
+section.projects {
+  div.projects-category {
+    div {
+      &.heading {
+        display: block;
+        width: 100%;
+      }
+      &.project-list {
+        div.project-item {
+          display: inline-flex;
+          margin: 0 auto;
+          margin-bottom: 60px;
+          @media screen and (max-width: $medium-max) {
+            display: block;
+          }
+          div {
+            &.project-thumbnail {
+              display: inline-block;
+              @media screen and (max-width: $medium-max) {
+                display: block;
+              }
+              img {
+                @media screen and (min-width: $project-col-2-min) {
+                  width: $project-width;
+                }
+                @media screen and (max-width: $project-col-1-max) {
+                  width: $project-large-width;
+                }
+              }
+            }
+          }
+          a {
+            div.project-filter {
+              position: absolute;
+              left: auto;
+              background: $keita-lab-black;
+              opacity: 0.9;
+              z-index: $z-project-filter;
+              @media screen and (min-width: $project-col-2-min) {
+                width: $project-width;
+                height: $project-height;
+                transform: translate(-$project-width, 0);
+              }
+              @media screen and (max-width: $project-col-1-max) {
+                width: 88%;
+                transform: translate(-$project-large-width, 0);
+              }
+              @media screen and (max-width: $medium-max) {
+                position: relative;
+                display: block !important ;
+                width: 100%;
+                transform: translate(0, 0);
+                background: none;
+              }
+              div {
+                margin: 0 20px;
+                @media screen and (min-width: $large-min) {
+                  color: $keita-lab-lightgray;
+                }
+                @media screen and (max-width: $medium-max) {
+                  color: $keita-lab-black;
+                }
+              }
+              .project-year {
+                @media screen and (min-width: $project-col-2-min) {
+                  margin-top: 80px;
+                }
+                @media screen and (max-width: $project-col-1-max) {
+                  margin-top: 215px;
+                }
+                @media screen and (max-width: $medium-max) {
+                  margin-top: 0;
+                }
+              }
+              .project-title {
+                font-size: $medium-single-byte-pc;
+              }
+              .project-author {
+                font-size: $small-double-byte-pc;
+              }
+              .project-brief {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

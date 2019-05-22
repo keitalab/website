@@ -1,0 +1,113 @@
+{% extends "_layout_project_item.html" %}
+
+{% set myProject = projects.creation_support[0] %}
+
+{% block project_keyword %}
+{% for keyword in myProject.keywords %}
+<span class="double-byte">{{ keyword }}</span>
+{% endfor %}
+{% endblock %}
+{% block project_author_period %}
+<span class="double-byte">{{ myProject.author_ja }}</span><!--
+--><span class="single-byte">({{ myProject.period }})</span>
+{% endblock %}
+{% block project_title %}
+<span class="single-byte">{{ myProject.title_ja }}</span>
+{% endblock %}
+{% block project_main_image %}
+<img src="{{ myProject.image }}" alt=""/>
+{% endblock %}
+{% block project_heading %}
+<span class="double-byte">{{ myProject.brief_ja }}</span>
+{% endblock %}
+{% block project_explanation %}
+{% for paragraph in myProject.explanation %}
+<div class="paragraph">
+  <span class="double-byte">{{ paragraph }}</span>
+
+</div>
+{% endfor %}
+{% endblock %}
+{% block project_sub_images %}
+{% for image in myProject.sub_images %}
+<div class="project-sub-image">
+  <img src="{{ image }}" alt="" />
+</div>
+{% endfor %}
+{% endblock %}
+<span>sajfiodsjafoi</span>
+{% block project_publications %}
+{% if myProject.publications|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Publications</span>
+</div>
+{% endif %}
+{% for publication in myProject.publications %}
+<div class="project-publications project-achievement bothsides-margin">
+  <span class="double-byte">{{ publication.text }}</span>
+{% if publication.url %}
+<a class="double-byte" target="_blank" href="{{ publication.url }}">→</a>
+{% endif %}
+</div>
+{% endfor %}
+{% endblock %}
+{% block project_awards %}
+{% if myProject.awards|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Awards</span>
+</div>
+{% endif %}
+{% for award in myProject.awards %}
+<div class="project-awards project-achievement bothsides-margin">
+  <span class="double-byte">{{ award.text }}</span>
+  {% if award.url %}
+  <a class="double-byte" target="_blank" href="{{ award.url }}">→</a>
+  {% endif %}
+</div>
+{% endfor %}
+{% endblock %}
+{% block project_exhibitions %}
+{% if myProject.exhibitions|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Exhibitions</span>
+</div>
+{% endif %}
+{% for exhibition in myProject.exhibitions %}
+<div class="project-exhibitions project-achievement bothsides-margin">
+  <span class="double-byte">{{ exhibition.text }}</span>
+  {% if exhibition.url %}
+  <a class="double-byte" target="_blank" href="{{ exhibition.url }}">→</a>
+  {% endif %}
+</div>
+{% endfor %}
+{% endblock %}
+{% block project_media %}
+{% if myProject.media|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Media</span>
+</div>
+{% endif %}
+{% for media in myProject.media %}
+<div class="project-media project-achievement bothsides-margin">
+  <span class="double-byte">{{ media.text }}</span>
+  {% if media.url %}
+  <a class="double-byte" target="_blank" href="{{ media.url }}">→</a>
+  {% endif %}
+</div>
+{% endfor %}
+{% endblock %}
+{% block project_links %}
+{% if myProject.links|length > 0 %}
+<div class="heading">
+  <span class="single-byte">Links</span>
+</div>
+{% endif %}
+{% for link in myProject.links %}
+<div class="project-links project-achievement bothsides-margin">
+  <span class="double-byte">{{ link.text }}</span>
+  {% if link.url %}
+  <a class="double-byte" target="_blank" href="{{ link.url }}">→</a>
+  {% endif %}
+</div>
+{% endfor %}
+{% endblock %}

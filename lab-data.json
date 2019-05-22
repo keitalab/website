@@ -1,0 +1,527 @@
+ {
+  "news": {
+    "2016_04": {
+      "kickoff":{
+        "date": "2016.4.1",
+        "title": "2016年度、始動しました！",
+        "text": [
+          "新年度を迎え、明治大学FMSも４年目に突入しました。渡邊研究室は8人の1年生、7人の2年生、7人の3年生、そして修士1年1人を新たな正式なメンバーとして迎えました。そして12人の新4年生を加え、35人の学生と准教授に昇格した渡邊恵太、総勢36人の大所帯となりましたが、このメンバーで、この一年を乗り切っていきたいと思います！"
+        ],
+        "thumbnail": "/images/news/kickoff-thumbnail.jpg",
+        "images": [
+          "/images/news/group_picture_20160406.jpg"
+        ],
+        "detail_page": "/news/2016/04/kickoff",
+        "newer_news": "/news/2016/04/skycircus"
+      },
+      "skycircus": {
+        "date": "2016.4.21",
+        "title": "SKY CIRCUSに「ものとーく」が導入されました！",
+        "text": [
+          "池袋の代表的なランドマークであるサンシャイン60の展望台「SKY CIRCUS」のショップコーナーに、渡邊恵太（明治大学、CIDRE INTERACTION DESIGN代表）の研究/製品「ものとーく」が導入されています。SKY CIRCUSのお土産「SKY CIRCUSクッキー」が動きと音声でプロモーションしながらの陳列されています。",
+          "また、渡邊研究室のメンバーはSKY CIRCUSに遊びに行き、様々なアトラクションや東京都を一望できるパノラマ展望台を楽しみました。皆様も是非、足を運んでみてください！"
+        ],
+        "thumbnail": "/images/news/skycircus-thumbnail.jpg",
+        "images": [
+          "/images/news/skycircus-01.jpg",
+          "/images/news/skycircus-02.jpg",
+          "/images/news/skycircus-03.jpg",
+          "/images/news/skycircus-04.jpg"
+        ],
+        "detail_page": "/news/2016/04/skycircus",
+        "external_link": [
+          {
+            "url": "http://www.skycircus.jp/",
+            "text": "サンシャイン60展望台 SKY CIRCUS"
+          },
+          {
+            "url": "http://cidre.tokyo/monotalk/",
+            "text": "CIDRE INTERACTION DESIGN「ものとーく」"
+          }
+        ],
+        "older_news": "/news/2016/04/kickoff",
+        "newer_news": "/news/2016/04/icc-release"
+      },
+      "icc_release":{
+        "date": "2016.4.30",
+        "title": "NTT ICC常設展「オープンスペース2016」",
+        "text": [
+          "5月28日（土）より開催されるNTTインターコミュニケーション・センター（ICC）の長期展示「オープン・スペース2016 メディア・コンシャス」に、渡邊研究室が参加します。大学などの研究機関での成果や事例を紹介する「研究開発コーナー」を担当します。",
+          "また、ICCに関する情報はこれからも随時公開していきます。展示が始まりましたら、是非、足を運んでいただけたらと思います！"
+        ],
+        "thumbnail": "/images/news/icc-thumbnail.jpg",
+        "images": [
+          "/images/news/icc-release-01.jpg"
+        ],
+        "detail_page": "/news/2016/04/icc-release",
+        "external_link": [
+          {
+            "url": "https://www.ntt-east.co.jp/release/detail/20160428_01.html",
+            "text": "NTT東日本プレスリリース"
+          },
+          {
+            "url": "http://www.ntticc.or.jp/index_j.html",
+            "text": "NTTインターコニュニケーションセンター（ICC）"
+          }
+        ],
+        "older_news": "/news/2016/04/skycircus"
+      }
+    }
+  },
+  "members": {
+    "b2": [
+      {"firstname_ja": "祥一", "lastname_ja": "國松", "firstname_en": "Shoichi", "lastname_en": "Kunimatsu", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "優人", "lastname_ja": "黒木", "firstname_en": "Yuto", "lastname_en": " Kuroki", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "里奈", "lastname_ja": "高瀬", "firstname_en": "Rina", "lastname_en": "Takase", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "一真", "lastname_ja": "高田", "firstname_en": "Kazuma", "lastname_en": "Takada", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "拓", "lastname_ja": "高橋", "firstname_en": "Taku", "lastname_en": "Takahashi", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "孝一", "lastname_ja": "楯岡", "firstname_en": "Koichi", "lastname_en": "Tateoka", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "健也", "lastname_ja": "中里", "firstname_en": "Kenya", "lastname_en": "Nakazato", "image": "/images/members/john_smith-150sq.jpg"}
+    ],
+    "b3": [
+      {"firstname_ja": "泰良", "lastname_ja": "大内", "firstname_en": "Taira", "lastname_en": "Ouchi", "image": "/images/members/tiara-150sq.jpg"},
+      {"firstname_ja": "翔麻", "lastname_ja": "金子", "firstname_en": "Shoma", "lastname_en": "Kaneko", "image": "/images/members/kaneko-150sq.jpg"},
+      {"firstname_ja": "麻里奈", "lastname_ja": "長嶋", "firstname_en": "Marina", "lastname_en": "Nagashima", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "龍太郎", "lastname_ja": "永須", "firstname_en": "Ryotaro", "lastname_en": "Nagasu", "image": "/images/members/ngs-150sq.jpg"},
+      {"firstname_ja": "瞳", "lastname_ja": "西條", "firstname_en": "Hitomi", "lastname_en": "Nishijo", "image": "/images/members/jo-150sq.jpg"},
+      {"firstname_ja": "康輔", "lastname_ja": "八木", "firstname_en": "Kosuke", "lastname_en": "Yagi", "image": "/images/members/john_smith-150sq.jpg"},
+      {"firstname_ja": "朝香", "lastname_ja": "吉益", "firstname_en": "Asaka", "lastname_en": "Yoshimasu", "image": "/images/members/john_smith-150sq.jpg"}
+    ],
+    "b4": [
+      {"firstname_ja": "大智", "lastname_ja": "伊藤", "firstname_en": "Daichi", "lastname_en": "Ito", "image": "/images/members/itoh-150sq.jpg"},
+      {"firstname_ja": "陽太", "lastname_ja": "尾髙", "firstname_en": "Yota", "lastname_en": "Odaka", "image": "/images/members/odk-150sq.jpg"},
+      {"firstname_ja": "翔平", "lastname_ja": "片倉", "firstname_en": "Shohei", "lastname_en": "Katakura", "image": "/images/members/kaffcop-150sq.jpg"},
+      {"firstname_ja": "一将", "lastname_ja": "川連", "firstname_en": "Kazumasa", "lastname_en": "Kawazure", "image": "/images/members/kwzr-150sq.jpg"},
+      {"firstname_ja": "千晴", "lastname_ja": "古賀", "firstname_en": "Chiharu", "lastname_en": "Koga", "image": "/images/members/kgchr-150sq.jpg"},
+      {"firstname_ja": "勇毅", "lastname_ja": "小松", "firstname_en": "Yuki", "lastname_en": "Komatsu", "image": "/images/members/kmt-150sq.jpg"},
+      {"firstname_ja": "英輝", "lastname_ja": "杉本", "firstname_en": "Hideki", "lastname_en": "Sugimoto", "image": "/images/members/sugimoto-150sq.jpg"},
+      {"firstname_ja": "遼祐", "lastname_ja": "高桑", "firstname_en": "Ryosuke", "lastname_en": "Takakuwa", "image": "/images/members/tkkw-150sq.jpg"},
+      {"firstname_ja": "択真", "lastname_ja": "永島", "firstname_en": "Takuma", "lastname_en": "Nagashima", "image": "/images/members/jobs-150sq.jpg"},
+      {"firstname_ja": "裕登", "lastname_ja": "中屋", "firstname_en": "Hiroto", "lastname_en": "Nakaya", "image": "/images/members/hiron-150sq.jpg"},
+      {"firstname_ja": "健太", "lastname_ja": "原", "firstname_en": "Kenta", "lastname_en": "Hara", "image": "/images/members/mactkg-150sq.jpg"},
+      {"firstname_ja": "佳純", "lastname_ja": "吉村", "firstname_en": "Kazumi", "lastname_en": "Yoshimura", "image": "/images/members/ysmr-150sq.jpg"}
+    ],
+    "m1": [
+      {"firstname_ja": "朋美", "lastname_ja": "幸野", "firstname_en": "Tomomi", "lastname_en": "Kono", "image": "/images/members/kono-300sq.jpg"}
+    ],
+    "other": [
+      {"firstname_ja": "恵太", "lastname_ja": "渡邊", "firstname_en": "Keita", "lastname_en": "Watanabe", "image": "/images/members/100kw-150sq.jpg"}
+    ]
+  },
+  "projects": {
+    "sense_of_belonging": [
+      { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊",
+        "title_en": "LiveTexture", "title_ja": "LiveTexture",
+        "brief_en": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
+        "brief_ja": "インタラクティブに質感が変化するテクスチャの表現手法",
+        "explanation": [
+        ],
+        "image": "/images/projects/live-texture/live-texture-main.jpg",
+        "detail_page": "/projects/live-texture",
+        "period": "2014~",
+        "sub_images": [
+        ],
+        "explanation": [
+
+        ],
+        "keywords": [
+
+        ],
+        "publications": [
+          {
+            "text": "小渕 豊 渡邊 恵太, LiveSurface: センサ情報を利用したインタラクティブな質感表現手法, 情報処理学会 インタラクション2015",
+            "url": "http://www.interaction-ipsj.org/proceedings/2015/data/20150226/B66.pdf"
+          }
+        ],
+        "awards": [
+          {
+            "text": "情報処理学会シンポジウム インタラクション2015 インタラクティブ発表賞"
+          }
+        ],
+        "exhibitions": [
+        ],
+        "media": [
+        ],
+        "links": [
+          {
+            "text": "デモページ（携帯端末からアクセスください）",
+            "url": "http://fms-cat.github.io/LiveTexture/"
+          }
+        ]
+      },
+      { "author_en": "Kazumi Yoshimura", "author_ja": "吉村佳純",
+        "title_en": "TactileRecord", "title_ja": "TactileRecord",
+        "brief_en": "テクスチャによる音楽の触覚提示手法の提案",
+        "brief_ja": "テクスチャによる音楽の触覚提示手法の提案",
+        "image": "/images/projects/tactile-record/tactile-record-main.jpg",
+        "detail_page": "/projects/tactile-record",
+        "period": "2015~",
+        "sub_images": [
+          "/images/projects/tactile-record/tactile-record-sub1.jpg",
+          "/images/projects/tactile-record/tactile-record-sub2.jpg"
+        ],
+        "explanation": [
+          "従来の音楽鑑賞における触覚提示システムでは、臨場感の向上を目的として振動触覚を提示する手法が主流でした。しかしこの従来手法では、迫力や乗りの良さの強調といった臨場感の提示にのみ特化しているため、表現できる楽曲印象の種類が限られてしまいます。",
+          "「TactileRecord」では、音楽の軽やかさや心地良さなど、より多様な楽曲印象を表現できるよう、音楽をテクスチャとして生成する触覚提示手法を提案しています。入力された楽曲の印象に合わせたテクスチャパターンを生成し、作成されたパターンを元にレーザーカッターでデバイスの上部表面を彫刻し触覚提示を行っています。このデバイス上面は楽曲ごとに変更可能で、表面の凹凸をなぞると同時にそのテクスチャに対応した音楽が流れる仕組みになっています。凹凸感や触り心地によって楽曲の印象を強調することを目指します。"
+        ],
+        "keywords": [
+          "音楽の触覚提示"
+        ],
+        "publications": [
+
+        ],
+        "awards": [
+
+        ],
+        "exhibitions": [
+          {
+            "text": "第10回 金の卵 オールスター デザイン ショーケース",
+            "url": "http://www.axisinc.co.jp/building/eventdetail/420"
+          }
+        ],
+        "media": [
+
+        ],
+        "links": [
+
+        ]
+      }
+    ],
+    "next_internet": [
+      { "author_en": "Yota Odaka", "author_ja": "尾髙陽太",
+        "title_en": "Integlass", "title_ja": "Integlass",
+        "brief_en": "A measuring cup which combines information with tool.",
+        "brief_ja": "情報と道具を一体化する計量カップ",
+        "image": "/images/projects/integlass/integlass-main.jpg",
+        "detail_page": "/projects/integlass",
+        "period": "2013~2015",
+        "sub_images": [
+          "/images/projects/integlass/integlass-sub1.jpg",
+          "/images/projects/integlass/integlass-sub2.jpg"
+        ],
+        "explanation": [
+          "料理をするときに用いる「レシピ」。今やレシピはインターネット上に大量に存在し、誰でも簡単に探し出すことができるようになりました。私たちは、この電子化したレシピが「知る」目的を超えて、実際の調理を支援する調理器具となりうる可能性を提案します。",
+          "「Integlass」は、目盛りの代わりに携帯端末を取り付けて計量する計量カップです。携帯端末に表示されたレシピの材料に触れると、目盛りの役割を持つ画面に移り、容器のどこまで材料を注げば目的の分量が計り取れるかを示します。容器の傾きに合わせて、この表示も変化し、容器が水平でなくても計量することができます。",
+          "電子化された情報を「人間が見て解釈するもの」から「人間の行動を支援するもの」にするような道具の設計があると考えています。"
+        ],
+        "keywords": [
+          "次のインターネット体験", "情報の道具化"
+        ],
+        "publications": [
+          {
+            "text": "尾高 陽太 渡邊 恵太, Arctanbler: 空中でも水平を得られる計量カップ, 情報処理学会 インタラクション2014",
+            "url": "http://www.interaction-ipsj.org/proceedings/2014/data/20140220/C2-3.pdf"
+          }
+        ],
+        "awards": [
+          {
+            "text": "情報処理学会シンポジウム インタラクション2014 インタラクティブ発表賞",
+            "url": "http://www.interaction-ipsj.org/2014/program.html"
+          }
+        ],
+        "exhibitions": [
+          {
+            "text": "第9回 金の卵 オールスター デザイン ショーケース",
+            "url": "http://www.axisinc.co.jp/building/eventdetail/344"
+          }
+        ],
+        "media": [
+          {
+            "text": "テレビ東京 WBS ワールドビジネスサテライト トレンドたまご 2014.9.2",
+            "url": "http://txbiz.tv-tokyo.co.jp/wbs/trend_tamago/post_74048/"
+          },
+          {
+            "text": "日刊工業新聞 2014.8.22"
+          }
+        ],
+        "links": [
+
+        ]
+      },
+      { "author_en": "Keita Hara", "author_ja": "原健太",
+        "title_en": "Webmo", "title_ja": "Webmo",
+        "brief_en": "A motor which devices control via Web API on Wi-Fi network.",
+        "brief_ja": "WebAPIを持ったモーター",
+        "image": "/images/projects/webmo/webmo-main.jpg",
+        "detail_page": "/projects/webmo",
+        "period": "2015~",
+        "sub_images": [
+          "/images/projects/webmo/webmo-sub1.jpg",
+          "/images/projects/webmo/webmo-sub2.jpg"
+        ],
+        "explanation": [
+
+        ],
+        "keywords": [
+          "即興性",
+          "次のインターネット",
+          "情報の道具化"
+        ],
+        "publications": [
+          {
+            "text": "原健太, 渡邊恵太. Webmo: WifiとWebAPIをパッケージングしたステッピングモーター. 第23回インタラクティブシステムとソフトウェアに関するワークショップ論文集(WISS2015), 2015.",
+            "url": "http://www.wiss.org/WISS2015Proceedings/demo/3-R22.pdf"
+          }
+        ],
+        "awards": [
+
+        ],
+        "exhibitions": [
+          {
+            "text": "第10回 金の卵 オールスター デザイン ショーケース",
+            "url": "http://www.axisinc.co.jp/building/eventdetail/420"
+          }
+        ],
+        "media": [
+
+        ],
+        "links": [
+          {
+            "text": "2016年販売予定",
+            "url": "//webmo.io"
+          }
+        ]
+      },
+      { "author_en": "Shohei Katakura", "author_ja": "片倉翔平",
+        "title_en": "presendBox", "title_ja": "presendBox",
+        "brief_en": "メッセージの価値を高める箱の提案とその試作",
+        "brief_ja": "メッセージの価値を高める箱の提案とその試作",
+        "image": "/images/projects/presend-box/presend-box-main.jpg",
+        "detail_page": "/projects/presend-box",
+        "period": "2015~",
+        "sub_images": [
+          "/images/projects/presend-box/presend-box-sub1.jpg",
+          "/images/projects/presend-box/presend-box-sub2.jpg"
+        ],
+        "explanation": [
+          "現在のメッセージングは、素早く便利になってきています。しかしその一方、手紙時などのような温かさは感じられなくなってきていると感じます。",
+          "「presendBox」は画面の中にディスプレイを閉じ込め、その中にメッセージを送信し、開けることによってメッセージを受け取りる箱です。スマホなどではメッセージは、常に画面に表示されているわけではなく、アプリを終了した時やロックをかけたとき、突然消えるため手紙のような保持感を感じることはできません。しかし箱のなかに閉じ込めることによって、開けた時に徐々にあらわれることによって”すでにそこにあった”という持続を感じさせることができます。それによってメッセージの価値を高まると考えます。"
+        ],
+        "keywords": [
+          "画面のリアリティ"
+        ],
+        "publications": [
+
+        ],
+        "awards": [
+
+        ],
+        "exhibitions": [
+
+        ],
+        "media": [
+
+        ],
+        "links": [
+
+        ]
+      }
+    ],
+    "creation_support": [
+      { "author_en": "Hiroto Nakaya", "author_ja": "中屋裕登",
+        "title_en": "ImageSeed", "title_ja": "ImageSeed",
+        "brief_en": "思考を即応的に具現化することに特化した会話補強ツール",
+        "brief_ja": "思考を即応的に具現化することに特化した会話補強ツール",
+        "image": "/images/projects/image-seed/image-seed-main.jpg",
+        "detail_page": "/projects/image-seed",
+        "period": "2015~",
+        "sub_images": [
+          "/images/projects/image-seed/image-seed-sub1.jpg",
+          "/images/projects/image-seed/image-seed-sub2.jpg"
+        ],
+        "explanation": [
+          "ホワイトボードを前にして行う対面会話は、自分の伝えたいことをすぐに図を描くことができるため便利です。思考していることを他の人に伝えるためには、出来る限り具体的にアウトプットする必要があります。アウトプットの方法として図で描くことは伝達率が高くなる一方で、そのための技術や時間のコストを必要とします。",
+          "「ImageSeed」では、web上に存在する既存の画像を音声入力によって表示し、組み合わせてつかうことで、柔軟なアウトプットを実現します。これにより低コストでありながらも、素早いアウトプットを可能にすると考えます。"
+        ],
+        "keywords": [
+          "即興性"
+        ],
+        "publications": [
+          {
+            "text": "中屋裕登, 渡邊恵太. ImageSeed: 思考を即応的に具現化することに特化した会話補強ツール. 第23回インタラクティブシステムとソフトウェアに関するワークショップ論文集(WISS2015), pp.119-120, 2015.",
+            "url": "http://www.wiss.org/WISS2015Proceedings/demo/1-R05.pdf"
+          }
+        ],
+        "awards": [
+
+        ],
+        "exhibitions": [
+
+        ],
+        "media": [
+
+        ],
+        "links": [
+
+        ]
+      }
+    ],
+    "2015": [
+      { "author_en": "Shoma Kaneko", "author_ja": "金子翔麻",
+        "title_en": "Geoterior", "title_ja": "Geoterior",
+        "brief_en": "周辺地理情報を日常的に眺めるインタフェース",
+        "brief_ja": "周辺地理情報を日常的に眺めるインタフェース",
+        "image": "geoterior-1000.jpg",
+        "detail_page": "",
+        "period": "",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          "インタフェース",
+          "情報の具体化"
+        ]
+      },
+      { "author_en": "Shohei Katakura", "author_ja": "片倉翔平",
+        "title_en": "presendBox", "title_ja": "presendBox",
+        "brief_en": "無機質なメッセージの価値を高める箱",
+        "brief_ja": "無機質なメッセージの価値を高める箱",
+        "image": "presendbox-1000.jpg",
+        "detail_page": "",
+        "period": "2015~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      },
+      { "author_en": "Kazumi Yoshimura", "author_ja": "吉村佳純",
+        "title_en": "TactileRecord", "title_ja": "TactileRecord",
+        "brief_en": "テクスチャによる音楽の触覚提示",
+        "brief_ja": "テクスチャによる音楽の触覚提示",
+        "image": "tactilerecord-1000.jpg",
+        "detail_page": "",
+        "period": "2015~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      },
+      { "author_en": "Keita Hara", "author_ja": "原健太",
+        "title_en": "Webmo", "title_ja": "Webmo",
+        "brief_en": "A motor which devices control via Web API on Wi-Fi network.",
+        "brief_ja": "Wi-Fiを経由して制御するWeb APIを持ったステッピングモーター",
+        "image": "webmo-1000.jpg",
+        "detail_page": "",
+        "period": "2015~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      },
+      { "author_en": "Daichi Ito", "author_ja": "伊藤大智", "title_en": "DigestScene", "title_ja": "DigestScene",
+        "brief_ja": "見どころのみを撮影するカメラシステム",
+        "brief_en": "見どころのみを撮影するカメラシステム",
+        "image": "digestscene-1000.jpg",
+        "detail_page": "",
+        "period": "2015~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      }
+    ],
+    "2014": [
+      { "author_en": "Yutaka Obuchi", "author_ja": "小渕豊",
+        "title_en": "LiveTexture", "title_ja": "LiveTexture",
+        "brief_en": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
+        "brief_ja": "加速度センサ、カメラ、照度センサの情報を駆使して、インタラクティブに質感を変化させる",
+        "image": "livetexture-444.jpg",
+        "detail_page": "",
+        "period": "2014~",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      }
+    ],
+    "2013": [
+      { "author_en": "Yota Odaka", "author_ja": "尾髙陽太",
+        "title_en": "Integlass", "title_ja": "Integlass",
+        "brief_en": "A measuring cup which combines information with tool.",
+        "brief_ja": "情報と道具を一体化する計量カップ",
+        "image": "integlass-1000.jpg",
+        "detail_page": "integlass",
+        "period": "2013~2015",
+        "sections": [
+          {
+            "headline": "",
+            "body": "",
+            "image":"/image/projects/integlass/integlass-1000x750.jpg n"
+          },
+          {
+            "headline": "",
+            "body": "",
+            "image":""
+          }
+        ],
+        "tags": [
+          ""
+        ]
+      }
+    ]
+  }
+}

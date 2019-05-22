@@ -1,0 +1,52 @@
+{% extends "_layout.html" %}
+{% set pinned = news["2016_04"].icc_release %}
+{% block main %}
+<section class="container news">
+  <div class="headline">
+    <span class="single-byte">News</span>
+  </div>
+  <article class="pinned-news">
+    <div class="pinned-news-image">
+      <a href="{{ pinned.detail_page }}">
+        <img src="{{ pinned.images[0] }}" alt="" />
+      </a>
+    </div>
+    <div class="pinned-news-title heading leftside-margin">
+      <span class="double-byte">{{ pinned.title }}</span>
+    </div>
+    <div class="pinned-news-date rightside-margin">
+      <span class="single-byte">{{ pinned.date }}</span>
+    </div>
+    <div class="pinned-news-text paragraph bothsides-margin">
+      <span class="double-byte">{{ pinned.text[0]|truncate(100, True) }}</span>
+      <a href="{{ pinned.detail_page }}">→</a>
+    </div>
+  </article>
+  {% set dates = ["2016_04"] %}
+  {% set titles = {
+    "2016_04": ["skycircus", "kickoff"]
+  }
+  %}
+
+  {% for date in dates %}
+  {% for title in titles[date] %}
+  <article class="news bothsides-margin">
+    <div class="news-thumbnail">
+      <a href="{{ news[date][title].detail_page }}">
+        <img src="{{ news[date][title].thumbnail }}" alt="" />
+      </a>
+    </div>
+    <div class="news-description">
+      <div class="news-date">
+        <span class="single-byte">{{ news[date][title].date }}</span>
+      </div>
+      <div class="news-title">
+        <span class="double-byte">{{ news[date][title].title }}</span>
+        <a  class="double-byte" href="{{ news[date][title].detail_page }}">→</a>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+  {% endfor %}
+</section>
+{% endblock %}

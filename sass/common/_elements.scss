@@ -1,0 +1,148 @@
+section.container {
+  @media screen and (min-width: $large-min) {
+
+  }
+  @media screen and (max-width: $medium-max) {
+
+  }
+}
+body {
+  color: $keita-lab-black;
+}
+span, a {
+  &::selection {
+    background-color: $keita-lab-lightgray;
+    color: $keita-lab-white;
+  }
+  &.single-byte {
+    letter-spacing: 0.09em;
+    font-size: 1.01em;
+    font-family: Noto Sans Japanese, Helvetica Neue, Helvetica, sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+  }
+  &.double-byte {
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    font-size: 1em;
+    font-family: Noto Sans Japanese, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ", "メイリオ", sans-serif;
+    &.serif {
+      font-family: serif;
+    }
+  }
+  &.bold {
+    font-weight: 500;
+  }
+  &.light {
+    font-weight: 300;
+  }
+  &.underline {
+    text-decoration: underline;
+  }
+}
+
+a{
+  color: $keita-lab-lightgray;
+  transition: 0.2s;
+  &:hover {
+    transition: 0.5s;
+    text-decoration: none;
+    color: $keita-lab-black;
+  }
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+section {
+  &.container {
+  }
+}
+div {
+  &.headline {
+    text-align: left;
+    @media screen and (min-width: $large-min) {
+      margin: 0 0 20px 0;
+      font-weight: 200;
+      span {
+        &.double-byte {
+          font-size: $large-double-byte-pc;
+        }
+        &.single-byte {
+          font-size: $large-single-byte-pc;
+        }
+      }
+    }
+    @media screen and (max-width: $medium-max) {
+      margin: 0 0 12px 0;
+      font-weight: 200;
+      span {
+        &.double-byte {
+          font-size: $large-double-byte-sp;
+        }
+        &.single-byte {
+          font-size: $large-single-byte-sp;
+        }
+      }
+    }
+  }
+  &.heading {
+    text-align: left;
+    @media screen and (min-width: $large-min) {
+      line-height: 1.2em;
+      margin-bottom: 30px;
+      font-weight: 100;
+      span {
+        &.double-byte {
+          font-size: $medium-double-byte-pc;
+        }
+        &.single-byte {
+          font-size: $medium-single-byte-pc;
+        }
+      }
+    }
+    @media screen and (max-width: $medium-max) {
+      span {
+        &.double-byte {
+          font-size: $medium-double-byte-sp;
+        }
+        &.single-byte {
+          font-size: $medium-single-byte-sp;
+        }
+      }
+    }
+  }
+  &.paragraph {
+    text-align: left;
+    @media screen and (min-width: $large-min) {
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      font-weight: 300;
+      span {
+        &.double-byte {
+          font-size: $small-double-byte-pc;
+        }
+        &.single-byte {
+          font-size: $small-single-byte-pc;
+        }
+      }
+    }
+    @media screen and (max-width: $medium-max) {
+      span {
+        &.double-byte {
+          font-size: $small-double-byte-sp;
+        }
+        &.single-byte {
+          font-size: $small-single-byte-sp;
+        }
+      }
+    }
+  }
+}
