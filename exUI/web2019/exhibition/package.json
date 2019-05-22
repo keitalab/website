@@ -1,0 +1,24 @@
+{
+  "name": "exhibition2018",
+  "version": "1.0.0",
+  "description": "2018年度用Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keitalab/exhibition2018.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keitalab/exhibition2018/issues"
+  },
+  "homepage": "https://github.com/keitalab/exhibition2018#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}

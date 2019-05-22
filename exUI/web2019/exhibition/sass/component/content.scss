@@ -1,0 +1,48 @@
+.contents {
+  background-image: url("../assets/background.jpg");
+  width: 100%;
+  display: none;
+}
+.contents-mask {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.contents-inner {
+  width: 90%;
+  margin: auto;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-title {
+  font-weight: bold;
+  font-size: 32px;
+  display: inline;
+}
+
+.content-header {
+}
+
+.content-title {
+  display: inline-block;
+
+  &::after {
+    background-color: #00ded2;
+    border-radius: 4px;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 8px;
+    margin: 0 auto;
+  }
+}
+
+.content-title-sub {
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+}
+.content-description {
+  margin-top: 16px;
+}

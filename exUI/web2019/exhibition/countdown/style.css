@@ -1,0 +1,102 @@
+* {
+  font-family: "arial", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
+    sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  #background {
+    background-image: url("images/phone.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #background {
+    background-image: url("images/pc.jpg");
+  }
+}
+
+#background {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#background-mask {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+canvas {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#canvas-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.mt-1 {
+  margin-top: 8%;
+}
+.mt-2 {
+  margin-top: 12%;
+}
+.mt-3 {
+  margin-top: 30%;
+}
+.mt-4 {
+  margin-top: 40%;
+}
+
+#rate-days {
+  font-size: calc(80px + 10vw);
+}
+
+#day {
+  font-size: calc(32px + 2vw);
+}
+
+#rate-days-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+#rate-days-wrapper:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -8px;
+  background-color: rgb(250, 225, 254); /* 線色 */
+  border-radius: 20px; /* 線幅の半分 */
+  content: "";
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  z-index: -1;
+  height: 40px; /* 線幅 */
+}
+.lead-text {
+  font-size: calc(24px + 1vw);
+  font-weight: bolder;
+}
+
+.sub-text {
+  font-size: calc(18px + 1vw);
+  color: #444;
+  font-weight: bolder;
+}
+
+.text-center {
+  text-align: center;
+}

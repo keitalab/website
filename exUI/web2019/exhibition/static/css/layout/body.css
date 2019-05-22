@@ -1,0 +1,15 @@
+@charset "UTF-8";
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+* {
+  font-family: "arial", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}

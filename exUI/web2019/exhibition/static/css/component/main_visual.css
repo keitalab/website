@@ -1,0 +1,16 @@
+.main-visual {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.main-visual img {
+  display: block;
+  width: 100%;
+  content: url("../../static/assets/main_pc.jpg");
+}
+
+@media screen and (max-width: 480px) {
+  .main-visual img {
+    content: url("../../static/assets/main_sp.jpg");
+  }
+}

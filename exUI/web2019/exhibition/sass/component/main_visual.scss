@@ -1,0 +1,63 @@
+.main-visual {
+  img {
+    display: block;
+    width: 100%;
+
+    content: url("../../static/assets/main_pc.jpg");
+    @media screen and (max-width: 480px) {
+      content: url("../../static/assets/main_sp.jpg");
+    }
+  }
+  margin-bottom: 32px;
+  position: relative;
+}
+// .main-visual-title {
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+// }
+
+// .main-visual-title-label {
+//   position: absolute;
+
+//   top: 12vh;
+//   left: 8vh;
+//   font-size: 20px;
+//   @media screen and (min-width: 480px) {
+//     font-size: 40px;
+//   }
+// }
+// .main-visual-title-head {
+//   position: absolute;
+//   width: 100%;
+//   text-align: right;
+//   font-weight: bold;
+//   top: 60vh;
+//   right: 8vh;
+
+//   @media screen and (max-width: 1024px) {
+//     font-size: 100px;
+//   }
+//   @media screen and (max-width: 896px) {
+//     font-size: 50px;
+//   }
+//   @media screen and (max-width: 480px) {
+//     font-size: 20px;
+//   }
+// }
+// .main-visual-title-sub {
+//   position: absolute;
+//   width: 100%;
+//   text-align: right;
+//   right: 8vh;
+//   font-size: 20px;
+//   @media screen and (min-width: 480px) {
+//     font-size: 40px;
+//   }
+// }
+// .sub-1 {
+//   top: 76vh;
+// }
+// .sub-2 {
+//   top: 82vh;
+// }
